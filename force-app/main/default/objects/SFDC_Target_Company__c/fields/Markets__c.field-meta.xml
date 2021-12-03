@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Markets__c</fullName>
+    <externalId>false</externalId>
+    <label>Markets</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accounting</fullName>
+                <default>false</default>
+                <label>Accounting</label>
+            </value>
+            <value>
+                <fullName>Billing</fullName>
+                <default>false</default>
+                <label>Billing</label>
+            </value>
+            <value>
+                <fullName>Collaboration Suites</fullName>
+                <default>false</default>
+                <label>Collaboration Suites</label>
+            </value>
+            <value>
+                <fullName>Contacts/eMail Management</fullName>
+                <default>false</default>
+                <label>Contacts/eMail Management</label>
+            </value>
+            <value>
+                <fullName>CRM</fullName>
+                <default>false</default>
+                <label>CRM</label>
+            </value>
+            <value>
+                <fullName>Electronic Signature</fullName>
+                <default>false</default>
+                <label>Electronic Signature</label>
+            </value>
+            <value>
+                <fullName>eMail Archiving</fullName>
+                <default>false</default>
+                <label>eMail Archiving</label>
+            </value>
+            <value>
+                <fullName>eMail Marketing</fullName>
+                <default>false</default>
+                <label>eMail Marketing</label>
+            </value>
+            <value>
+                <fullName>File Share/Sync/Store</fullName>
+                <default>false</default>
+                <label>File Share/Sync/Store</label>
+            </value>
+            <value>
+                <fullName>Large File Send</fullName>
+                <default>false</default>
+                <label>Large File Send</label>
+            </value>
+            <value>
+                <fullName>Online Backup</fullName>
+                <default>false</default>
+                <label>Online Backup</label>
+            </value>
+            <value>
+                <fullName>Project Management/Collaboration</fullName>
+                <default>false</default>
+                <label>Project Management/Collaboration</label>
+            </value>
+            <value>
+                <fullName>Remote Desktop</fullName>
+                <default>false</default>
+                <label>Remote Desktop</label>
+            </value>
+            <value>
+                <fullName>Voice</fullName>
+                <default>false</default>
+                <label>Voice</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

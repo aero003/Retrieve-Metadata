@@ -1,0 +1,34 @@
+<apex:page extensions="Consensus_Tier_UpgradeController" standardController="Account" lightningStylesheets="true" sidebar="true" showHeader="true" docType="html-5.0" >   
+<apex:pageBlock title="Tier Upgrade">
+    <apex:form id="tierUpgradeForm">
+    	<div style="font-size: 23px;">
+            <spam>Current Tier : </spam><apex:outputText style="color: green;" value="{!currentProduct}"/> 
+        </div>
+        <br />
+        <apex:selectRadio layout="pageDirection" value="{!currentTier}" >
+            <apex:actionSupport event="onchange" action="{!test}" rerender="out"/>
+    		<apex:selectOptions value="{!selectedTierOption}"/>
+    		
+		</apex:selectRadio>
+        <!--<apex:commandButton value="Select Tier" action="{!test}" rerender="out" status="status"/>-->
+    
+
+    <apex:outputPanel id="out">
+        <apex:commandButton disabled="{!currentTier == NULL}" value="Save" action="{!saveRecord}"></apex:commandButton>
+          <apex:actionstatus id="status" startText="Loading..."> 
+             <apex:facet name="stop"> 
+               <apex:outputPanel style="font-size: 23px;"> 
+                   <br /><br />
+                   <div><spam>Selected : </spam><apex:outputText style="color: green;" value="{!currentTier}"/></div> 
+              </apex:outputPanel> 
+            </apex:facet> 
+          </apex:actionstatus> 
+        </apex:outputPanel>
+    
+        
+        
+        </apex:form>	
+    
+    
+    </apex:pageBlock>
+</apex:page>

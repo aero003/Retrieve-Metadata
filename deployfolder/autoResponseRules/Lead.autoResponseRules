@@ -1,0 +1,1461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoResponseRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <autoResponseRule>
+        <fullName>efax</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>Developer</value>
+            </criteriaItems>
+            <senderEmail>corporatesales@mail.efax.com</senderEmail>
+            <senderName>eFax Developer</senderName>
+            <template>eFaxDeveloperemailtemplates/eFaxDeveloperautoleadconfirmation</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.internalSourceID__c</field>
+                <operation>equals</operation>
+                <value>webinar</value>
+            </criteriaItems>
+            <senderEmail>donya.mogadam@j2global.com</senderEmail>
+            <senderName>Donya.Mogadam</senderName>
+            <template>eFaxCorporateSalesMktg/Webinar_Auto_Response_Confirmation</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.OwnerId</field>
+                <operation>equals</operation>
+                <value>eFax Sales</value>
+            </criteriaItems>
+            <senderEmail>sales@mail.efax.com</senderEmail>
+            <senderName>eFax Team</senderName>
+            <template>All_Templates/WebTS_Auto_Reply</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.J2_Campaign_Tracking__c</field>
+                <operation>equals</operation>
+                <value>ILC-CFAX</value>
+            </criteriaItems>
+            <senderEmail>tara.reddy@j2global.com</senderEmail>
+            <senderName>Tara Reddy</senderName>
+            <template>eFaxCorporateSalesMktg/CorpFaxwebtoleadautoemailresponse</template>
+        </ruleEntry>
+    </autoResponseRule>
+    <autoResponseRule>
+        <fullName>j2 Global Auto Response</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eVoice Live Receptionist</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>notContain</operation>
+                <value>Vanity Number</value>
+            </criteriaItems>
+            <senderEmail>noreplyevoice@mail.evoice.com</senderEmail>
+            <senderName>eVoice-Live Receptionist</senderName>
+            <template>Voice_Templates/eVoice_Live_Receptionist_Initial_Notification_Email_Upon_Inquiry</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eVoice Live Receptionist</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>contains</operation>
+                <value>Vanity Number</value>
+            </criteriaItems>
+            <senderEmail>noreplyevoice@mail.evoice.com</senderEmail>
+            <senderName>eVoice Vanity Number</senderName>
+            <template>Voice_Templates/eVoice_Live_Receptionist_Initial_Notification_Email_Upon_Inquiry_NEW</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Web Site</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>KIS Mobile Web Page</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.com</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_Mobile_Corporate_Lead_AutoResponse</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Online Backup</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.com</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_OB_US</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Disaster Recovery</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.com</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_DR_US</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Mobile</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.com</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_MBL_US</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Partner Programme</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.com</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_PP_US</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.ie</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Online Backup</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ie</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_OB_IE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.ie</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Disaster Recovery</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ie</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_DR_IE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Sfax: Lead</value>
+            </criteriaItems>
+            <senderEmail>corporatesales@mail.efax.com</senderEmail>
+            <senderName>Sfax Sales</senderName>
+            <template>sFax_Templates/Sfax_Auto_Response</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.ie</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Mobile</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ie</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_MBL_IE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.ie</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Cloud2Cloud</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ie</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_Cloud2Cloud_IE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.ie/cloud2cloud</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ie</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_Cloud2Cloud_IE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.ie</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Partner Programme</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ie</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_PP_IE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafej2.co.uk</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Online Backup</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafej2.co.uk</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_OB_UK</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafej2.co.uk</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Disaster Recovery</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafej2.co.uk</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_DR_UK</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafej2.co.uk</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Mobile</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafej2.co.uk</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_MBL_UK</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafej2.co.uk</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Partner Programme</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafej2.co.uk</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_PP_UK</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafej2.co.uk/cloud2cloud</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafej2.co.uk</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_Cloud2Cloud_UK</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafej2.co.uk</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Cloud2Cloud</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafej2.co.uk</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_Cloud2Cloud_UK</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.co.nz</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Online Backup</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.co.nz</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_OB_NZ_2_21_14</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.co.nz</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Disaster Recovery</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.co.nz</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_DR_NZ_2_21_14</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.co.nz</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Mobile</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.co.nz</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_MBL_NZ_2_21_14</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.co.nz</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Partner Programme</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.co.nz</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_PP_NZ_2_21_14</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.ca</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Online Backup</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ca</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_OB_CA_2_21_14</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.ca</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Disaster Recovery</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ca</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_DR_CA_2_21_14</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.ca</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Mobile</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ca</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_MBL_CA_2_21_14</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.ca</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Partner Programme</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ca</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_PP_CA_2_21_14</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.is</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Online Backup</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.is</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Online_Backup_Contact_Us_IS</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.is</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Disaster Recovery</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.is</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/DR_Contact_Us_IS</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.is</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Mobile</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.is</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Mobile_Contact_Us_IS</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.is</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Partner Programme</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.is</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Partner_Program_Contact_Us_IS</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.nl</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Online Backup</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.nl</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_OB_ND</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.nl</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Disaster Recovery</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.nl</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_DR_ND</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.nl</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Mobile</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.nl</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_MBL_ND</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafe.nl</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Desired_Solution__c</field>
+                <operation>equals</operation>
+                <value>Partner Programme</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.nl</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_PP_ND</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.ca/includes/leadpop.php?f=Online Backup Marketing Brochure - CA.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ca</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Marketing_Brochure_OB_email_Mkt_CA</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.ca/includes/leadpop.php?f=Online Backup Technical - CA.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ca</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Technical_Brief_OB_email_Tech_CA</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.ca/includes/leadpop.php?f=Partner Package - CA.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ca</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/PP_email_CA</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.ca/includes/leadpop.php?f=DR Marketing Brochure - CA.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ca</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Marketing_Brochure_DR_email_Mkt_CA</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.ca/includes/leadpop.php?f=DR Technical Brief - CA.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ca</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Technical_Brief_DR_email_Tech_CA</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.ca/includes/leadpop.php?f=Mobile Marketing Brochure - CA.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ca</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Marketing_Brochure_MBL_email_Mkt_CA</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.ca/includes/leadpop.php?f=Mobile Technical Brief - CA.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ca</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Technical_Brief_MBL_email_Tech_CA</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.ca/includes/leadpop.php?f=Fully Managed and Monitored - CA.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ca</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/FMM_email_CA</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.com/includes/leadpop.php?f=Online Backup Marketing Brochure - US.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.com</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Marketing_Brochure_OB_email_Mkt_US</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.com/includes/leadpop.php?f=Online Backup Technical - US.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.com</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Technical_Brief_OB_email_Tech_US</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.com/includes/leadpop.php?f=DR Marketing Brochure - US.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.com</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Marketing_Brochure_DR_email_Mkt_US</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.com/includes/leadpop.php?f=DR Technical Brief - US.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.com</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Technical_Brief_DR_email_Tech_US</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.com/includes/leadpop.php?f=Mobile Marketing Brochure - US.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.com</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Marketing_Brochure_MBL_email_Mkt_US</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.com/includes/leadpop.php?f=Mobile Technical Brief - US.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.com</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Technical_Brief_MBL_email_Tech_US</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.com/includes/leadpop.php?f=Partner Package - US.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.com</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/PP_email_US</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.com/includes/leadpop.php?f=Fully Managed and Monitored - US.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.com</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/FMM_email_US</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.co.nz/includes/leadpop.php?f=Online Backup Marketing Brochure - NZ.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.co.nz</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Marketing_Brochure_OB_email_Mkt_NZ</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.co.nz/includes/leadpop.php?f=Online Backup Technical - NZ.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.co.nz</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Technical_Brief_OB_email_Tech_NZ</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.co.nz/includes/leadpop.php?f=DR Marketing Brochure - NZ.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.co.nz</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Marketing_Brochure_DR_email_Mkt_NZ</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.co.nz/includes/leadpop.php?f=DR Technical Brief - NZ.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.co.nz</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Technical_Brief_DR_email_Tech_NZ</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.co.nz/includes/leadpop.php?f=Mobile Marketing Brochure - NZ.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.co.nz</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Marketing_Brochure_MBL_email_Mkt_NZ</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.co.nz/includes/leadpop.php?f=Mobile Technical Brief - NZ.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.co.nz</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Technical_Brief_MBL_email_Tech_NZ</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.co.nz/includes/leadpop.php?f=Partner Package - NZ.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.co.nz</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/PP_email_NZ</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.co.nz/includes/leadpop.php?f=Fully Managed and Monitored - NZ.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.co.nz</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/FMM_email_NZ</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.ie/includes/leadpop.php?f=Online Backup Marketing Brochure - IE.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ie</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Marketing_Brochure_OB_email_Mkt_IE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.ie/includes/leadpop.php?f=Online Backup Technical - IE.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ie</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Technical_Brief_OB_email_Tech_IE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.ie/includes/leadpop.php?f=DR Marketing Brochure - IE.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ie</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Marketing_Brochure_DR_email_Mkt_IE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.ie/includes/leadpop.php?f=DR Technical Brief - IE.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ie</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Technical_Brief_DR_email_Tech_IE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.ie/includes/leadpop.php?f=Mobile Marketing Brochure - IE.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ie</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Marketing_Brochure_MBL_email_Mkt_IE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.ie/includes/leadpop.php?f=Mobile Technical Brief - IE.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ie</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Technical_Brief_MBL_email_Tech_IE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.ie/includes/leadpop.php?f=Partner Package - IE.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ie</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/PP_email_IE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.ie/includes/leadpop.php?f=Fully Managed and Monitored - IE.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.ie</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/FMM_email_IE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafej2.co.uk/includes/leadpop.php?f=Online Backup Marketing Brochure - GB.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafej2.co.uk</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Marketing_Brochure_OB_email_Mkt_UK</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafej2.co.uk/includes/leadpop.php?f=Online Backup Technical - GB.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafej2.co.uk</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Technical_Brief_OB_email_Tech_UK</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafej2.co.uk/includes/leadpop.php?f=DR Marketing Brochure - GB.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafej2.co.uk</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Marketing_Brochure_DR_email_Mkt_UK</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafej2.co.uk/includes/leadpop.php?f=DR Technical Brief - GB.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafej2.co.uk</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Technical_Brief_DR_email_Tech_UK</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafej2.co.uk/includes/leadpop.php?f=Mobile Marketing Brochure - GB.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafej2.co.uk</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Marketing_Brochure_MBL_email_Mkt_UK</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafej2.co.uk/includes/leadpop.php?f=Mobile Technical Brief - GB.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafej2.co.uk</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Technical_Brief_MBL_email_Tech_UK</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafej2.co.uk/includes/leadpop.php?f=Partner Package - GB.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafej2.co.uk</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/PP_email_UK</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafej2.co.uk/includes/leadpop.php?f=Fully Managed and Monitored - GB.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafej2.co.uk</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/FMM_email_UK</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.is/includes/leadpop.php?f=Online Backup Marketing Brochure - IS.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.is</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Online_Backup_Marketing_Brochure_IS</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.is/includes/leadpop.php?f=Online Backup Technical - IS.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.is</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Online_Backup_Technical_Brief_IS</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.is/includes/leadpop.php?f=DR Marketing Brochure - IS.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.is</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/DR_Marketin_Brochure_IS</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.is/includes/leadpop.php?f=DR Technical Brief - IS.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.is</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/DR_Technical_Brief_IS</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.is/includes/leadpop.php?f=Mobile Marketing Brochure - IS.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.is</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Mobile_Marketing_Brochure_IS</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.is/includes/leadpop.php?f=Mobile Technical Brief - IS.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.is</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Mobile_Technical_Brief_IS</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.is/includes/leadpop.php?f=Partner Package - IS.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.is</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Partner_Program_Brochure_IS</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.is/includes/leadpop.php?f=Fully Managed and Monitored - IS.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.is</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Partner_Program_Brochure_IS</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.nl/includes/leadpop.php?f=Online Backup Marketing Brochure - NL.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.nl</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/OB_Marketing_Brochure_NL</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.nl/includes/leadpop.php?f=Online Backup Technical - NL.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.nl</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/OB_Technical_Brief_NL</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.nl/includes/leadpop.php?f=DR Marketing Brochure - NL.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.nl</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/DR_Marketing_Brochure_NL</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.nl/includes/leadpop.php?f=DR Technical Brief - NL.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.nl</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/DR_Technical_Brief_NL</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.nl/includes/leadpop.php?f=Mobile Marketing Brochure - NL.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.nl</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Mobile_Marketing_Brochure_NL</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.nl/includes/leadpop.php?f=Mobile Technical Brief - NL.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.nl</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/Mobile_Technical_Brief_NL</template>
+        </ruleEntry>
+        <ruleEntry>
+            <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax Corporate DE</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>DE Website</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Paid Search</value>
+            </criteriaItems>
+            <senderEmail>corporatesales@mail.efax.com</senderEmail>
+            <senderName>eFax Corporate DE</senderName>
+            <template>All_Templates/Auto_Responder_eFax_Corporate_DE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Sugar Sync</value>
+            </criteriaItems>
+            <senderEmail>christian.ofer@j2.com</senderEmail>
+            <senderName>SugarSync Sales Team</senderName>
+            <template>Sugar_Sync_Sales/Sugar_Sync_Sales_Support</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.nl/includes/leadpop.php?f=Partner Package - NL.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.nl</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/PP_Brochure_NL</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.keepitsafe.nl/includes/leadpop.php?f=Fully Managed and Monitored - NL.pdf</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.nl</senderEmail>
+            <senderName>KeepItSafe Sales</senderName>
+            <template>KeepItSafe_Marketing_Templates_downloads/FMM_Brochure_NL</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>http://www.evoice.com/thank-you</value>
+            </criteriaItems>
+            <senderEmail>help@mail.evoice.com</senderEmail>
+            <senderName>eVoice</senderName>
+            <template>eVoice_Workforce/Auto_Responder</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Duport</value>
+            </criteriaItems>
+            <senderEmail>barry.mulvey@j2.com</senderEmail>
+            <senderName>Barry Mulvey</senderName>
+            <template>All_Templates/X2014_Duport_Autoresponse_Lead</template>
+        </ruleEntry>
+        <ruleEntry>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>Developer</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>equals</operation>
+                <value>eFax Developer</value>
+            </criteriaItems>
+            <senderEmail>carol.shim@j2.com</senderEmail>
+            <senderName>eFax Developer Sales</senderName>
+            <template>eFaxCorporateSalesMktg/eFax_Dev</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>MetroFax®: Lead</value>
+            </criteriaItems>
+            <senderEmail>sales@metrofax.com</senderEmail>
+            <senderName>MetroFax</senderName>
+            <template>Metrofax_Marketing_templates/MetrofaxyWeb_Lead_Auto_Responder_Template</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax®: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>notEqual</operation>
+                <value>MFA2.SFDC-IN|MyFax for AppExchange 2,Duport,SFDC-IN|MyFax for AppExchange 2,SFDC-DM|MyFax for AppExchange 2</value>
+            </criteriaItems>
+            <senderEmail>corporatesales@mail.efax.com</senderEmail>
+            <senderName>eFax Corporate® Sales</senderName>
+            <template>eFaxCorporateSalesMktg/eFax_Corp</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>MyFax Lead</value>
+            </criteriaItems>
+            <senderEmail>reply@myfax.com</senderEmail>
+            <senderName>MyFax® Sales</senderName>
+            <template>MyFax_Marketing_Templates/MyFax_Web_Lead_Auto_Responder_Template</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>HybridFax</value>
+            </criteriaItems>
+            <senderEmail>corporatesales@mail.efax.com</senderEmail>
+            <senderName>eFax Corporate</senderName>
+            <template>eFax_Corporate_Channel_Marketing/Auto_Responder_HybridFAX</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>NextGen</value>
+            </criteriaItems>
+            <senderEmail>corporatesales@mail.efax.com</senderEmail>
+            <senderName>eFax Corporate</senderName>
+            <template>eFax_Corporate_Channel_Marketing/Auto_Responder_NextGen</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Channel Marketing</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>Prospect Partner</value>
+            </criteriaItems>
+            <senderEmail>corporatesales@mail.efax.com</senderEmail>
+            <senderName>eFax Corporate</senderName>
+            <template>eFax_Corporate_Channel_Marketing/Auto_Responder_Prospect_Partner</template>
+        </ruleEntry>
+        <ruleEntry>
+            <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax Corporate FR</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>FR Website</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Paid Search</value>
+            </criteriaItems>
+            <senderEmail>corporatesales@mail.efax.com</senderEmail>
+            <senderName>eFax Corporate FR</senderName>
+            <template>eFax_Corporate_FR/Auto_Responder_eFax_Corporate_FR</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>KeepItSafej2.co.uk,KeepItSafe.com,KeepItSafe.ie,KeepItSafe.co.nz,KeepItSafe.nl,KeepItSafe.ca,KeepItSafe.is</value>
+            </criteriaItems>
+            <senderEmail>sales@keepitsafe.com</senderEmail>
+            <senderName>KeepItSafe® Sales</senderName>
+            <template>KeepItSafe_Templates/KIS_Lead_AutoResponse</template>
+        </ruleEntry>
+        <ruleEntry>
+            <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7</booleanFilter>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>notContain</operation>
+                <value>MyFax for AppExchange 2,BCNL,Duport</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>notEqual</operation>
+                <value>eFax® EU Sales,eFax® UK Sales,eReceptionist® EU Sales,eReceptionist® UK Sales,X-Sell UK Sales,eFax Corporate UK,eFax Corporate FR</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>notEqual</operation>
+                <value>SFDC-DM|MyFax for AppExchange 2,SFDC-IN|MyFax for AppExchange 2,MFA2.SFDC-IN|MyFax for AppExchange 2</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>notEqual</operation>
+                <value>Duport</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>notEqual</operation>
+                <value>BCNL</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>notEqual</operation>
+                <value>International Presence,Zintel AU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Campaign.J2_Campaign_Tracking__c</field>
+                <operation>notEqual</operation>
+                <value>EU Data Reg Paper</value>
+            </criteriaItems>
+            <senderEmail>corporatesales@mail.efax.com</senderEmail>
+            <senderName>eFax Corporate</senderName>
+            <template>eFaxCorporateSalesMktg/eFax_Corp</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>International Presence</value>
+            </criteriaItems>
+            <senderEmail>corporatesales@mail.efax.com</senderEmail>
+            <senderName>eFax Corporate</senderName>
+            <template>eFax_Corporate_Channel_Marketing/Auto_Responder_eFax_Corporate</template>
+        </ruleEntry>
+        <ruleEntry>
+            <booleanFilter>1 AND (2 OR 3 OR 4 )</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax Corporate UK</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>UK Website</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Paid Search</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Paid Display</value>
+            </criteriaItems>
+            <senderEmail>corporatesales@mail.efax.com</senderEmail>
+            <senderName>eFax Corporate UK</senderName>
+            <template>eFax_Corporate_UK/Auto_Responder_eFax_Corporate_UK</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax: Corporate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.HasOptedOutOfEmail</field>
+                <operation>notEqual</operation>
+                <value>True</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>notEqual</operation>
+                <value>Inbound Call,Website Blog,DiscoveryOrg,Website - eFax Corporate landing page</value>
+            </criteriaItems>
+            <senderEmail>corporatesales@mail.efax.com</senderEmail>
+            <senderName>eFax Corporate</senderName>
+            <template>eFaxCorporateSalesMktg/eFax_Corp</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eReceptionist® UK Sales</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Paid Search,Website</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>FR</value>
+            </criteriaItems>
+            <senderEmail>ventes@mail.ereceptionist.fr</senderEmail>
+            <senderName>eReceptionist</senderName>
+            <template>eReceptionist_UK/eR_Form_Completion_FR</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eReceptionist® UK Sales</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Paid Search,Website</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>NL</value>
+            </criteriaItems>
+            <senderEmail>verkoop@mail.ereceptionist.nl</senderEmail>
+            <senderName>eReceptionist</senderName>
+            <template>eReceptionist_UK/eR_Form_Completion_NL</template>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eReceptionist® UK Sales</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Paid Search,Website</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>IE</value>
+            </criteriaItems>
+            <senderEmail>sales@ereceptionist.ie</senderEmail>
+            <senderName>eReceptionist</senderName>
+            <template>eReceptionist_UK/eR_Form_Completion_IE</template>
+        </ruleEntry>
+    </autoResponseRule>
+</AutoResponseRules>

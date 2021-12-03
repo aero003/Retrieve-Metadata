@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <links>CAM</links>
+    <links>MIT_Modify_Inbox_Tool</links>
+    <links>RD_ISP</links>
+    <links>SAMpw</links>
+    <links>Send_Queue_ATL</links>
+    <links>Send_Queue_CHD</links>
+    <links>Send_Queue_FRA</links>
+    <links>Send_Queue_LHR</links>
+    <links>Send_Queue_PDX</links>
+    <links>Send_Queue_YOW</links>
+    <links>Unlock_jSource_Login</links>
+    <links>Jira</links>
+    <links>Sfax_Portal</links>
+    <links>Sfax_Recurly</links>
+    <links>Sfax_Module</links>
+    <links>Sfax_Knowledge_Base</links>
+    <links>Corp_Sfax_KB</links>
+    <links>Send_Queue_YVR_Under_Send_Queue_YOW</links>
+    <links>Kibana</links>
+    <pageComponentType>links</pageComponentType>
+</HomePageComponent>

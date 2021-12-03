@@ -1,0 +1,5 @@
+<apex:page standardController="Contact" extensions="OracleSObjectSyncExt" showHeader="true" sidebar="true" action="{!sync}">
+	<!--apex:form>
+		<apex:inputHidden value="{!Account.Oracle_Service_Cloud_ID__c}" />
+	</apex:form-->
+</apex:page>

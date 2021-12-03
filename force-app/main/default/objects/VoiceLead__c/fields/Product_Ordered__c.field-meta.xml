@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Ordered__c</fullName>
+    <description>Product ordered for a SALE.  
+Product Interested in for a LEAD.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Pick either:
+Product ordered for a SALE.  
+Product Interested in for a LEAD.</inlineHelpText>
+    <label>Product Ordered/Interested In</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>OBR-4 ext</fullName>
+                <default>false</default>
+                <label>OBR-4 ext</label>
+            </value>
+            <value>
+                <fullName>OBR-10 ext</fullName>
+                <default>false</default>
+                <label>OBR-10 ext</label>
+            </value>
+            <value>
+                <fullName>OBR-otherExts</fullName>
+                <default>false</default>
+                <label>OBR-otherExts</label>
+            </value>
+            <value>
+                <fullName>OBE</fullName>
+                <default>false</default>
+                <label>OBE</label>
+            </value>
+            <value>
+                <fullName>OBUM</fullName>
+                <default>false</default>
+                <label>OBUM</label>
+            </value>
+            <value>
+                <fullName>eVR-3ext</fullName>
+                <default>false</default>
+                <label>eVR-3ext</label>
+            </value>
+            <value>
+                <fullName>eVR-otherExts</fullName>
+                <default>false</default>
+                <label>eVR-otherExts</label>
+            </value>
+            <value>
+                <fullName>PP-MM</fullName>
+                <default>false</default>
+                <label>PP-MM</label>
+            </value>
+            <value>
+                <fullName>PP-FMFM</fullName>
+                <default>false</default>
+                <label>PP-FMFM</label>
+            </value>
+            <value>
+                <fullName>PP-VO</fullName>
+                <default>false</default>
+                <label>PP-VO</label>
+            </value>
+            <value>
+                <fullName>eFax-Plus</fullName>
+                <default>false</default>
+                <label>eFax-Plus</label>
+            </value>
+            <value>
+                <fullName>eFax-Pro</fullName>
+                <default>false</default>
+                <label>eFax-Pro</label>
+            </value>
+            <value>
+                <fullName>eFax-Corp</fullName>
+                <default>false</default>
+                <label>eFax-Corp</label>
+            </value>
+            <value>
+                <fullName>fax.com</fullName>
+                <default>false</default>
+                <label>fax.com</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

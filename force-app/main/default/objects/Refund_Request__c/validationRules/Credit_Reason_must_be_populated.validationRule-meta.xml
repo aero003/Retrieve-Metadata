@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credit_Reason_must_be_populated</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ RecordTypeID__c =&quot;012600000009bWj&quot;,
+ Requested_Credit_Amount__c &gt;0,
+ ISPICKVAL( Reason_for_Credit__c,&quot;&quot; )
+)</errorConditionFormula>
+    <errorDisplayField>Reason_for_Credit__c</errorDisplayField>
+    <errorMessage>If credit is requested, then Reason for Credit cannot be blank.</errorMessage>
+</ValidationRule>

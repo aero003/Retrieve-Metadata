@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expected_Close_Date_Inactive</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( Stage__c ,&quot;Inactive / Not Interested&quot;), Expected_Close_Date__c  &gt; DATEVALUE(&quot;1900-01-01&quot;))</errorConditionFormula>
+    <errorDisplayField>Expected_Close_Date__c</errorDisplayField>
+    <errorMessage>CANNOT HAVE EXPECTED CLOSE DATE WITH INACTIVE ACCOUNT</errorMessage>
+</ValidationRule>

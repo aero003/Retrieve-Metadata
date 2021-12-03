@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>KIS business process to determine the scope of a potential customer requirement - set up as a Lookup to Leads</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>Site Survey</label>
+    <nameField>
+        <displayFormat>KIS-Site-{000000}</displayFormat>
+        <label>Site Survey Name</label>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Site Surveys</pluralLabel>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <searchLayouts>
+        <customTabListAdditionalFields>OWNER.ALIAS</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Contact_Text__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Estimated_Data_Total__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Exclusion_Data_GB__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Related_Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Related_Lead__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Requested_By__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Reseller_If_Needed__c</customTabListAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Contact_Text__c</searchFilterFields>
+        <searchFilterFields>Related_Account__c</searchFilterFields>
+        <searchFilterFields>Related_Lead__c</searchFilterFields>
+        <searchFilterFields>Requested_By__c</searchFilterFields>
+        <searchFilterFields>Reseller_If_Needed__c</searchFilterFields>
+        <searchFilterFields>OWNER.ALIAS</searchFilterFields>
+        <searchFilterFields>LAST_UPDATE</searchFilterFields>
+        <searchResultsAdditionalFields>Contact_Text__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Requested_By__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Related_Lead__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Site_Survey_is_Completed__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Estimated_Data_Total__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Related_Account__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Contact_Text__c</fullName>
+        <description>Name of Contact in Text format (Not a lookup)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Name of Contact in Text format (Not a lookup)</inlineHelpText>
+        <label>Contact (Text)</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Data_Folder_List__c</fullName>
+        <description>Enter in the Data Folders on separate lines.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter in the Data Folders on separate lines.</inlineHelpText>
+        <label>Data Folder List</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Estimated_Data_Total__c</fullName>
+        <description>The SUM of Data Types in Site Survey MINUS Excluded Data</description>
+        <externalId>false</externalId>
+        <formula>Exchange_Data_GB__c  +  Lotus_Data_GB__c  +  MySQL_Data_GB__c  +  MySQL_Data_GB__c  +  Oracle_Data_GB__c  +  SQL_Data_GB__c  +  Other_Data_GB__c  -  Exclusion_Data_GB__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The SUM of Data Types in Site Survey MINUS Excluded Data</inlineHelpText>
+        <label>Estimated Data Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Exchange_Data_GB__c</fullName>
+        <description>Total Exchange Data in GB for Site Survey.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Exchange Data in GB for Site Survey.</inlineHelpText>
+        <label>Exchange Data (GB)</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Excluded_F__c</fullName>
+        <description>KIS - Site Survey - Enter the  Excluded Folders on Separate Lines</description>
+        <externalId>false</externalId>
+        <inlineHelpText>KIS - Site Survey - Enter the  Excluded Folders on Separate Lines</inlineHelpText>
+        <label>Excluded Folders List</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Exclusion_Data_GB__c</fullName>
+        <description>Total Excluded Data in GB for Site Survey.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Excluded Data in GB for Site Survey.</inlineHelpText>
+        <label>Exclusion Data (GB)</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lotus_Data_GB__c</fullName>
+        <description>Total Lotus Data in GB for Site Survey.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Lotus Data in GB for Site Survey.</inlineHelpText>
+        <label>Lotus Data (GB)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MySQL_Data_GB__c</fullName>
+        <description>Total MySQL Data in GB for Site Survey.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total MySQL Data in GB for Site Survey.</inlineHelpText>
+        <label>MySQL Data (GB)</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notes_Site_Survey__c</fullName>
+        <description>Notes related to KIS Site Survey.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Notes related to KIS Site Survey.</inlineHelpText>
+        <label>Notes</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Related Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Site Survey (Related: Opportunity)</relationshipLabel>
+        <relationshipName>Site_Surveys</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Oracle_Data_GB__c</fullName>
+        <description>Total Oracle Data in GB for Site Survey.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Oracle Data in GB for Site Survey.</inlineHelpText>
+        <label>Oracle Data (GB)</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Other_Data_GB__c</fullName>
+        <description>KIS Site Survey - Other Data in GB</description>
+        <externalId>false</externalId>
+        <inlineHelpText>KIS Site Survey - Other Data in GB</inlineHelpText>
+        <label>Other Data (GB)</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Related_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>KIS - Select the Account this Site Survey is related with.  In case of a Site Survey created on a Lead - Please update this value after Convert Lead process.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>KIS - Select the Account this Site Survey is related with.  In case of a Site Survey created on a Lead - Please update this value after Convert Lead process.</inlineHelpText>
+        <label>Related Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Site Surveys (Related Account)</relationshipLabel>
+        <relationshipName>Site_Surveys1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Related_Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The Lead / Prospect which owns this Site Survey.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Lead / Prospect which owns this Site Survey.</inlineHelpText>
+        <label>Related Lead</label>
+        <referenceTo>Lead</referenceTo>
+        <relationshipLabel>Site Surveys</relationshipLabel>
+        <relationshipName>Site_Surveys</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Requested_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>KIS - Please select the name of your colleague who requested this Site Survey.  This will help automatically send a completion email and update the status in reports.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>KIS - Please select the name of your colleague who requested this Site Survey.  This will help automatically send a completion email and update the status in reports.</inlineHelpText>
+        <label>Requested By:</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <filterItems>
+                <field>User.Profile.Name</field>
+                <operation>startsWith</operation>
+                <value>Keep</value>
+            </filterItems>
+            <filterItems>
+                <field>User.Profile.Name</field>
+                <operation>contains</operation>
+                <value>admin</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Site_Surveys</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Reseller_If_Needed__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The Look up for the referring Re-seller and Prospect owner.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Look up for the referring Re-seller and Prospect owner.</inlineHelpText>
+        <label>Reseller (If Needed)</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>KeepItSafe, KeepItSafeUS</value>
+            </filterItems>
+            <filterItems>
+                <field>Account.Type</field>
+                <operation>equals</operation>
+                <value>Partner</value>
+            </filterItems>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Site Surveys</relationshipLabel>
+        <relationshipName>Site_Surveys</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Site_Survey_is_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>KIS - Is the Site Survey Completed?  By clicking the check box here - we will let the requester know you are finished and start the Quote Generation phase</description>
+        <externalId>false</externalId>
+        <inlineHelpText>KIS - Is the Site Survey Completed?  By clicking the check box here - we will let the requester know you are finished and start the Quote Generation phase</inlineHelpText>
+        <label>Site Survey is Completed?</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SQL_Data_GB__c</fullName>
+        <description>Total SQL Data in GB for Site Survey.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total SQL Data in GB for Site Survey.</inlineHelpText>
+        <label>SQL Data (GB)</label>
+        <precision>11</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SSId__c</fullName>
+        <externalId>false</externalId>
+        <formula>Id</formula>
+        <label>SSId</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SSname__c</fullName>
+        <externalId>false</externalId>
+        <formula>Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SSname</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Contact_Text__c</columns>
+        <columns>Related_Lead__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Estimated_Data_Total__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>KeepItSafe</group>
+            <group>KeepItSafe_US_Group</group>
+        </sharedTo>
+    </listViews>
+    <recordTypes>
+        <fullName>KIS_Site_Survey_Record_Type</fullName>
+        <active>true</active>
+        <description>KIS: Site Survey</description>
+        <label>KIS: Site Survey</label>
+    </recordTypes>
+</CustomObject>

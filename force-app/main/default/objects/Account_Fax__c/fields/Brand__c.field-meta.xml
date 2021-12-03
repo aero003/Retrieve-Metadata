@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brand__c</fullName>
+    <description>Please enter the j2 Global Inc. Brand</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please enter the j2 Global Inc. Brand</inlineHelpText>
+    <label>Brand</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>eFax Developer</fullName>
+                <default>false</default>
+                <label>eFax Developer</label>
+            </value>
+            <value>
+                <fullName>Fax.com</fullName>
+                <default>false</default>
+                <label>Fax.com</label>
+            </value>
+            <value>
+                <fullName>RapidFAX</fullName>
+                <default>false</default>
+                <label>RapidFAX</label>
+            </value>
+            <value>
+                <fullName>Send2Fax</fullName>
+                <default>false</default>
+                <label>Send2Fax</label>
+            </value>
+            <value>
+                <fullName>Smartfax</fullName>
+                <default>false</default>
+                <label>Smartfax</label>
+            </value>
+            <value>
+                <fullName>Trustfax</fullName>
+                <default>false</default>
+                <label>Trustfax</label>
+            </value>
+            <value>
+                <fullName>jConnect</fullName>
+                <default>false</default>
+                <label>jConnect</label>
+            </value>
+            <value>
+                <fullName>eFax</fullName>
+                <default>false</default>
+                <label>eFax</label>
+            </value>
+            <value>
+                <fullName>eVoice</fullName>
+                <default>false</default>
+                <label>eVoice</label>
+            </value>
+            <value>
+                <fullName>eFax Corporate</fullName>
+                <default>false</default>
+                <label>eFax Corporate</label>
+            </value>
+            <value>
+                <fullName>Electric Mail</fullName>
+                <default>false</default>
+                <label>Electric Mail</label>
+            </value>
+            <value>
+                <fullName>Venali</fullName>
+                <default>false</default>
+                <label>Venali</label>
+            </value>
+            <value>
+                <fullName>FuseMail</fullName>
+                <default>false</default>
+                <label>FuseMail</label>
+            </value>
+            <value>
+                <fullName>MailWise</fullName>
+                <default>false</default>
+                <label>MailWise</label>
+            </value>
+            <value>
+                <fullName>Enterprise Mailer</fullName>
+                <default>false</default>
+                <label>Enterprise Mailer</label>
+            </value>
+            <value>
+                <fullName>M4 Internet</fullName>
+                <default>false</default>
+                <label>M4 Internet</label>
+            </value>
+            <value>
+                <fullName>Quexion</fullName>
+                <default>false</default>
+                <label>Quexion</label>
+            </value>
+            <value>
+                <fullName>MyFax</fullName>
+                <default>false</default>
+                <label>MyFax</label>
+            </value>
+            <value>
+                <fullName>KeepItSafe</fullName>
+                <default>false</default>
+                <label>KeepItSafe</label>
+            </value>
+            <value>
+                <fullName>Landslide</fullName>
+                <default>false</default>
+                <label>Landslide</label>
+            </value>
+            <value>
+                <fullName>OneBox</fullName>
+                <default>false</default>
+                <label>OneBox</label>
+            </value>
+            <value>
+                <fullName>MetroFax</fullName>
+                <default>false</default>
+                <label>MetroFax</label>
+            </value>
+            <value>
+                <fullName>Sfax</fullName>
+                <default>false</default>
+                <label>Sfax</label>
+            </value>
+            <value>
+                <fullName>Infonet</fullName>
+                <default>false</default>
+                <label>Infonet</label>
+            </value>
+            <value>
+                <fullName>JBlast</fullName>
+                <default>false</default>
+                <label>JBlast</label>
+            </value>
+            <value>
+                <fullName>Protus IP Solutions</fullName>
+                <default>false</default>
+                <label>Protus IP Solutions</label>
+            </value>
+            <value>
+                <fullName>Rogers Business Internet Fax</fullName>
+                <default>false</default>
+                <label>Rogers Business Internet Fax</label>
+            </value>
+            <value>
+                <fullName>Telus</fullName>
+                <default>false</default>
+                <label>Telus</label>
+            </value>
+            <value>
+                <fullName>Virtual Fax</fullName>
+                <default>false</default>
+                <label>Virtual Fax</label>
+            </value>
+            <value>
+                <fullName>Campaigner</fullName>
+                <default>false</default>
+                <label>Campaigner</label>
+            </value>
+            <value>
+                <fullName>LiveVault®</fullName>
+                <default>false</default>
+                <label>LiveVault®</label>
+            </value>
+            <value>
+                <fullName>Fonebox</fullName>
+                <default>false</default>
+                <label>Fonebox</label>
+            </value>
+            <value>
+                <fullName>Line2</fullName>
+                <default>false</default>
+                <label>Line2</label>
+            </value>
+            <value>
+                <fullName>Consensus</fullName>
+                <default>false</default>
+                <label>Consensus</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

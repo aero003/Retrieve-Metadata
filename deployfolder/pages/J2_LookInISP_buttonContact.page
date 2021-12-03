@@ -1,0 +1,156 @@
+<apex:page standardcontroller="Contact">
+    <apex:includescript value="{!URLFOR($Resource.J2_ISP_Tool,'/js/jquery.min.js')}" />
+    <apex:includescript value="{!URLFOR($Resource.J2_ISP_Tool,'/js/jquery.query-object.js')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.J2_ISP_Tool,'/style/style.css')}" />
+
+    <script type="text/javascript">
+    function setCustomerId(){
+        var custid = "{!Contact.Account_Customer_ID__c}";
+        custid = custid.substr(custid.indexOf('-')+1);
+        //alert("look in isp " + custid.substr(custid.indexOf('-')+1));
+        $("body").data("apiurl", "{!$Setup.J2_ISP_ToolCustomSetting__c.J2_ISP_ApiEndpoint__c}");
+        if("{!$User.ISP_CS_TOOL_TOKEN__c}" !== null){
+            $("body").data("ispuserToken","{!$User.ISP_CS_TOOL_TOKEN__c}");
+        } else {
+            $("body").data("ispuserToken","null");
+             window.open('/apex/J2_FAXFORCE_PROD?sfdc.tabName={!$Setup.J2_ISP_ToolCustomSetting__c.J2_ISP_sfdctabname__c}&searchcollapse=true&customerid='+custid, '_blank', '');
+            // window.open('https://c.cs196.visual.force.com/apex/J2_FAXFORCE_PROD?sfdc.tabName={!$Setup.J2_ISP_ToolCustomSetting__c.J2_ISP_sfdctabname__c}&searchcollapse=true&customerid='+custid, '_blank', '');
+            return false;
+        }
+        //   var data = "{\"search_option\":\"customer_id\" ,\"search_value\":\"" + custid + "\", \"include_inactive\":\"true\"}";
+        //  postAjaxFunc("customers/search", data, btnLookinISPClick);
+        
+         getAjaxFunc("customers/search?value="+custid+"&include_inactive=Y",btnLookinISPClick); 
+        // getAjaxFunc("customers/" + "search?value="+custid + "&include_inactive=Y",btnLookinISPClick);
+                    
+        function btnLookinISPClick(data, issuccess){
+            if(issuccess){
+                 var currenturl = document.location;
+                //alert(currenturl);
+                //alert(currenturl.hostname);
+                //window.open('https://c.cs196.visual.force.com/apex/J2_FAXFORCE_PROD?sfdc.tabName={!$Setup.J2_ISP_ToolCustomSetting__c.J2_ISP_sfdctabname__c}&searchcollapse=true&customerid='+custid, '_blank', '');
+                // window.open('https://j2fullsand--fullsand--c.visualforce.com/apex/J2_FAXFORCE_PROD?sfdc.tabName={!$Setup.J2_ISP_ToolCustomSetting__c.J2_ISP_sfdctabname__c}&searchcollapse=true&customerid='+custid, '_blank', '');
+                window.open('/apex/J2_FAXFORCE_PROD?sfdc.tabName={!$Setup.J2_ISP_ToolCustomSetting__c.J2_ISP_sfdctabname__c}&searchcollapse=true&customerid='+custid, '_blank', '');
+            }
+            else{
+                alert("Customer Not Found – please try again or click on ISP CS Tool link to search in ISP");
+            }
+        }
+        var token_errors = [
+            "TOKEN_INVALID",
+            "MISSING_TOKEN",
+            "DECRYPTION_FAILED",
+            "TOKEN_EXPIRED",
+            "ACCESS_FAILED"
+        ];
+
+        function postAjaxFunc(urlendpoints, data, successCallback, extraparam) {
+            $.ajax({
+                type: "POST",
+                url: $("body").data("apiurl") + urlendpoints,
+                dataType: "json",
+                headers: { 'Authorization': 'Bearer ' + $("body").data("ispuserToken") },
+                contentType: "application/json",
+                data: data,
+                success: function (data) {
+                    if (typeof successCallback === "function") {
+                        successCallback(data, true);
+                    }
+                },
+                error: function (e) {
+                    if (e && e.responseJSON && e.responseJSON.errors && e.responseJSON.errors[0] && e.responseJSON.errors[0].error_code) {
+                        if (token_errors.indexOf(e.responseJSON.errors[0].error_code) == -1) {
+                            //console.log(e.responseJSON.errors[0].error_code);
+                            if (typeof successCallback === "function") {
+                                if (extraparam !== "") {
+                                    successCallback(e, false, extraparam);
+                                }
+                                else {
+                                    successCallback(e, false);
+                                }
+                            }
+                        } else {
+                            // window.open('https://c.cs196.visual.force.com/apex/J2_FAXFORCE_PROD?sfdc.tabName={!$Setup.J2_ISP_ToolCustomSetting__c.J2_ISP_sfdctabname__c}&searchcollapse=true&customerid='+custid, '_blank', '');
+                            window.open('/apex/J2_FAXFORCE_PROD?sfdc.tabName={!$Setup.J2_ISP_ToolCustomSetting__c.J2_ISP_sfdctabname__c}&searchcollapse=true&customerid='+custid, '_blank', '');
+                            return false;
+                    }
+                    }
+                }
+            });
+        }
+    }
+
+
+    function getSearchOptionSets() {
+        getAjaxFunc("", getSearchOptionSetsSuccessFunc, "");
+    }
+    function getSearchOptionSetsSuccessFunc(data, issuccess) {
+        if (issuccess) {
+        }
+        else{
+        }
+    }
+    function getAjaxFunc(urlendpoints, successCallback, extraparam) {
+        $.ajax({
+            type: "GET",
+            url: $("body").data("apiurl") + urlendpoints,
+            dataType: "json",
+            headers: { 'Authorization': 'Bearer ' + $("body").data("ispuserToken") },
+            success: function (data) {
+                if (typeof successCallback === "function") {
+                    if (extraparam !== "") {
+                        successCallback(data, true, extraparam);
+                    }
+                    else {
+                        successCallback(data, true);
+                    }
+
+                }
+            },
+            error: function (e) {
+                if (typeof successCallback === "function") {
+                    if (extraparam !== "") {
+                        successCallback(e, false, extraparam);
+                    }
+                    else {
+                        successCallback(e, false);
+                    }
+                }
+            } 
+        });
+    }
+
+    window.onload = function(){
+        $("body").data("apiurl", "{!$Setup.J2_ISP_ToolCustomSetting__c.J2_ISP_ApiEndpoint__c}");
+        preload();
+    }
+
+
+    function preload() {
+        if ($("body").data("apiurl")) {
+            onloadReady();
+        }
+        else {
+
+            setTimeout(function () {
+                preload();
+            }, 800);
+
+        }
+    }
+
+    function onloadReady(){
+        var profileName = "{!$Profile.Name}";
+        if(profileName.indexOf("Administrator") > -1 || profileName.indexOf("Support") > -1 || profileName.indexOf("Management") > -1){
+            getSearchOptionSets();
+            $("#btnLookInISP").show();
+        }
+        else{
+            $("#btnLookInISP").hide();
+        }
+    }
+    </script>
+    <apex:form style="width:100%;text-align:right;">
+        <input type="button" id="btnLookInISP" value="View In FaxForce" onclick="setCustomerId()" style="display:none;" class="grey-btn" />
+    </apex:form>
+</apex:page>

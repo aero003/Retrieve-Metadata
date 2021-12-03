@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>CS Corporate PSP</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>CS_Corporate_PSP</publicGroup>
+        </publicGroups>
+        <users>
+            <user>berroney.campbell@j2.com</user>
+            <user>cedric.bates@j2.com</user>
+            <user>crystal.sands@j2.com</user>
+            <user>keith.brown@j2.com</user>
+            <user>mariana.powell-hall@j2.com</user>
+            <user>moniffa.whittle@j2.com</user>
+            <user>sirena.brown@j2.com</user>
+            <user>steven.mccombs@j2.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

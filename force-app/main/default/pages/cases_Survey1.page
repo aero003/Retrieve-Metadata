@@ -1,0 +1,341 @@
+<apex:page standardController="Case" extensions="cases_Survey_Extension" showHeader="false" standardStyleSheets="false">
+    <head>
+        <title> j2 Global Communications </title>
+        <apex:styleSheet value="{!URLFOR($Resource.casesSurvey,  'Script-CSS_dbay.css')}"/>
+    </head>
+    <body>
+        <apex:form id="theForm" >
+            <table class="myborderwithfont" width="100%" cellpadding="0" cellspacing="0" >
+                <tr align="center" valign="middle">
+                    <td style="width: 955px">               
+                        <table cellpadding="0" cellspacing="10" border="0" style="width: 706px">
+                            <tr>
+                                <td style="width: 688px">
+                                    <div id="Panel2" style="width:100%;">
+                                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                            <tr align="left">
+                                                <td><apex:image value="{!URLFOR($Resource.casesSurvey, 'CS_Survey.bmp')}" alt="" /></td>
+                                                <td align="right">
+                                                    <apex:image id="imgLogo0" value="{!URLFOR($Resource.casesSurvey, 'ImgUpload_eFaxEUS.jpg')}" style="height:75px;width:150px;border-width:0px;" rendered="{!thisCase.Brand__c == 'eFax'}" />
+                                                    <apex:image id="imgLogo1" value="{!URLFOR($Resource.casesSurvey, 'developerLogo.gif')}" style="height:56px;width:245px;border-width:0px;" rendered="{!thisCase.Brand__c == 'eFax Developer'}" />
+                                                    <apex:image id="imgLogo2" value="{!URLFOR($Resource.casesSurvey, 'faxcom.bmp')}" style="height:75px;width:304px;border-width:0px;" rendered="{!thisCase.Brand__c == 'Fax.com'}" />
+                                                    <apex:image id="imgLogo3" value="{!URLFOR($Resource.casesSurvey, 'RapidFaxlogo.png')}" style="height:50px;width:200px;border-width:0px;" rendered="{!thisCase.Brand__c == 'RapidFAX'}" />
+                                                    <apex:image id="imgLogo4" value="{!URLFOR($Resource.casesSurvey, 'send2fax-logo.gif')}" style="height:84px;width:437px;border-width:0px;" rendered="{!thisCase.Brand__c == 'Send2Fax'}" />
+                                                    <apex:image id="imgLogo5" value="{!URLFOR($Resource.casesSurvey, 'logo-smartfax.gif')}" style="height:50px;width:200px;border-width:0px;" rendered="{!thisCase.Brand__c == 'Smartfax'}" />
+                                                    <apex:image id="imgLogo6" value="{!URLFOR($Resource.casesSurvey, 'jconnect.jpg')}" style="height:120px;width:300px;border-width:0px;" rendered="{!thisCase.Brand__c == 'jConnect'}" />
+                                                    <apex:image id="imgLogo7" value="{!URLFOR($Resource.casesSurvey, 'evoice.jpg')}" style="height:120px;width:300px;border-width:0px;" rendered="{!thisCase.Brand__c == 'eVoice'}" />
+                                                    <apex:image id="imgLogo8" value="{!URLFOR($Resource.casesSurvey, 'efaxcorporatesm.jpg')}" style="height:64px;width:300px;border-width:0px;" rendered="{!thisCase.Brand__c == 'eFax Corporate'}" />
+                                                    <apex:image id="imgLogo9" value="{!URLFOR($Resource.casesSurvey, 'trustfax.bmp')}" style="height:34px;width:15p8x;border-width:0px;" rendered="{!thisCase.Brand__c == 'Trustfax'}" />
+                                                  </td>
+                                            </tr>
+                                        </table>
+                                    </div>    
+                                </td>
+                            </tr>
+                        </table>
+
+                        <apex:outputPanel layout="block" rendered="{!showError}" >
+                            <apex:pageMessages />
+                            <table cellpadding="0" cellspacing="10" border="0" style="width: 706px">
+                                <tr>
+                                    <td style="height: 40px;"></td>
+                                </tr>        
+                                <tr align="center">        
+                                    <td style="height: 20px; text-align: left;">
+                                        <span><span style="font-size: 14pt; color: black; font-family: Verdana;">Contact Support</span></span>
+                                    </td>
+                                </tr>
+                                <tr><td style="height: 40px;"></td></tr>
+                                <tr align="Center">
+                                    <td style="text-align: justify">
+                                        <span style="color: black; font-family: Verdana; font-size: 10pt;"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </strong>
+                                        We apologize for the inconvenience, but the location you are seeking cannot be found or there could be an error in the application. 
+                                        Please contact support at <strong>j2survey@mail.j2.com</strong>.
+                                        A short description on what cause the error happen would be of great help.</span>
+                                    </td>
+                                </tr>
+                                <tr align="center">
+                                    <td style="text-align: left">
+                                    </td>
+                                </tr>
+                            </table>
+                        </apex:outputPanel>
+                        
+                        <apex:outputPanel layout="block" rendered="{!showThankYou}" >
+                            <apex:pageMessages />
+                            <table cellpadding="0" cellspacing="10" border="0" style="width: 706px">
+                                <tr><td style="height: 40px;"></td></tr>        
+                                <tr><td style="height: 40px;"></td></tr>
+                                <tr align="Center">
+                                    <td>
+                                        <span style="color: #ff0033; font-family: Verdana;"><strong>Thank you for your valuable feedback.</strong></span>
+                                    </td>
+                                </tr>
+                            </table>                    
+
+                        </apex:outputPanel>
+                        
+                        <apex:outputPanel layout="block" rendered="{!showThankYou != true && showError != true}" >
+                            <table cellpadding="0" cellspacing="10" border="0" style="width: 706px">
+                                <tr align="left">
+                                    <td>
+                                        <div>
+                                            <table class="myborderwithfont" cellspacing="0" rules="all" border="1" id="GridView1" style="width:100%;border-collapse:collapse;">
+                                                <tr>
+                                                    <th scope="col">&nbsp;</th><th scope="col">&nbsp;</th><th scope="col">&nbsp;</th>
+                                                </tr>
+                                                <tr>
+                                                    <td style="color:White;">1</td><td>                            
+                                                        <table>
+                                                            <tr align ="left">
+                                                                <td valign="top" align="left">1.</td>
+                                                                <td align="left">How would you rate today's Customer Service (phone support) experience overall?</td>
+                                                            </tr>
+                                                        </table>
+                                                        <hr/>                               
+                                                        <table border="0">
+                                                            <tr align ="left">
+                                                                <td valign="top">
+                                                                    <apex:selectRadio value="{!thisCase.srv_Q1__c}" >
+                                                                        <apex:selectOptions value="{!satisfiedOptions}"/>
+                                                                    </apex:selectRadio>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <br />
+                                                        <br />
+                                                    </td>
+                                                    <td style="color:White;">1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="color:White;">2</td><td>                            
+                                                        <table>
+                                                            <tr align ="left">
+                                                                <td valign="top" align="left">2.</td>
+                                                                <td align="left">Please rate the resolution provided to you today.</td>
+                                                            </tr>
+                                                        </table>
+                                                        <hr/>                               
+                                                        <table border="0">
+                                                            <tr align ="left">
+                                                                <td valign="top">
+                                                                    <apex:selectRadio value="{!thisCase.srv_q2__c}" >
+                                                                        <apex:selectOptions value="{!goodOptions}"/>
+                                                                    </apex:selectRadio>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <br />
+                                                        <br />
+                                                    </td>
+                                                    <td style="color:White;">2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="color:White;">3</td><td>                            
+                                                        <table>
+                                                            <tr align ="left">
+                                                                <td valign="top" align="left">3.</td>
+                                                                <td align="left">How would you rate the timeliness of the response provided to you today?</td>
+                                                            </tr>
+                                                        </table>
+                                                        <hr/>                               
+                                                        <table border="0">
+                                                            <tr align ="left">
+                                                                <td valign="top">
+                                                                    <apex:selectRadio value="{!thisCase.srv_q3__c}" >
+                                                                        <apex:selectOptions value="{!satisfiedOptions}"/>
+                                                                    </apex:selectRadio>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <br />
+                                                        <br />
+                                                    </td>
+                                                    <td style="color:White;">3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="color:White;">4</td>
+                                                    <td>                            
+                                                        <table>
+                                                            <tr align ="left">
+                                                                <td valign="top" align="left">4.</td>
+                                                                <td align="left">How would you rate the Representative on courteousness and communication skills?</td>
+                                                            </tr>
+                                                        </table>
+                                                        <hr/>                               
+                                                        <table border="0">
+                                                            <tr align ="left">
+                                                                <td valign="top">
+                                                                    <apex:selectRadio value="{!thisCase.srv_Q4__c}" >
+                                                                        <apex:selectOptions value="{!satisfiedOptions}"/>
+                                                                    </apex:selectRadio>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <br />
+                                                        <br />
+                                                    </td>
+                                                    <td style="color:White;">4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="color:White;">5</td><td>                            
+                                                        <table>
+                                                            <tr align ="left">
+                                                                <td valign="top" align="left">5.</td>
+                                                                <td align="left">On a scale of 0 to 10 with 10 being the highest how likely are you to recommend our service?
+
+</td>
+                                                            </tr>
+                                                        </table>
+                                                        <hr/>                               
+                                                        <table border="0">
+                                                            <tr align ="left">
+                                                                <td valign="top">
+                                                                    <apex:selectRadio value="{!thisCase.srv_q5__c}" >
+                                                                        <apex:selectOptions value="{!recommendOptions}"/>
+                                                                    </apex:selectRadio>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <br />
+                                                        <br />
+                                                    </td>
+                                                    <td style="color:White;">5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="color:White;">6</td>
+                                                    <td>                            
+                                                        <table>
+                                                            <tr align ="left">
+                                                                <td valign="top" align="left">6.</td>
+                                                                <td align="left">Are you aware of our other products and services offered by j2 Global?</td>
+                                                            </tr>
+                                                        </table>
+                                                        <hr/>                               
+                                                        <table border="0">
+                                                            <tr align ="left">
+                                                                <td valign="top">
+                                                                    <apex:selectRadio value="{!thisCase.srv_q6__c}" >
+                                                                        <apex:selectOptions value="{!awareOptions}"/>
+                                                                    </apex:selectRadio>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <br />
+                                                        <br />
+                                                    </td>
+                                                    <td style="color:White;">6</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="color:White;">7</td>
+                                                    <td>                            
+                                                        <table>
+                                                            <tr align ="left">
+                                                                <td valign="top" align="left">7.</td>
+                                                                <td align="left">Which other j2 product would be of interest to you?</td>
+                                                            </tr>
+                                                        </table>
+                                                        <hr/>                               
+                                                        <table border="0">
+                                                            <tr align ="left">
+                                                                <td valign="top">
+                                                                    <apex:selectRadio value="{!thisCase.srv_q7__c}" >
+                                                                        <apex:selectOptions value="{!interestOptions}"/>
+                                                                    </apex:selectRadio>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <br />
+                                                        <br />
+                                                    </td>
+                                                    <td style="color:White;">7</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="color:White;">8</td>
+                                                    <td>                            
+                                                        <table>
+                                                            <tr align ="left">
+                                                                <td valign="top" align="left">8.</td>
+                                                                <td align="left">?</td>
+                                                            </tr>
+                                                        </table>
+                                                        <hr/>                               
+                                                        <table border="0">
+                                                            <tr align ="left">
+                                                                <td valign="top">
+                                                                    <apex:selectRadio value="{!thisCase.srv_q8__c}" >
+                                                                        <apex:selectOptions value="{!awareOptions}"/>
+                                                                    </apex:selectRadio>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <br />
+                                                        <br />
+                                                    </td>
+                                                    <td style="color:White;">8</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div id="Panel3" style="width:100%;">
+                                            <table  cellpadding="0" cellspacing="10" border="0" width="100%">
+                                                <tr>
+                                                    <td align="left" style="height: 19px">Your Name <span style="color: #ff3333">*</span></td>
+                                                    <td align="left" style="height: 19px">
+                                                        <apex:inputField value="{!thisCase.srv_Name__c}" id="TextBox1" styleclass="myborderwithfont" style="width:250px;" />
+                                                        <span id="RequiredFieldValidator1" style="color:Red;visibility:hidden;">Please Enter Your Name</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left">Email Address <span style="color: #ff3333">*</span></td>
+                                                    <td align="left">
+                                                        <apex:inputField value="{!thisCase.srv_Email_Address__c}" id="TextBox2" styleclass="myborderwithfont" style="width:250px;" />
+                                                        <span id="RequiredFieldValidator2" style="color:Red;display:none;">Please Enter Your Email ID</span>
+                                                        <span id="RegularExpressionValidator1" style="color:Red;display:none;">Invalid Email ID</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left">
+                                                        <span id="Label1">(Optional) Will you provide a customer testimonial for use on our websites and/or other promotional material? If so, please enter your testimonial here**. </span>
+                                                    </td>
+                                                    <td align="left">
+                                                        <apex:inputField value="{!thisCase.srv_Comments__c}" id="TextBox3" styleclass="myborderwithfont" style="height:71px;width:413px;" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left">
+                                                    </td>
+                                                    <td align="left">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="left">
+                                                    </td>
+                                                    <td align="left">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" align="center">
+                                                        <span id="Label3" style="display:inline-block;width:290px;"> </span>
+                                                        <apex:commandbutton value="Submit" action="{!submitSurvey}" id="Button2" styleclass="myborderwithfont" />
+                                                        Fields Marked <span style="color: #ff0033">(*)</span> are Mandatory.
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+                <tr align="center" valign="middle">
+                    <td align="center" style="width: 960px">
+                        <apex:outputPanel layout="block" rendered="{!showThankYou != true && showError != true}" >
+                            <span id="Lbldisclaimer" style="font-family:Verdana;font-size:XX-Small;font-weight:bold;font-style:normal;">**BY SUBMITTING A TESTIMONIAL, CUSTOMER ACKNOWLEDGES THAT HIS/HER TESTIMONIAL MAY BE POSTED ON OUR COMPANY WEBSITE, OR USED FOR ANY REASON AT THE COMPANY'S DISCRETION</span>
+                        </apex:outputPanel>
+                    </td>
+                </tr>
+            </table>
+        </apex:form>
+    </body>
+</apex:page>

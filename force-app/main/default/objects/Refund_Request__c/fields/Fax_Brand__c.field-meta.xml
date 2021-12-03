@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fax_Brand__c</fullName>
+    <externalId>false</externalId>
+    <label>Fax Brand</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>eFax</fullName>
+                <default>false</default>
+                <label>eFax</label>
+            </value>
+            <value>
+                <fullName>MyFax</fullName>
+                <default>false</default>
+                <label>MyFax</label>
+            </value>
+            <value>
+                <fullName>MetroFax</fullName>
+                <default>false</default>
+                <label>MetroFax</label>
+            </value>
+            <value>
+                <fullName>DOC</fullName>
+                <default>false</default>
+                <label>DOC</label>
+            </value>
+            <value>
+                <fullName>eFax AU</fullName>
+                <default>false</default>
+                <label>eFax AU</label>
+            </value>
+            <value>
+                <fullName>eFax JP</fullName>
+                <default>false</default>
+                <label>eFax JP</label>
+            </value>
+            <value>
+                <fullName>jsign</fullName>
+                <default>false</default>
+                <label>jsign</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

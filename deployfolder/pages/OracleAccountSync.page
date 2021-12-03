@@ -1,0 +1,2 @@
+<apex:page standardController="Account" extensions="OracleSObjectSyncExt" showHeader="true" sidebar="true" action="{!sync}">
+</apex:page>

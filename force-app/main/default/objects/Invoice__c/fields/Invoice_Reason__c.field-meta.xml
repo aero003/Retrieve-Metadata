@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Invoice Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Acquisition</fullName>
+                <default>false</default>
+                <label>Acquisition</label>
+            </value>
+            <value>
+                <fullName>Cheaper Solution/Cost Cutting</fullName>
+                <default>false</default>
+                <label>Cheaper Solution/Cost Cutting</label>
+            </value>
+            <value>
+                <fullName>Closed Down</fullName>
+                <default>false</default>
+                <label>Closed Down</label>
+            </value>
+            <value>
+                <fullName>Competitor</fullName>
+                <default>false</default>
+                <label>Competitor</label>
+            </value>
+            <value>
+                <fullName>Delinquent</fullName>
+                <default>false</default>
+                <label>Delinquent</label>
+            </value>
+            <value>
+                <fullName>Dis-satisfied with Service</fullName>
+                <default>false</default>
+                <label>Dis-satisfied with Service</label>
+            </value>
+            <value>
+                <fullName>Lost Through Re-seller</fullName>
+                <default>false</default>
+                <label>Lost Through Re-seller</label>
+            </value>
+            <value>
+                <fullName>Merger/Alliance</fullName>
+                <default>false</default>
+                <label>Merger/Alliance</label>
+            </value>
+            <value>
+                <fullName>Moved to Cloud Solution</fullName>
+                <default>false</default>
+                <label>Moved to Cloud Solution</label>
+            </value>
+            <value>
+                <fullName>Moved to Bulk Invoice</fullName>
+                <default>false</default>
+                <label>Moved to Bulk Invoice</label>
+            </value>
+            <value>
+                <fullName>New Contract in Place</fullName>
+                <default>false</default>
+                <label>New Contract in Place</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

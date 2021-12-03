@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Invoice</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Invoices</value>
+    </caseValues>
+    <layouts>
+        <layout>Invoice Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Billing Audit Values (Not used by Sales or Operations)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Current Year Monthly Invoicing (Automatically Calculated by Trigger)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Invoice Description - Base Description + Acct Name +  Month YYYY + Custom Desc.</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Oracle Invoice Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quarterly Summary and Commissions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Service types/products</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Tax &amp; Payment Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Do_Not_Bill</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Invoice_Reason_Status_Active</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Invoice_Reason_Status_Inactive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>No_Invoice_for_KIS_IC</name>
+    </validationRules>
+</CustomObjectTranslation>

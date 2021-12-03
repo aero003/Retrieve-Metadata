@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+/*  992px > tablet styles < 1280px ======================================= */
+@media screen and (min-width:992px) {
+.month-section input, .month-section select{width:100px; display:block;}
+.collapse-date-section .date-section input, .billable-section .date-section input {width:130px; display:block;}
+.sales-main-section .text-label {
+    width: auto;
+}
+}
+
+@media screen and (min-width:1200px) {
+/*.sales-main-section .control-label { width: 142px; text-align: right; }*/
+.sales-main-section .text-label { width: auto; text-align: left;}
+#tblISPSearchResult { width: 100%; max-width: 100%; }
+.payment-section .control-label {width: auto; }
+.sales-main-section .memo-div { width: auto; }
+#tblISPCreditCards{width: 100%; max-width: 100%; }
+.fixed_headers > thead > tr > th {min-height:inherit;}
+.image-block .control-label {
+    width: auto;
+}
+.fax-record .control-label{width:auto;}
+
+}
+
+@media screen and (min-width:1367px){
+/*.collapse-date-secrion .month-section, .date-section .month-section {
+    width: 19%;
+}
+.collapse-date-secrion .btn-collapse{margin-left: 64px;}*/
+}
+

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vKind_of_Business__c</fullName>
+    <description>Select the primary kind of business</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select the primary kind of business</inlineHelpText>
+    <label>Kind of Business</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1  Accounting</fullName>
+                <default>false</default>
+                <label>1  Accounting</label>
+            </value>
+            <value>
+                <fullName>2  Advertising</fullName>
+                <default>false</default>
+                <label>2  Advertising</label>
+            </value>
+            <value>
+                <fullName>3  Aerospace/Aviation/Automotive</fullName>
+                <default>false</default>
+                <label>3  Aerospace/Aviation/Automotive</label>
+            </value>
+            <value>
+                <fullName>4  Agriculture/Forestry/Fishing</fullName>
+                <default>false</default>
+                <label>4  Agriculture/Forestry/Fishing</label>
+            </value>
+            <value>
+                <fullName>5  Biotech</fullName>
+                <default>false</default>
+                <label>5  Biotech</label>
+            </value>
+            <value>
+                <fullName>6  Business Services - Hotels/Other Lodging Places</fullName>
+                <default>false</default>
+                <label>6  Business Services - Hotels/Other Lodging Places</label>
+            </value>
+            <value>
+                <fullName>7  Computer Hardware/Software/Internet</fullName>
+                <default>false</default>
+                <label>7  Computer Hardware/Software/Internet</label>
+            </value>
+            <value>
+                <fullName>8  Construction/Home improvement</fullName>
+                <default>false</default>
+                <label>8  Construction/Home improvement</label>
+            </value>
+            <value>
+                <fullName>9  Consulting</fullName>
+                <default>false</default>
+                <label>9  Consulting</label>
+            </value>
+            <value>
+                <fullName>10 Education</fullName>
+                <default>false</default>
+                <label>10 Education</label>
+            </value>
+            <value>
+                <fullName>11 Engineering/Architecture</fullName>
+                <default>false</default>
+                <label>11 Engineering/Architecture</label>
+            </value>
+            <value>
+                <fullName>12 Entertainment/Recreation</fullName>
+                <default>false</default>
+                <label>12 Entertainment/Recreation</label>
+            </value>
+            <value>
+                <fullName>13 Finance/Banking/Insurance/Mortgage</fullName>
+                <default>false</default>
+                <label>13 Finance/Banking/Insurance/Mortgage</label>
+            </value>
+            <value>
+                <fullName>14 Food services</fullName>
+                <default>false</default>
+                <label>14 Food services</label>
+            </value>
+            <value>
+                <fullName>15 Government/Military</fullName>
+                <default>false</default>
+                <label>15 Government/Military</label>
+            </value>
+            <value>
+                <fullName>16 HealthCare/Medical</fullName>
+                <default>false</default>
+                <label>16 HealthCare/Medical</label>
+            </value>
+            <value>
+                <fullName>17 Internet (ASP)</fullName>
+                <default>false</default>
+                <label>17 Internet (ASP)</label>
+            </value>
+            <value>
+                <fullName>18 Legal</fullName>
+                <default>false</default>
+                <label>18 Legal</label>
+            </value>
+            <value>
+                <fullName>19 Manufacturing</fullName>
+                <default>false</default>
+                <label>19 Manufacturing</label>
+            </value>
+            <value>
+                <fullName>20 Market Research/Marketing/PR</fullName>
+                <default>false</default>
+                <label>20 Market Research/Marketing/PR</label>
+            </value>
+            <value>
+                <fullName>21 Media/Printing/Publishing</fullName>
+                <default>false</default>
+                <label>21 Media/Printing/Publishing</label>
+            </value>
+            <value>
+                <fullName>22 Mining</fullName>
+                <default>false</default>
+                <label>22 Mining</label>
+            </value>
+            <value>
+                <fullName>23 Non-Profit</fullName>
+                <default>false</default>
+                <label>23 Non-Profit</label>
+            </value>
+            <value>
+                <fullName>24 Pharmaceutical/Chemical</fullName>
+                <default>false</default>
+                <label>24 Pharmaceutical/Chemical</label>
+            </value>
+            <value>
+                <fullName>25 Research/Science</fullName>
+                <default>false</default>
+                <label>25 Research/Science</label>
+            </value>
+            <value>
+                <fullName>26 Real Estate</fullName>
+                <default>false</default>
+                <label>26 Real Estate</label>
+            </value>
+            <value>
+                <fullName>27 Retail/Wholesale Trade</fullName>
+                <default>false</default>
+                <label>27 Retail/Wholesale Trade</label>
+            </value>
+            <value>
+                <fullName>28 Telecommunications</fullName>
+                <default>false</default>
+                <label>28 Telecommunications</label>
+            </value>
+            <value>
+                <fullName>29 Utilities</fullName>
+                <default>false</default>
+                <label>29 Utilities</label>
+            </value>
+            <value>
+                <fullName>30 Wholesale</fullName>
+                <default>false</default>
+                <label>30 Wholesale</label>
+            </value>
+            <value>
+                <fullName>31 Transportation/Distribution</fullName>
+                <default>false</default>
+                <label>31 Transportation/Distribution</label>
+            </value>
+            <value>
+                <fullName>32 Business/Professional Services</fullName>
+                <default>false</default>
+                <label>32 Business/Professional Services</label>
+            </value>
+            <value>
+                <fullName>33 Professional Services - Other</fullName>
+                <default>false</default>
+                <label>33 Professional Services - Other</label>
+            </value>
+            <value>
+                <fullName>34 Other</fullName>
+                <default>false</default>
+                <label>34 Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

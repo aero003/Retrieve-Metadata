@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Drive_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Drive Location Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>At KIS</fullName>
+                <default>true</default>
+                <label>At KIS</label>
+            </value>
+            <value>
+                <fullName>In Transit to Customer</fullName>
+                <default>false</default>
+                <label>In Transit to Customer</label>
+            </value>
+            <value>
+                <fullName>At Customer</fullName>
+                <default>false</default>
+                <label>At Customer</label>
+            </value>
+            <value>
+                <fullName>In Transit to KIS</fullName>
+                <default>false</default>
+                <label>In Transit to KIS</label>
+            </value>
+            <value>
+                <fullName>At NOC</fullName>
+                <default>false</default>
+                <label>At NOC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

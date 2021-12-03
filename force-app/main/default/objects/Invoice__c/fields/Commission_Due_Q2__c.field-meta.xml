@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commission_Due_Q2__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Account__r.Commission__c  &gt; 0.00  &amp;&amp;  Q2__c &gt; 0.00, Account__r.Commission__c, Account__r.Commission_Variable_Percentage__c  *  Q2__c )</formula>
+    <label>Commission Due - Q2</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

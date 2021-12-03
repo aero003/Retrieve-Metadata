@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Edit_Provisioning</fullName>
+    <availability>online</availability>
+    <description>Open VF page to edit sFax Provisioning record</description>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Edit</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>if(&apos;{!Provisioning__c.RecordType}&apos; == &apos;Sfax&apos;) {
+window.location.href = &apos;/apex/sfaxProvisioning?id={!Provisioning__c.Id}&apos;;
+}
+else if(&apos;{!Provisioning__c.RecordType}&apos; == &apos;consensus&apos;) {
+window.location.href = &apos;/apex/ConsensusProvisioning?id={!Provisioning__c.Id}&apos;;
+}</url>
+</WebLink>

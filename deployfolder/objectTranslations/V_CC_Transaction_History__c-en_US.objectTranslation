@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>V: CC Transaction History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>V: CC Transaction History</value>
+    </caseValues>
+    <layouts>
+        <layout>V: CC Transaction History Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Account__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Action_Type__c</name>
+        <picklistValues>
+            <masterLabel>Overage Billing</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>epay Payment</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>AVS_Response_Desc__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>CC_Number__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>CC_TH_Match__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Charges_USD__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Payments_USD__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Response_Desc__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Result__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Transaction_ID__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

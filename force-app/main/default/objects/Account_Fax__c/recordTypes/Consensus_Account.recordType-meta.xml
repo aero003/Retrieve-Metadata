@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consensus_Account</fullName>
+    <active>true</active>
+    <description>Consensus Account Process</description>
+    <label>Consensus: Account</label>
+    <picklistValues>
+        <picklist>Account_Type__c</picklist>
+        <values>
+            <fullName>CORP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CPA - Signed Customer Pending Cancellation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRM - Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRM - Cancelled - Non Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRM - Signed Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CRM - Signed Customer in Implementation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSPM Customer %28Playbook%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Campaigner - Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Campaigner - Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Campaigner - Suspended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contactology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EmailDirect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Free</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JBlast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead - A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead - B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lead - C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mailout</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner %26 Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner - Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner - Cancel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner - Nurture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pilot Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Publicaster</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspended</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Brand__c</picklist>
+        <values>
+            <fullName>Campaigner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consensus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electric Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enterprise Mailer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fax%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fonebox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FuseMail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infonet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JBlast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KeepItSafe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landslide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Line2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LiveVault%C2%AE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M4 Internet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MailWise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MetroFax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MyFax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OneBox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Protus IP Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quexion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RapidFAX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rogers Business Internet Fax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send2Fax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sfax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smartfax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trustfax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Venali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virtual Fax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eFax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eFax Corporate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eFax Developer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>eVoice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>jConnect</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>De-activated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delinquent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive %28Dead%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive %28Winback%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner %28Active%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner %28Prospect%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provisioned</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualified</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Re-opened</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rebilling Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent to Collection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suspended - KIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terminated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Update_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

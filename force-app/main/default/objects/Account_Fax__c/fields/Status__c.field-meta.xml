@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>ISP Status</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Active</fullName>
+                <default>false</default>
+                <label>Active</label>
+            </value>
+            <value>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+                <label>Inactive</label>
+            </value>
+            <value>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+                <label>Prospect</label>
+            </value>
+            <value>
+                <fullName>Trial</fullName>
+                <default>false</default>
+                <label>Trial</label>
+            </value>
+            <value>
+                <fullName>De-activated</fullName>
+                <default>false</default>
+                <label>De-activated</label>
+            </value>
+            <value>
+                <fullName>Suspended</fullName>
+                <default>false</default>
+                <label>Suspended</label>
+            </value>
+            <value>
+                <fullName>Rebilling Failed</fullName>
+                <default>false</default>
+                <label>Rebilling Failed</label>
+            </value>
+            <value>
+                <fullName>Terminated</fullName>
+                <default>false</default>
+                <label>Terminated</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Delinquent</fullName>
+                <default>false</default>
+                <label>Delinquent</label>
+            </value>
+            <value>
+                <fullName>Re-opened</fullName>
+                <default>false</default>
+                <label>Re-opened</label>
+            </value>
+            <value>
+                <fullName>Suspended - KIS</fullName>
+                <default>false</default>
+                <label>Suspended - KIS</label>
+            </value>
+            <value>
+                <fullName>Sent to Collection</fullName>
+                <default>false</default>
+                <label>Sent to Collection</label>
+            </value>
+            <value>
+                <fullName>Provisioned</fullName>
+                <default>false</default>
+                <label>Provisioned</label>
+            </value>
+            <value>
+                <fullName>Inactive (Dead)</fullName>
+                <default>false</default>
+                <label>Inactive (Dead)</label>
+            </value>
+            <value>
+                <fullName>Inactive (Winback)</fullName>
+                <default>false</default>
+                <label>Inactive (Winback)</label>
+            </value>
+            <value>
+                <fullName>Partner (Prospect)</fullName>
+                <default>false</default>
+                <label>Partner (Prospect)</label>
+            </value>
+            <value>
+                <fullName>Partner (Active)</fullName>
+                <default>false</default>
+                <label>Partner (Active)</label>
+            </value>
+            <value>
+                <fullName>Review</fullName>
+                <default>false</default>
+                <label>Review</label>
+            </value>
+            <value>
+                <fullName>Qualified</fullName>
+                <default>false</default>
+                <label>Qualified</label>
+            </value>
+            <value>
+                <fullName>Pending Review</fullName>
+                <default>false</default>
+                <label>Pending Review</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

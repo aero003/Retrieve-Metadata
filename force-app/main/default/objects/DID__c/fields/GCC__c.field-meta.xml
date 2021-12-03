@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GCC__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SFSD-888 Created this field to tag german geo compliance DID to trigger emails to capture proof of identity</description>
+    <externalId>false</externalId>
+    <label>GCC</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

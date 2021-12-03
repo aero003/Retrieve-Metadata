@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RefundAmount_CreditAmount_mandatory</fullName>
+    <active>true</active>
+    <description>Only one of refund amount, credit amount mandatory.</description>
+    <errorConditionFormula>OR(
+	AND(
+		OR(ISBLANK( Requested_Credit_Amount__c ),(Requested_Credit_Amount__c =0)) ,
+		OR(ISBLANK( Requested_Refund_Amount__c ),(Requested_Refund_Amount__c =0))
+	)
+	,
+	AND(
+		AND(NOT(ISBLANK( Requested_Credit_Amount__c )),Requested_Credit_Amount__c !=0 ) ,
+		AND(NOT(ISBLANK( Requested_Refund_Amount__c )),Requested_Refund_Amount__c !=0 )
+	)
+)</errorConditionFormula>
+    <errorMessage>Please enter Requested Credit Amount or Requested Refund Amount.</errorMessage>
+</ValidationRule>

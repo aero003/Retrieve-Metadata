@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <description>Type of investor.</description>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Angel</fullName>
+                <default>false</default>
+                <label>Angel</label>
+            </value>
+            <value>
+                <fullName>Early / Mid Stage</fullName>
+                <default>false</default>
+                <label>Early / Mid Stage</label>
+            </value>
+            <value>
+                <fullName>Late Stage</fullName>
+                <default>false</default>
+                <label>Late Stage</label>
+            </value>
+            <value>
+                <fullName>Venture Debt</fullName>
+                <default>false</default>
+                <label>Venture Debt</label>
+            </value>
+            <value>
+                <fullName>Buyout</fullName>
+                <default>false</default>
+                <label>Buyout</label>
+            </value>
+            <value>
+                <fullName>Hedge Fund</fullName>
+                <default>false</default>
+                <label>Hedge Fund</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

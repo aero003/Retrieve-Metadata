@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product__c</fullName>
+    <externalId>false</externalId>
+    <label>Product</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>DR Offsite - KIS</fullName>
+                <default>false</default>
+                <label>DR Offsite - KIS</label>
+            </value>
+            <value>
+                <fullName>DR Onsite - KIS</fullName>
+                <default>false</default>
+                <label>DR Onsite - KIS</label>
+            </value>
+            <value>
+                <fullName>Enterprise Hybrid Backup Onsite - KIS - Asigra</fullName>
+                <default>false</default>
+                <label>Enterprise Hybrid Backup Onsite - KIS - Asigra</label>
+            </value>
+            <value>
+                <fullName>Enterprise - KIS - Asigra</fullName>
+                <default>false</default>
+                <label>Enterprise - KIS - Asigra</label>
+            </value>
+            <value>
+                <fullName>eVault</fullName>
+                <default>false</default>
+                <label>eVault</label>
+            </value>
+            <value>
+                <fullName>Front-Server</fullName>
+                <default>false</default>
+                <label>Front-Server</label>
+            </value>
+            <value>
+                <fullName>Managed Backup - KIS - Ahsay</fullName>
+                <default>true</default>
+                <label>Managed Backup - KIS - Ahsay</label>
+            </value>
+            <value>
+                <fullName>Mobile - KIS</fullName>
+                <default>false</default>
+                <label>Mobile - KIS</label>
+            </value>
+            <value>
+                <fullName>Reselling Data Backup Equipment</fullName>
+                <default>false</default>
+                <label>Reselling Data Backup Equipment</label>
+            </value>
+            <value>
+                <fullName>Send2Cloud</fullName>
+                <default>false</default>
+                <label>Send2Cloud</label>
+            </value>
+            <value>
+                <fullName>Server Colocation - KIS</fullName>
+                <default>false</default>
+                <label>Server Colocation - KIS</label>
+            </value>
+            <value>
+                <fullName>Server Hosting - KIS</fullName>
+                <default>false</default>
+                <label>Server Hosting - KIS</label>
+            </value>
+            <value>
+                <fullName>TSM Cloud Backup</fullName>
+                <default>false</default>
+                <label>TSM Cloud Backup</label>
+            </value>
+            <value>
+                <fullName>Veeam Cloud Connect</fullName>
+                <default>false</default>
+                <label>Veeam Cloud Connect</label>
+            </value>
+            <value>
+                <fullName>Veeam DRAAS</fullName>
+                <default>false</default>
+                <label>Veeam DRAAS</label>
+            </value>
+            <value>
+                <fullName>Veeam - KIS</fullName>
+                <default>false</default>
+                <label>Veeam - KIS</label>
+            </value>
+            <value>
+                <fullName>Workforce - KIS</fullName>
+                <default>false</default>
+                <label>Workforce - KIS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

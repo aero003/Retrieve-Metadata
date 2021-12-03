@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Account Fax</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Accounts Fax</value>
+    </caseValues>
+    <layouts>
+        <layout>Account Fax Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Update Status</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Consensus_Account</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

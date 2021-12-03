@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Consensus Billing</name>
+    <queueMembers>
+        <users>
+            <user>anush.vardapetyan@j2.com</user>
+            <user>fabiola.ysita@j2.com</user>
+            <user>kelly.simmons@j2.com</user>
+            <user>martha.lopez@j2.com</user>
+            <user>mychal.adams@j2.com</user>
+            <user>narine.margaryan@j2.com</user>
+            <user>sydney.weaver@j2.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

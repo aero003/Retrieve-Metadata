@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Type_of_Pricing__c</name>
+    <picklistValues>
+        <masterLabel>Not Tiered Pricing</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Red Pepper</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Red Pepper Aggregate</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

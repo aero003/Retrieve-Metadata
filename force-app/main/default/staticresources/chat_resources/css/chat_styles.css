@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+.embeddedServiceSidebar, .embeddedServiceHelpButton{
+    font-family: Open Sans, sans-serif !important;
+}
+
+.embeddedServiceSidebar.layout-docked .dockableContainer {
+    max-height: 600px !important;
+}
+
+.helpButton {
+    bottom: 26.2px !important;
+    right: 26.2px !important;
+    height: 35px !important;
+}
+
+.embeddedServiceSidebar .helpButton{ /* CTA Css  when not opened */
+    border-radius: 17.5px;
+    height: 35px;
+    content: "Get Support" !important;
+    background: #006699 !important;
+    border: none;
+}
+
+
+.embeddedServiceHelpButton .uiButton { /* CTA Css  when minimized */
+    border-radius: 17.5px !important;
+    height: 35px !important;
+    content: "Get Support" !important;
+    background: #006699 !important;
+    border: none !important;
+}
+
+.embeddedServiceSidebar .sidebarHeader{ /* Chat header color */
+    background: #006699 !important;
+    border:none;
+}
+
+.embeddedServiceSidebar .sidebarHeader h2{ /* title of chat */
+    color: white;
+    font-family:inherit;
+}
+
+.agent.embeddedServiceLiveAgentStateChatPlaintextMessageDefaultUI { /* agent messages */
+    background: white !important;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0, 0.08);
+}
+
+.chasitor.embeddedServiceLiveAgentStateChatPlaintextMessageDefaultUI { /* user messages */
+    background: #006699 !important;
+}
+
+.embeddedServiceSidebar .footerMenuWrapper { /* Hide hamburger menu */
+    display: block;
+}
+
+.chasitorText::placeholder { /* Italicize place holder text */
+    font-style: italic;
+    color: #9b9b9b !important;
+    font-family: Open Sans, sans-serif;
+}
+
+.embeddedServiceSidebar .chasitorInputWrapper.embeddedServiceLiveAgentStateChatInputFooter { /*user type footer*/
+    background: white;
+    border-top: 2px #006699 solid;
+}
+
+.textarea.uiInput.uiInputTextArea { /* user type are*/
+    background: #f4f4f4;
+    font-family: Open Sans, sans-serif;
+}
+
+.chasitor .timeContent {
+    display: none; /* Hide time stamp under user chat bubles */
+}
+
+
+.embeddedServiceSidebar .text.announcement { /* announcemnt text that fades in and out at start of chat and also during timeout*/
+    background: #006699;
+    color: white;
+    font-family: inherit;
+    font-size: 12px;
+}
+
+.embeddedServiceSidebar .uiButton--default.uiButton.embeddedServiceSidebarButton {
+    background: #006699;
+    border-radius: 3px;
+    height: 45px;
+}
+
+.embeddedServiceSidebar .startButton.uiButton--default.uiButton.embeddedServiceSidebarButton{
+        border-radius: 23.5px;
+        height: 29px;
+        width: 202px;
+        background: #006699;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+}
+
+.embeddedServiceSidebar .queuePositionMessage p {
+    font-family: inherit;
+}
+
+.embeddedServiceSidebar .waitingCancelChat.uiButton--inverse.embeddedServiceSidebarButton {
+    background: #006699;
+    height: 45px;
+    border-radius: 3px;
+    font-family: Open Sans, sans-serif;
+}
+
+.embeddedServiceSidebar .waitingCancelChat.uiButton--inverse.embeddedServiceSidebarButton:hover,
+.embeddedServiceSidebar .waitingCancelChat.uiButton--inverse.embeddedServiceSidebarButton:focus {
+    background: #003955;
+}
+
+.embeddedServiceSidebar .waitingCancelChat.uiButton--inverse .label {
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.dialogButtonContainer .dialogButton.embeddedServiceSidebarButton {
+    background: #22699e;
+    height: 45px;
+    border-radius: 3px;
+}
+
+/*bottom buttons*/
+.dialogButtonContainer .dialogButton.uiButton.embeddedServiceSidebarButton:hover,
+.endChatContainer .endChatButton.embeddedServiceSidebarButton:hover{
+    background: #003955;
+}
+
+.dialogButtonContainer .dialogButton.embeddedServiceSidebarButton .label,
+.endChatContainer .endChatButton.embeddedServiceSidebarButton .label{
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.14;
+    font-family: Open Sans, sans-serif;
+}
+
+.embeddedServiceSidebarDialogState #dialogTextTitle {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.01;
+    font-family: Open Sans, sans-serif;
+}
+
+.embeddedServiceSidebarDialogState #dialogTextBody .uiOutputRichText {
+    font-size: 14px;
+    font-family: Open Sans, sans-serif;
+}
+
+.embeddedServiceHelpButton .helpButton .uiButton:hover::before,
+.embeddedServiceHelpButton .helpButton .uiButton:focus::before{
+    border-radius: 17.5px 17.5px !important;
+}
+
+/*Custom prechat form*/
+
+.formContent input.slds-style-inputtext {
+    height: 26px;
+    border-radius: 4px;
+    border: solid .07px #cbccd0;
+}
+
+.formContent label.uiLabel-left.uiLabel {
+    font-size: 13px;
+    color: #4a4a4a;
+    font-weight: normal;
+}
+
+.formContent .fieldList .embeddedServiceSidebarFormField {
+    width: 190px;
+    margin-left: 0;
+}
+
+.embeddedServiceSidebarForm .fieldList {
+    margin: 100px 65px 0 65px !important;
+}
+
+.formContent.embeddedServiceSidebarForm {
+    padding-top: 24px;
+    font-size: 30px;
+    line-height: .61;
+    font-weight: bold;
+}
+
+.embeddedServiceSidebarForm .fieldList {
+    margin: 0 !important;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.fieldList::before {
+    content: "Please provide the following information so we can assist you:";
+    padding: 24px 37px 34px 37px;
+}
+
+
+
+.formContent::before {
+    content: "Hi there!";
+}
+
+.prechatUI .embeddedServiceSidebarFormField .split-field-container,
+.prechatUI .embeddedServiceSidebarFormField .uiInput--input,
+.prechatUI .embeddedServiceSidebarFormField .uiInput--select {
+    margin-bottom: 16px !important;
+}
+
+.prechatUI .embeddedServiceSidebarFormField .uiInput--input.has-error{
+    margin-bottom: 0 !important;
+}
+
+/*.prechatUI .buttonWrapper.embeddedServiceSidebarForm {*/
+
+/*}*/
+
+
+/*.prechatUI .buttonWrapper.embeddedServiceSidebarForm {*/
+/*    padding-bottom: 123px;*/
+/*}*/
+
+
+.embeddedServiceSidebar .startButton .label.bBody {
+    font-family: Open Sans, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+.embeddedServiceSidebar.layout-docked .dockableContainer {
+    bottom: 26.3px !important;
+    right: 26.3px !important;
+    border-radius: 12px 12px 0 12px !important;
+}
+
+
+.prechatUI .uiInputDefaultError .form-element__help {
+    margin-top: 1px !important;
+    margin-bottom: 3px !important;
+}
+
+.embeddedServiceSidebar .embeddedServiceLiveAgentStateChat .messageArea:focus {
+    border: none !important;
+}
+
+.embeddedServiceSidebar .chatMessage.wrapper {
+    overflow: visible;
+}
+
+.embeddedServiceLiveAgentStateChatButtonMessage .uiButton--default.uiButton.embeddedServiceLiveAgentStateChatButtonItem { /* Quick replies */
+    background: #006699;
+    border-radius: 21px;
+    width: 74px;
+    border: solid 1px #006699;
+    float: unset;
+}
+
+.embeddedServiceSidebarFormField .slds-style-inputtext, .embeddedServiceSidebarFormField .slds-style-select {
+    font-family: Open Sans, sans-serif !important;
+}
+
+.embeddedServiceLiveAgentStateChatButtonMessage .uiButton--default.uiButton.embeddedServiceLiveAgentStateChatButtonItem .label.bBody {
+    color: white;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: Open Sans, sans-serif;
+}
+
+/*@media only screen and (max-height: 650px){*/
+/*    .prechatUI .buttonWrapper.embeddedServiceSidebarForm {*/
+/*        padding-bottom: 24px;*/
+/*    }*/
+/*}*/
+
+.embeddedServiceHelpButton .embeddedServiceIcon::before,
+.embeddedServiceSidebar .embeddedServiceIcon.help::before{ /* CTA chat Icon */
+    content: url(../img/nf_chatIcon.svg) !important;
+}
+
+.embeddedServiceSidebar .embeddedServiceIcon.help svg{
+    display: none;
+}
+
+.embeddedServiceHelpButton .embeddedServiceIcon {
+    width: 21px !important;
+    margin-top: 2.3px;
+}
+
+.embeddedServiceSidebar .embeddedServiceSidebarMinimizedDefaultUI {
+    padding: 0;
+}
+
+.embeddedServiceSidebar .dockableContainer.show .sidebarHeader {
+    padding: 0 9.5px;
+}
+
+.embeddedServiceSidebar .dockableContainer.show .sidebarHeader::before {
+    content: url(../img/nf_chatIcon.svg) !important;
+    margin-right: 9.8px;
+    margin-top: 2px;
+}
+
+
+/* These are the close and minimize button hover shading  */
+button.minimizeButton:hover[embeddedService-chatHeader_chatHeader]:before {
+    right: 41.5px !important;
+}
+
+button.closeButton:hover[embeddedService-chatHeader_chatHeader]:before {
+    right: 9px !important;
+}
+
+@media only screen and (max-width: 500px){
+    .embeddedServiceHelpButton .uiButton,
+    .embeddedServiceSidebar .minimizedContainer.helpButton.embeddedServiceSidebarMinimizedDefaultUI{
+        min-width: 0 !important;
+        width:35px;
+        padding: 0 7px !important;
+    }
+
+    .embeddedServiceHelpButton #helpButtonSpan,
+    .embeddedServiceSidebar .helpButton .minimizedText{
+        display: none !important;
+    }
+
+    .embeddedServiceHelpButton .embeddedServiceIcon,
+    .embeddedServiceSidebar .embeddedServiceIcon{
+        margin-right: 0 !important;
+    }
+
+    .embeddedServiceSidebar.layout-docked .dockableContainer{
+        bottom: unset !important;
+        max-height: unset !important;
+    }
+
+    .chatActionButton.Send.embeddedServiceLiveAgentStateChatAction {
+        margin-left: 13px;
+    }
+}
+
+.embeddedServiceInvitation > .embeddedServiceInvitationFooter {
+    padding-right: 10px !important;
+    padding-top: 0 !important;
+    max-height: 50px !important;
+}
+
+.embeddedServiceInvitation > .embeddedServiceInvitationHeader {
+    height: 50px !important;
+}
+
+
+#snapins_invite {
+    z-index: 500 !important;
+    position: fixed !important;
+}
+
+button.uiButton.helpButtonDisabled {
+    display: none !important;
+}
+
+button.endChatButton.saveTranscriptButton.uiButton--inverse.uiButton.embeddedServiceSidebarButton {
+    background: #006699;
+    margin-top: 5px;
+}
+
+.embeddedServiceLiveAgentStateChatPlaintextMessageDefaultUI.agent.plaintextContent a {
+    color: #337ab7 !important;
+    text-decoration: none;
+}

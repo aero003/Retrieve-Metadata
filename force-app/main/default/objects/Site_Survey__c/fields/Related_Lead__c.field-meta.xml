@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_Lead__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>The Lead / Prospect which owns this Site Survey.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The Lead / Prospect which owns this Site Survey.</inlineHelpText>
+    <label>Related Lead</label>
+    <referenceTo>Lead</referenceTo>
+    <relationshipLabel>Site Surveys</relationshipLabel>
+    <relationshipName>Site_Surveys</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

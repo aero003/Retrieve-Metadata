@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>October__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(Opportunity__r.RecordTypeId =(&quot;012600000009X6M&quot;),Opportunity__r.RecordTypeId =(&quot;012600000009UrD&quot;)), 
+CASE(Opportunity__r.Closing_Month__c, 
+&quot;January&quot;, WR__c, 
+&quot;February&quot;, WR__c, 
+&quot;March&quot;, WR__c, 
+&quot;April&quot;, WR__c, 
+&quot;May&quot;, WR__c, 
+&quot;June&quot;, WR__c, 
+&quot;July&quot;, WR__c, 
+&quot;August&quot;, WR__c, 
+&quot;September&quot;, WR__c, 
+&quot;October&quot;, WR__c, 
+0), 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>October</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+/*  768px > tablet styles < 991px ======================================= */
+@media screen and (min-width:768px) {
+/*.tab-section .nav-tabs>li { width:auto;}
+.sales-main-section .control-label {width: calc(100% - 75%);}*/
+
+.payment-section .control-label {width: auto; }
+.sales-main-section .memo-div { width: auto; }
+.image-block .control-label {
+    width: auto;
+}
+.sales-main-section .text-label {
+    width: auto;
+}
+.fax-record .control-label{width:auto;}
+
+
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Status__c</fullName>
+    <description>Possible wrapup scenarios for voice.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please choose outcome of the contact.</inlineHelpText>
+    <label>Lead Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Open</fullName>
+                <default>true</default>
+                <label>Open</label>
+            </value>
+            <value>
+                <fullName>SALE</fullName>
+                <default>false</default>
+                <label>SALE</label>
+            </value>
+            <value>
+                <fullName>Left message/sent email - awaiting reply</fullName>
+                <default>false</default>
+                <label>Left message/sent email - awaiting reply</label>
+            </value>
+            <value>
+                <fullName>Qualified - considering solution</fullName>
+                <default>false</default>
+                <label>Qualified - considering solution</label>
+            </value>
+            <value>
+                <fullName>Referred to other j2 Product</fullName>
+                <default>false</default>
+                <label>Referred to other j2 Product</label>
+            </value>
+            <value>
+                <fullName>No Response to Calls/Emails</fullName>
+                <default>false</default>
+                <label>No Response to Calls/Emails</label>
+            </value>
+            <value>
+                <fullName>No Sale - disliked product / pricing</fullName>
+                <default>false</default>
+                <label>No Sale - disliked product / pricing</label>
+            </value>
+            <value>
+                <fullName>No Sale - Keeping current solution</fullName>
+                <default>false</default>
+                <label>No Sale - Keeping current solution</label>
+            </value>
+            <value>
+                <fullName>No Sale - Evaluating Competitor</fullName>
+                <default>false</default>
+                <label>No Sale - Evaluating Competitor</label>
+            </value>
+            <value>
+                <fullName>Not the right decision maker</fullName>
+                <default>false</default>
+                <label>Not the right decision maker</label>
+            </value>
+            <value>
+                <fullName>Invalid Lead / Spam</fullName>
+                <default>false</default>
+                <label>Invalid Lead / Spam</label>
+            </value>
+            <value>
+                <fullName>Customer support issue, no sales opp.</fullName>
+                <default>false</default>
+                <label>Customer support issue, no sales opp.</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

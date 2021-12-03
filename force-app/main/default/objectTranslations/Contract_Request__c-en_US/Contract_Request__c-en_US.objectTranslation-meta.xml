@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Contract Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Contract Requests</value>
+    </caseValues>
+    <layouts>
+        <layout>Contract Request Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contract Request Layout V2</layout>
+        <sections>
+            <label></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Copy of New Amendment - old</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Do Not Modify</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Amendment</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Admendment Prototype</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Do Not Modify</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Amendment</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Amendment</layout>
+        <sections>
+            <label></label>
+            <section>ADDING TLS, EFAX SECURE OR PORTING?</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>APPROVAL INFORMATION</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>ARE ANY PRICES CHANGING?</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>DESCRIPTION OF AMENDMENT</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Do Not Modify</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>IS THIS A NAME CHANGE?</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>IS THIS A TERM EXTENSION?</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>MINIMUM COMMITMENT CHANGING?</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>NEW AMENDMENT</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Developer Agreement</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Do Not Modify</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>NEW DEVELOPER AGREEMENT</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New eFax Corporate Agreement</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Do Not Modify</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>NEW EFAX CORPORATE AGREEMENT</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eFax Corporate SOF</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Do Not Modify</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>eFax Corporate SOF</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eFax Corporate SOF Read Only</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Do Not Modify</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>eFax Corporate SOF</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>New_Amendment</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>New_Developer_Agreement</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>New_eFax_Corporate_Agreement</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>eFax_Corporate_SOF</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>eFax_Corporate_SOF_Read_Only</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Date_Amendment_Term_Begins_1st_of_month</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Term_Extension_Info_Needed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Term_Extension_Info_not_needed</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>Conga_Composer</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Submit_for_Approval</name>
+    </webLinks>
+</CustomObjectTranslation>

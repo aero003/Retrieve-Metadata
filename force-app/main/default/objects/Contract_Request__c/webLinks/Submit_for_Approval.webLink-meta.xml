@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Submit_for_Approval</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Submit for Approval</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&apos;/soap/ajax/23.0/connection.js&apos;)}
+
+if ((Modal.confirm &amp;&amp; Modal.confirm(&apos;Once you submit this Contract Request, you must recall the approval before you can edit it. Continue?&apos;)) || (!Modal.confirm &amp;&amp; window.confirm(&apos;Once you submit this Contract Request, you must recall the approval before you can edit it. Continue?&apos;))) navigateToUrl(&apos;/p/process/Submit?id={!Contract_Request__c.Id}&amp;retURL=%2F{!Contract_Request__c.Id}&apos;);</url>
+</WebLink>

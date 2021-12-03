@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_Key_Account__c</fullName>
+    <description>Voice: WCSA : Salesforce - Company which owns the record</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Voice: WCSA : Salesforce - Company which owns the record</inlineHelpText>
+    <label>Company Key - Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipName>Voice_WCSA_Account_Notes</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>true</writeRequiresMasterRead>
+</CustomField>

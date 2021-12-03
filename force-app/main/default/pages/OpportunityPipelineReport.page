@@ -1,0 +1,532 @@
+<apex:page controller="OpportunityPipelineReportController" action="{!GenerateReport}" showHeader="true" sidebar="true" renderAs="{!renderAspdf}"  contentType="{!renderAsExcel}">  
+    <apex:form >
+        <html>
+            <apex:pageblock > 
+                <div>
+                    <apex:outputPanel id="oPanel" layout="block" style="margin:5px;padding:10px;">
+                        <strong><apex:outputLabel value="North American - Opportunity Pipeline Performance Review" style="font-weight:Bold;padding-right:10px;font-size:20px;"/></strong>
+                    </apex:outputPanel>
+                </div>
+                <!--<apex:pageBlockSection title="North American - Opportunity Pipeline Performance Review" showHeader="True" collapsible="false" columns="1">-->
+                <div id="filters" style="width:50%;margin: 5px;">
+                    <apex:pageBlockSection columns="1" >
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Select Year:" style="font-weight:bold;"></apex:outputLabel>
+                            <apex:selectList size="1" value="{!selectedYear}" > 
+                                <apex:selectOptions value="{!Years}" />  
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="Select Users:" style="font-weight:bold;"></apex:outputLabel>
+                            <apex:selectList size="3" value="{!selectedUsers}" multiselect="true" >
+                                <apex:selectOptions value="{!Users}"/>
+                            </apex:selectList>
+                        </apex:pageBlockSectionItem>
+                        
+                        
+                        <apex:pageBlockSectionItem >
+                            <apex:outputLabel value="" style="font-weight:bold;"></apex:outputLabel>
+                            <apex:outputPanel >
+                                <apex:commandButton value="Go!" reRender="pgbMain,filterBy" action="{!GenerateReport}" status="GoAction" />
+                                <apex:actionStatus id="GoAction">
+                                    <apex:facet name="start" >
+                                        <img src="/img/loading.gif" />                    
+                                    </apex:facet>
+                                </apex:actionStatus>
+                                <Apex:commandButton value="Export as Pdf" action="{!SaveAspdf}" StyleClass="myClass" />
+                                <Apex:commandButton value="Export as Excel" action="{!SaveAsExcel}" StyleClass="myClass"/> 
+                            </apex:outputPanel>
+                        </apex:pageBlockSectionItem>
+                    </apex:pageBlockSection> 
+                </div>
+                <div id="filtered By" style="margin:5px;padding:10px;">
+                    <apex:outputPanel >
+                        <apex:outputLabel ><span style="font-weight:bold; font-size:0.9em; color:#4a4a56;">Filtered By:</span></apex:outputLabel>
+                        <apex:outputLabel id="filterBy" style="font-size:80%;"><span style="font-weight: bolder;">Year </span>equals <span style="font-weight: bolder;">{!selectedYear} </span>And <span style="font-weight: bolder;">User Name </span>equals <span style="font-weight: bolder;"> {!UserName} </span><br/></apex:outputLabel> 
+                    </apex:outputPanel>                
+                </div>
+                
+            </apex:pageblock>
+            <apex:pageBlock id="pgbMain" >
+                <!--  <apex:outputPanel id="oPanel01" layout="block" style="padding:10px;">
+<apex:outputLabel value="Pipeline Summary" style="font-weight:Bold;padding-right:10px;font-size:20px;" />
+</apex:outputPanel> -->
+                <!--  <html style="border-top:10px;">  -->
+                <apex:outputPanel id="oPanel01" layout="block" style="padding:10px;">
+                    <strong><apex:outputLabel value="Pipeline Summary" style="font-weight:Bold;padding-right:10px;font-size:20px;" /></strong>
+                </apex:outputPanel>
+                <table border="1" class="list" cellspacing="0" cellpadding="0" style="margin-top:20px;">
+                   <tr class="headerRow">
+                        <td> </td>
+                        <td colspan="3" style="text-align:center;"> Total Pipeline </td>
+                        <td> </td>
+                        <td colspan="5" style="text-align:center;">  Healthcare Pipeline </td>
+                        <td> </td>
+                        <td colspan="3" style="text-align:center;"> Closed Won % </td>
+                    </tr>
+                   <tr class="headerRow">
+                        <td>Sales Owner</td>
+                        <td> Count </td>
+                        <td> FY{!selectedYear} </td>
+                        <td> ASP </td>
+                        <td> </td>
+                        <td> Count </td>
+                        <td> Opp Mix % </td>
+                        <td> FY{!selectedYear} </td>
+                        <td> Opp Mix % </td>
+                        <td> ASP </td>
+                        <td> </td>
+                        <td> Won Count </td>
+                        <td> Lost Count </td>
+                        <td> Win Ratio </td>
+                    </tr>
+                    <apex:repeat value="{!OpportunitiesTotalPipeline}" var="TotalOpps">
+                        <tr class="dataRow" style="background-color: #FEF9E7; display:{!if(TotalOpps.UserName=='Heading' && TotalOpps.Country!=null,'table-row','none')}" >
+                            <td style="font-weight:bold;">{!TotalOpps.Country} </td>
+                            <td> </td>
+                            <td></td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="dataRow" style="display:{!if(TotalOpps.UserName!='Total' && TotalOpps.UserName!='Average'  && TotalOpps.UserName!='Grand Total' && TotalOpps.UserName!='Heading','table-row','none')}">
+                            <td>{!TotalOpps.UserName}</td>
+                            <td>{!TotalOpps.TotalCount}</td>
+                            <td>$ {!TotalOpps.TotalAmount}</td>
+                            <td>$ {!TotalOpps.TotalASP}</td>
+                            <td> </td>
+                            <td>{!TotalOpps.HealthcareCount}</td>
+                            <td>{!TotalOpps.HealthcareCountPercentage}%</td>
+                            <td>$ {!TotalOpps.HealthcareAmount}</td>
+                            <td>{!TotalOpps.HealthcareAmountPercentage}%</td>
+                            <td>$ {!TotalOpps.HealthcareASP}</td>
+                            <td> </td>
+                            <td>{!TotalOpps.ClosedWonCount}</td>
+                            <td>{!TotalOpps.ClosedLostCount}</td>
+                            <td>{!TotalOpps.WonLostPercentage}%</td>
+                        </tr>
+                        <!-----------------------------------------------Average------------------------------------------------------------------->
+                        <tr class="dataRow" style="display:{!if(TotalOpps.UserName=='Average' && TotalOpps.UserName!='Total' && TotalOpps.UserName!='Grand Total' && TotalOpps.Country=='US','table-row','none')}" >
+                            <td style="font-weight:bold;font-style:italic;color:gray">{!TotalOpps.UserName}</td>
+                            <td style="font-weight:bold;font-style:italic;color:gray">{!TotalOpps.AvgTotalCount}</td>
+                            <td style="font-weight:bold;font-style:italic;color:gray">$ {!TotalOpps.TotalAmount}</td>
+                            <td></td>
+                            <td> </td>
+                            <td style="font-weight:bold;font-style:italic;color:gray">{!TotalOpps.AvgHealthcareCount}</td>
+                            <td></td>
+                            <td style="font-weight:bold;font-style:italic;color:gray">$ {!TotalOpps.HealthcareAmount}</td>
+                            <td></td>
+                            <td></td>
+                            <td> </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <!------------------------------------------------------------------------------------------------------------------>
+                        <tr class="dataRow" style="background-color: #e3f3ff; display:{!if(TotalOpps.UserName=='Total' || TotalOpps.UserName=='Grand Total','table-row','none')}" >
+                            <td style="font-weight:bold;font-style:italic;">{!TotalOpps.UserName} {!TotalOpps.Country}</td>
+                            <td style="font-weight:bold;font-style:italic;">{!TotalOpps.TotalCount}</td>
+                            <td style="font-weight:bold;font-style:italic;">$ {!TotalOpps.TotalAmount}</td>
+                            <td style="font-weight:bold;font-style:italic;">$ {!TotalOpps.TotalASP}</td>
+                            <td> </td>
+                            <td style="font-weight:bold;font-style:italic;" >{!TotalOpps.HealthcareCount}</td>
+                            <td style="font-weight:bold;font-style:italic;">{!TotalOpps.HealthcareCountPercentage}%</td>
+                            <td style="font-weight:bold;font-style:italic;">$ {!TotalOpps.HealthcareAmount}</td>
+                            <td style="font-weight:bold;font-style:italic;">{!TotalOpps.HealthcareAmountPercentage}%</td>
+                            <td style="font-weight:bold;font-style:italic;">$ {!TotalOpps.HealthcareASP}</td>
+                            <td> </td>
+                            <td style="font-weight:bold;font-style:italic;" >{!TotalOpps.ClosedWonCount}</td>
+                            <td style="font-weight:bold;font-style:italic;">{!TotalOpps.ClosedLostCount}</td>
+                            <td style="font-weight:bold;font-style:italic;">{!TotalOpps.WonLostPercentage}%</td>
+                        
+                        </tr>
+                    </apex:repeat>
+                </table>
+                <br/> 
+                <apex:outputPanel id="oPanel0" layout="block" style="padding:10px;padding-top:20px;">
+                    <strong>   <apex:outputLabel value="Forecast & Commitment" style="font-weight:Bold;padding-right:10px;font-size:20px;" /></strong>
+                </apex:outputPanel> <br/> 
+                <apex:outputPanel id="oPanel1" layout="block" style="margin:5px;padding:10px;padding-top:2px;">
+                    <strong> <apex:outputLabel value="First Quarter" style="font-weight:Bold;padding-right:10px;font-size:15px;" /></strong>
+                </apex:outputPanel>
+                <table border="1" class="list" cellspacing="0" cellpadding="0" style="margin-bottom: 14px;">
+                   <tr class="headerRow">
+                        <td> </td>
+                        <td></td>
+                        <td colspan="2" style="text-align:center;"> FORECAST Total</td>
+                        <td colspan="4" style="text-align:center;"> FORECAST Healthcare</td>
+                       <td colspan="3" style="text-align:center;"> MRR ACTUAL VS COMMIT </td>
+                        <td colspan="2" style="text-align:center;"> ACV ACTUAL VS COMMIT </td>
+                        
+                    </tr>
+                   <tr class="headerRow">
+                        <td>Sales Owner</td>
+                        <td> </td>
+                        <td> Rev </td>
+                        <td> Count </td>
+                        <td> HC Rev </td>
+                        <td> % HC $ </td>
+                        <td> HC Count </td>
+                        <td> % HC Count </td>
+                        <td> MRR Add </td>
+                        <td> % Won </td>
+                        <td> To Go </td>
+                        <td> MRR Add </td>
+                        <td> To Go </td>
+                    </tr>
+                    <apex:repeat value="{!OpportunitiesTotalPipelineQ1}" var="TotalOpps">
+                        <tr class="dataRow" style="background-color: #FEF9E7; display:{!if(TotalOpps.UserName=='Heading' && TotalOpps.Country!=null,'table-row','none')}" >
+                            <td style="font-weight:bold;">{!TotalOpps.Country} </td>
+                            <td> </td>
+                            <td></td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="dataRow" style="display:{!if(TotalOpps.UserName!='Total' && TotalOpps.UserName != 'Grand Total' && TotalOpps.UserName!='Average' && TotalOpps.UserName!='Heading','table-row','none')}">
+                            <td> {!TotalOpps.UserName}</td>
+                            <td> </td>
+                            <td>$ {!TotalOpps.QRevenue} </td>
+                            <td> {!TotalOpps.Qcount} </td>
+                            <td>$ {!TotalOpps.QHCRevenue} </td>
+                            <td> {!TotalOpps.QHCRevenuePercentage} %</td>
+                            <td> {!TotalOpps.QHCCount} </td>
+                            <td> {!TotalOpps.QHCCountPercentage} %</td>
+                            
+                            <td> $ {!TotalOpps.QMrr} </td>
+                            <td> {!TotalOpps.QClosedWonPercentage} % </td>
+                            <td>$  {!TotalOpps.QMRR_ToGo} </td>
+                            <td>$ {!TotalOpps.QACV_MRR}</td>
+                            <td>$ {!TotalOpps.QACV_ToGo}</td>
+                        </tr>
+                        <!-----------------------------------------------Average------------------------------------------------------------------->
+                        <tr class="dataRow" style="display:{!if(TotalOpps.UserName=='Average' && TotalOpps.UserName!='Total' && TotalOpps.UserName != 'Grand Total' && TotalOpps.Country=='US','table-row','none')}" >
+                            <td style="font-weight:bold;font-style:italic; color:gray"> Average</td>
+                            <td> </td>
+                            <td style="font-weight:bold;font-style:italic; color:gray">$ {!TotalOpps.QRevenue} </td>
+                            <td style="font-weight:bold;font-style:italic; color:gray"> {!TotalOpps.AvgQCount} </td>
+                            <td style="font-weight:bold;font-style:italic; color:gray">$ {!TotalOpps.QHCRevenue} </td>
+                            <td></td>
+                            <td style="font-weight:bold;font-style:italic; color:gray"> {!TotalOpps.AvgQHCCount}</td>
+                            <td> </td>
+                            <td style="font-weight:bold;font-style:italic; color:gray"> $ {!TotalOpps.QMrr} </td>
+                            <td>  </td>
+                            <td style="font-weight:bold;font-style:italic; color:gray">$  {!TotalOpps.QMRR_ToGo} </td>
+                        </tr>
+                        <!------------------------------------------------------------------------------------------------------------------>
+                        <tr class="dataRow" style="background-color: #e3f3ff; display:{!if(TotalOpps.UserName=='Total' || TotalOpps.UserName=='Grand Total','table-row','none')}" >
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.UserName} {!TotalOpps.Country} </td>
+                            <td style="font-weight:bold;font-style:italic;"> </td>
+                            <td style="font-weight:bold;font-style:italic;">$ {!TotalOpps.QRevenue} </td>
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.Qcount} </td>
+                            <td style="font-weight:bold;font-style:italic;">$ {!TotalOpps.QHCRevenue} </td>
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.QHCRevenuePercentage} %</td>
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.QHCCount} </td>
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.QHCCountPercentage} %</td>
+                            
+                            <td style="font-weight:bold;font-style:italic;"> $ {!TotalOpps.QMrr} </td>
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.QClosedWonPercentage} % </td>
+                            <td style="font-weight:bold;font-style:italic;">$  {!TotalOpps.QMRR_ToGo} </td>
+                             <td style="font-weight:bold;font-style:italic;">$ {!TotalOpps.QACV_MRR}</td>
+                            <td style="font-weight:bold;font-style:italic;">$ {!TotalOpps.QACV_ToGo}</td>
+                        </tr>
+                    </apex:repeat>
+                </table> <br/> 
+                <apex:outputPanel id="oPanel2" layout="block" style="margin:5px;padding:10px;padding-top:2px;">
+                    <strong> <apex:outputLabel value="Second Quarter" style="font-weight:Bold;padding-right:10px;font-size:15px;" /></strong>
+                </apex:outputPanel>
+                <table border="1" class="list" cellspacing="0" cellpadding="0" style="margin-bottom: 14px;">
+                   <tr class="headerRow">
+                        <td> </td>
+                        <td> </td>
+                        <td colspan="2" style="text-align:center;"> FORECAST Total</td>
+                        <td colspan="4" style="text-align:center;"> FORECAST Healthcare</td>
+                      <td colspan="3" style="text-align:center;"> MRR ACTUAL VS COMMIT </td>
+                        <td colspan="2" style="text-align:center;"> ACV ACTUAL VS COMMIT </td>
+                    </tr>
+                   <tr class="headerRow">
+                        <td>Sales Owner</td>
+                        <td> </td>
+                        <td> Rev </td>
+                        <td> Count </td>
+                        <td> HC Rev </td>
+                        <td> % HC $ </td>
+                        <td> HC Count </td>
+                        <td> % HC Count </td>
+                        <td> MRR Add </td>
+                        <td> % Won </td>
+                        <td> To Go </td>
+                        <td> MRR Add </td>
+                        <td> To Go </td>
+                    </tr>
+                    <apex:repeat value="{!OpportunitiesTotalPipelineQ2}" var="TotalOpps">
+                        <tr class="dataRow" style="background-color: #FEF9E7; display:{!if(TotalOpps.UserName=='Heading' && TotalOpps.UserName != 'Grand Total' && TotalOpps.Country!=null,'table-row','none')}" >
+                            <td style="font-weight:bold;">{!TotalOpps.Country} </td>
+                            <td> </td>
+                            <td></td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="dataRow" style="display:{!if(TotalOpps.UserName!='Total' && TotalOpps.UserName != 'Grand Total' && TotalOpps.UserName!='Average' && TotalOpps.UserName!='Heading','table-row','none')}">
+                            <td> {!TotalOpps.UserName}</td>
+                            <td> </td>
+                            <td>$ {!TotalOpps.QRevenue} </td>
+                            <td> {!TotalOpps.Qcount} </td>
+                            <td>$ {!TotalOpps.QHCRevenue} </td>
+                            <td> {!TotalOpps.QHCRevenuePercentage} %</td>
+                            <td> {!TotalOpps.QHCCount} </td>
+                            <td> {!TotalOpps.QHCCountPercentage} %</td>
+                            
+                            <td> $ {!TotalOpps.QMrr} </td>
+                            <td> {!TotalOpps.QClosedWonPercentage} % </td>
+                            <td>$  {!TotalOpps.QMRR_ToGo} </td>
+                            <td>$ {!TotalOpps.QACV_MRR}</td>
+                            <td>$ {!TotalOpps.QACV_ToGo}</td>
+                        </tr>
+                        <!-----------------------------------------------Average------------------------------------------------------------------->
+                        <tr class="dataRow" style="display:{!if(TotalOpps.UserName=='Average' && TotalOpps.UserName!='Total' && TotalOpps.UserName != 'Grand Total' && TotalOpps.Country=='US','table-row','none')}" >
+                            <td style="font-weight:bold;font-style:italic; color:gray"> Average</td>
+                            <td> </td>
+                            <td style="font-weight:bold;font-style:italic; color:gray">$ {!TotalOpps.QRevenue} </td>
+                            <td style="font-weight:bold;font-style:italic; color:gray"> {!TotalOpps.AvgQCount} </td>
+                            <td style="font-weight:bold;font-style:italic; color:gray">$ {!TotalOpps.QHCRevenue} </td>
+                            <td></td>
+                            <td style="font-weight:bold;font-style:italic; color:gray"> {!TotalOpps.AvgQHCCount}</td>
+                            <td> </td>
+                            <td style="font-weight:bold;font-style:italic; color:gray"> $ {!TotalOpps.QMrr} </td>
+                            <td>  </td>
+                            <td style="font-weight:bold;font-style:italic; color:gray">$  {!TotalOpps.QMRR_ToGo} </td>
+                        </tr>
+                        <!------------------------------------------------------------------------------------------------------------------>
+                        <tr class="dataRow" style="background-color: #e3f3ff; display:{!if(TotalOpps.UserName=='Total' || TotalOpps.UserName =='Grand Total' ,'table-row','none')}" >
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.UserName} {!TotalOpps.Country} </td>
+                            <td style="font-weight:bold;font-style:italic;"> </td>
+                            <td style="font-weight:bold;font-style:italic;">$ {!TotalOpps.QRevenue} </td>
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.Qcount} </td>
+                            <td style="font-weight:bold;font-style:italic;">$ {!TotalOpps.QHCRevenue} </td>
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.QHCRevenuePercentage} %</td>
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.QHCCount} </td>
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.QHCCountPercentage} %</td>
+                            
+                            <td style="font-weight:bold;font-style:italic;"> $ {!TotalOpps.QMrr} </td>
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.QClosedWonPercentage} % </td>
+                            <td style="font-weight:bold;font-style:italic;">$  {!TotalOpps.QMRR_ToGo} </td>
+                             <td style="font-weight:bold;font-style:italic;">$ {!TotalOpps.QACV_MRR}</td>
+                            <td style="font-weight:bold;font-style:italic;">$ {!TotalOpps.QACV_ToGo}</td>
+                        </tr>
+                    </apex:repeat>
+                </table> <br/> 
+                <apex:outputPanel id="oPanel3" layout="block" style="margin:5px;padding:10px;padding-top:2px;">
+                    <strong><apex:outputLabel value="Third Quarter" style="font-weight:Bold;padding-right:10px;font-size:15px;" /></strong>
+                </apex:outputPanel>
+                <table border="1" class="list" cellspacing="0" cellpadding="0" style="margin-bottom: 14px;">
+                   <tr class="headerRow">
+                        <td> </td>
+                        <td> </td>
+                        <td colspan="2" style="text-align:center;"> FORECAST Total</td>
+                        <td colspan="4" style="text-align:center;"> FORECAST Healthcare</td>
+                         <td colspan="3" style="text-align:center;"> MRR ACTUAL VS COMMIT </td>
+                        <td colspan="2" style="text-align:center;"> ACV ACTUAL VS COMMIT </td>
+                        
+                    </tr>
+                   <tr class="headerRow">
+                        <td>Sales Owner</td>
+                        <td> </td>
+                        <td> Rev </td>
+                        <td> Count </td>
+                        <td> HC Rev </td>
+                        <td> % HC $ </td>
+                        <td> HC Count </td>
+                        <td> % HC Count </td>
+                        <td> MRR Add </td>
+                        <td> % Won </td>
+                        <td> To Go </td>
+                        <td> MRR Add </td>
+                        <td> To Go </td>
+                    </tr>
+                    <apex:repeat value="{!OpportunitiesTotalPipelineQ3}" var="TotalOpps">
+                        <tr class="dataRow" style="background-color: #FEF9E7; display:{!if(TotalOpps.UserName=='Heading' && TotalOpps.UserName != 'Grand Total' && TotalOpps.Country!=null,'table-row','none')}" >
+                            <td style="font-weight:bold;">{!TotalOpps.Country} </td>
+                            <td> </td>
+                            <td></td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="dataRow" style="display:{!if(TotalOpps.UserName!='Total' && TotalOpps.UserName != 'Grand Total' && TotalOpps.UserName!='Average' && TotalOpps.UserName!='Heading','table-row','none')}">
+                            <td> {!TotalOpps.UserName}</td>
+                            <td> </td>
+                            <td>$ {!TotalOpps.QRevenue} </td>
+                            <td> {!TotalOpps.Qcount} </td>
+                            <td>$ {!TotalOpps.QHCRevenue} </td>
+                            <td> {!TotalOpps.QHCRevenuePercentage} %</td>
+                            <td> {!TotalOpps.QHCCount} </td>
+                            <td> {!TotalOpps.QHCCountPercentage} %</td>
+                            
+                            <td> $ {!TotalOpps.QMrr} </td>
+                            <td> {!TotalOpps.QClosedWonPercentage} % </td>
+                            <td>$  {!TotalOpps.QMRR_ToGo} </td>
+                            <td>$ {!TotalOpps.QACV_MRR}</td>
+                            <td>$ {!TotalOpps.QACV_ToGo}</td>
+                        </tr>
+                        <!-----------------------------------------------Average------------------------------------------------------------------->
+                        <tr class="dataRow" style="display:{!if(TotalOpps.UserName=='Average' && TotalOpps.UserName!='Total' && TotalOpps.UserName != 'Grand Total' && TotalOpps.Country=='US','table-row','none')}" >
+                            <td style="font-weight:bold;font-style:italic; color:gray"> Average</td>
+                            <td> </td>
+                            <td style="font-weight:bold;font-style:italic; color:gray">$ {!TotalOpps.QRevenue} </td>
+                            <td style="font-weight:bold;font-style:italic; color:gray"> {!TotalOpps.AvgQCount} </td>
+                            <td style="font-weight:bold;font-style:italic; color:gray">$ {!TotalOpps.QHCRevenue} </td>
+                            <td></td>
+                            <td style="font-weight:bold;font-style:italic; color:gray"> {!TotalOpps.AvgQHCCount}</td>
+                            <td> </td>
+                            <td style="font-weight:bold;font-style:italic; color:gray"> $ {!TotalOpps.QMrr} </td>
+                            <td>  </td>
+                            <td style="font-weight:bold;font-style:italic; color:gray">$  {!TotalOpps.QMRR_ToGo} </td>
+                        </tr>
+                        <!------------------------------------------------------------------------------------------------------------------>
+                        <tr class="dataRow" style="background-color: #e3f3ff; display:{!if(TotalOpps.UserName=='Total' || TotalOpps.UserName=='Grand Total','table-row','none')}" >
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.UserName} {!TotalOpps.Country} </td>
+                            <td style="font-weight:bold;font-style:italic;"> </td>
+                            <td style="font-weight:bold;font-style:italic;">$ {!TotalOpps.QRevenue} </td>
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.Qcount} </td>
+                            <td style="font-weight:bold;font-style:italic;">$ {!TotalOpps.QHCRevenue} </td>
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.QHCRevenuePercentage} %</td>
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.QHCCount} </td>
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.QHCCountPercentage} %</td>
+                            
+                            <td style="font-weight:bold;font-style:italic;"> $ {!TotalOpps.QMrr} </td>
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.QClosedWonPercentage} % </td>
+                            <td style="font-weight:bold;font-style:italic;">$  {!TotalOpps.QMRR_ToGo} </td>
+                             <td style="font-weight:bold;font-style:italic;">$ {!TotalOpps.QACV_MRR}</td>
+                            <td style="font-weight:bold;font-style:italic;">$ {!TotalOpps.QACV_ToGo}</td>
+                        </tr>
+                    </apex:repeat>
+                </table> <br/> 
+                <apex:outputPanel id="oPanel4" layout="block" style="margin:5px;padding:10px;padding-top:2px;">
+                    <strong><apex:outputLabel value="Fourth Quarter" style="font-weight:Bold;padding-right:10px;font-size:15px;" /></strong>
+                </apex:outputPanel>
+                <table border="1" class="list" cellspacing="0" cellpadding="0" style="margin-bottom: 14px;">
+                   <tr class="headerRow">
+                        <td> </td>
+                        <td> </td>
+                        <td colspan="2" style="text-align:center;"> FORECAST Total</td>
+                        <td colspan="4" style="text-align:center;"> FORECAST Healthcare</td>
+                        <td colspan="3" style="text-align:center;"> MRR ACTUAL VS COMMIT </td>
+                        <td colspan="2" style="text-align:center;"> ACV ACTUAL VS COMMIT </td>
+                    </tr>
+                   <tr class="headerRow">
+                        <td>Sales Owner</td>
+                        <td> </td>
+                        <td> Rev </td>
+                        <td> Count </td>
+                        <td> HC Rev </td>
+                        <td> % HC $ </td>
+                        <td> HC Count </td>
+                        <td> % HC Count </td>
+                        <td> MRR Add </td>
+                        <td> % Won </td>
+                        <td> To Go </td>
+                        <td> MRR Add </td>
+                        <td> To Go </td>
+                    </tr>
+                    <apex:repeat value="{!OpportunitiesTotalPipelineQ4}" var="TotalOpps">
+                        <tr class="dataRow" style="background-color: #FEF9E7; display:{!if(TotalOpps.UserName=='Heading' && TotalOpps.UserName != 'Grand Total' && TotalOpps.Country!=null,'table-row','none')}" >
+                            <td style="font-weight:bold;">{!TotalOpps.Country} </td>
+                            <td> </td>
+                            <td></td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="dataRow" style="display:{!if(TotalOpps.UserName!='Total' && TotalOpps.UserName != 'Grand Total' && TotalOpps.UserName!='Average' && TotalOpps.UserName!='Heading','table-row','none')}">
+                            <td> {!TotalOpps.UserName}</td>
+                            <td> </td>
+                            <td>$ {!TotalOpps.QRevenue} </td>
+                            <td> {!TotalOpps.Qcount} </td>
+                            
+                            <td>$ {!TotalOpps.QHCRevenue} </td>
+                            <td> {!TotalOpps.QHCRevenuePercentage} %</td>
+                            <td> {!TotalOpps.QHCCount} </td>
+                            <td> {!TotalOpps.QHCCountPercentage} %</td>
+                            
+                            
+                            <td> $ {!TotalOpps.QMrr} </td>
+                            <td> {!TotalOpps.QClosedWonPercentage} % </td>
+                            <td>$  {!TotalOpps.QMRR_ToGo} </td>
+                            <td>$ {!TotalOpps.QACV_MRR}</td>
+                            <td>$ {!TotalOpps.QACV_ToGo}</td>
+                        </tr>
+                        <!-----------------------------------------------Average------------------------------------------------------------------->
+                        <tr class="dataRow" style="display:{!if(TotalOpps.UserName=='Average' && TotalOpps.UserName!='Total' && TotalOpps.UserName != 'Grand Total' && TotalOpps.Country=='US','table-row','none')}" >
+                            <td style="font-weight:bold;font-style:italic; color:gray"> Average</td>
+                            <td> </td>
+                            <td style="font-weight:bold;font-style:italic; color:gray">$ {!TotalOpps.QRevenue} </td>
+                            <td style="font-weight:bold;font-style:italic; color:gray"> {!TotalOpps.AvgQCount} </td>
+                            <td style="font-weight:bold;font-style:italic; color:gray">$ {!TotalOpps.QHCRevenue} </td>
+                            <td></td>
+                            <td style="font-weight:bold;font-style:italic; color:gray"> {!TotalOpps.AvgQHCCount}</td>
+                            <td> </td>
+                            <td style="font-weight:bold;font-style:italic; color:gray"> $ {!TotalOpps.QMrr} </td>
+                            <td>  </td>
+                            <td style="font-weight:bold;font-style:italic; color:gray">$  {!TotalOpps.QMRR_ToGo} </td>
+                        </tr>
+                        <!------------------------------------------------------------------------------------------------------------------>
+                        <tr class="dataRow" style="background-color: #e3f3ff; display:{!if(TotalOpps.UserName=='Total' || TotalOpps.UserName == 'Grand Total' ,'table-row','none')}" >
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.UserName} {!TotalOpps.Country}</td>
+                            <td style="font-weight:bold;font-style:italic;"> </td>
+                            <td style="font-weight:bold;font-style:italic;">$ {!TotalOpps.QRevenue} </td>
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.Qcount} </td>
+                            <td style="font-weight:bold;font-style:italic;">$ {!TotalOpps.QHCRevenue} </td>
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.QHCRevenuePercentage} %</td>
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.QHCCount} </td>
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.QHCCountPercentage} %</td>
+                            
+                            <td style="font-weight:bold;font-style:italic;"> $ {!TotalOpps.QMrr} </td>
+                            <td style="font-weight:bold;font-style:italic;"> {!TotalOpps.QClosedWonPercentage} % </td>
+                            <td style="font-weight:bold;font-style:italic;">$  {!TotalOpps.QMRR_ToGo} </td>
+                             <td style="font-weight:bold;font-style:italic;">$ {!TotalOpps.QACV_MRR}</td>
+                            <td style="font-weight:bold;font-style:italic;">$ {!TotalOpps.QACV_ToGo}</td>
+                        </tr>
+                    </apex:repeat>
+                </table>
+            </apex:pageBlock>
+        </html>
+    </apex:form>
+</apex:page>

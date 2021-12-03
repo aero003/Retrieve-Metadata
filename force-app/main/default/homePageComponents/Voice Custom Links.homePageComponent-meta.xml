@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <links>WCSA</links>
+    <links>Jira</links>
+    <links>RD_ISP</links>
+    <links>RT_Greetings</links>
+    <links>X8ms</links>
+    <links>eVoice_Onebox_KB</links>
+    <links>Line2_KB</links>
+    <pageComponentType>links</pageComponentType>
+</HomePageComponent>

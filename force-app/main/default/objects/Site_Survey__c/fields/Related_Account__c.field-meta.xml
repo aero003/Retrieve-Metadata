@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_Account__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>KIS - Select the Account this Site Survey is related with.  In case of a Site Survey created on a Lead - Please update this value after Convert Lead process.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>KIS - Select the Account this Site Survey is related with.  In case of a Site Survey created on a Lead - Please update this value after Convert Lead process.</inlineHelpText>
+    <label>Related Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Site Surveys (Related Account)</relationshipLabel>
+    <relationshipName>Site_Surveys1</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

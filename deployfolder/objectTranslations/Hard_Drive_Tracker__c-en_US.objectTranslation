@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HDD Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HDD Requestor</value>
+    </caseValues>
+    <layouts>
+        <layout>Hard Drive Tracker Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Request a Hard Drive for an Account</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Tracking Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <workflowTasks>
+        <description></description>
+        <name>Ship_HDD_to_Customer</name>
+        <subject></subject>
+    </workflowTasks>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Account_Address__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Account__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Case__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Contact_Email_Address__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Contact__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Drive_Status__c</name>
+        <picklistValues>
+            <masterLabel>At Customer</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>At KIS</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>At NOC</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Transit to Customer</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Transit to KIS</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>KIS_Customer_ID__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>KIS_Hard_Drive__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Reason__c</name>
+        <picklistValues>
+            <masterLabel>New Install</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restore</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seed Load</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Requested_By__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Requested_HDD_Size_in_GB__c</name>
+        <picklistValues>
+            <masterLabel>1000 GB</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2000 GB</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>300 GB</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3000 GB</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4000 GB</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>500 GB</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5000 GB</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6000 GB</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8000 GB</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Sent_By__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Sent_Via__c</name>
+        <picklistValues>
+            <masterLabel>DHL</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FEDEX</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FirstDirect</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ParcelVision</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPS</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Status_of_Request__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Shipped</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Tracking_Number__c</name>
+    </fields>
+</CustomObjectTranslation>

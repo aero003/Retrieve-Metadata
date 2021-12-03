@@ -1,0 +1,24 @@
+<apex:page standardController="Account" extensions="Conensus_Billing_Stamp_Controller" lightningStylesheets="true" sidebar="false"
+           showHeader="false" docType="html-5.0">
+    <apex:form ID="TheForm">
+        <apex:pageMessages />
+        <apex:actionFunction name="stampIt" action="{!isIDProofing}" rerender="tstpopup"/>
+    	<apex:outputPanel id="tstpopup"> 
+            <apex:outputPanel styleClass="popupBackground" layout="block" rendered="{!displayPopUp}"/> 
+            <apex:outputPanel styleClass="custPopup" rendered="{!displayPopUp}"> 
+                <apex:outputText rendered="{!IF(bool=true,true,false)}" value="Billing Stamp Updated Successfully"></apex:outputText> 
+                <apex:outputText rendered="{!IF(bool=false,true,false)}" value="{!SUBSTITUTE(JSENCODE('Please ensure the following:\n1.Account has Application and Corp ID\n2.Opportunity is closed won with a primary quote'),'\\\n','<br/>')}" style="white-space:pre;" escape="false"></apex:outputText> 
+                <br/><br/><apex:commandButton value="Close" action="{!closePopup}" rerender="TheForm"/> 
+            </apex:outputPanel> 
+        </apex:outputPanel> 
+        </apex:form>
+	
+    <script>
+    stampIt();
+    </script>
+    
+    <style type="text/css"> 
+        .custPopup{ color: black; background-color: white; border-width: 2px; border-style: solid; z-index: 9999; left: 50%; padding:11px; position: absolute; width: 600px; margin-left: -240px; top:100px;text-align: center;} 
+        .popupBackground{ opacity: 0.20; filter: alpha(opacity = 20); position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 9998; } 
+    </style> 
+</apex:page>

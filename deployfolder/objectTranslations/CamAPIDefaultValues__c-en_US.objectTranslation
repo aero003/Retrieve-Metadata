@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cam API Default Values</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cam API Default Values</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <fields>
+        <label></label>
+        <name>collection_method__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>credit_limit__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>did_limit__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>marketplace_code__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>oem__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>secure_fax_Consensus__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>secure_fax_Efax__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>secure_fax_type__c</name>
+    </fields>
+</CustomObjectTranslation>

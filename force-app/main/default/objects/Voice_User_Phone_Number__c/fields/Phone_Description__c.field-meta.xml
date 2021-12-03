@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_Description__c</fullName>
+    <description>Voice - WCSA - User - Phone Number Description</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Voice - WCSA - User - Phone Number Description</inlineHelpText>
+    <label>Phone Description</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business Direct Line</fullName>
+                <default>false</default>
+                <label>Business Direct Line</label>
+            </value>
+            <value>
+                <fullName>Business Fax</fullName>
+                <default>false</default>
+                <label>Business Fax</label>
+            </value>
+            <value>
+                <fullName>Company&apos;s Main Line</fullName>
+                <default>false</default>
+                <label>Company&apos;s Main Line</label>
+            </value>
+            <value>
+                <fullName>Home Fax</fullName>
+                <default>false</default>
+                <label>Home Fax</label>
+            </value>
+            <value>
+                <fullName>Home Office</fullName>
+                <default>false</default>
+                <label>Home Office</label>
+            </value>
+            <value>
+                <fullName>Home Phone</fullName>
+                <default>false</default>
+                <label>Home Phone</label>
+            </value>
+            <value>
+                <fullName>Mobile Phone</fullName>
+                <default>false</default>
+                <label>Mobile Phone</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Pager</fullName>
+                <default>false</default>
+                <label>Pager</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

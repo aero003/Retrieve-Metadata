@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_in_Sign_Up_Date_Month__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Leap_Year__c=True,
+
+CASE(
+MONTH( Sign_Up_Date__c ),
+2, 29,
+4, 30,
+6, 30,
+9, 30,
+11, 30,
+31
+),
+
+CASE(
+MONTH( Sign_Up_Date__c ),
+2, 28,
+4, 30,
+6, 30,
+9, 30,
+11, 30,
+31
+)
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Days in Sign Up Date Month</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

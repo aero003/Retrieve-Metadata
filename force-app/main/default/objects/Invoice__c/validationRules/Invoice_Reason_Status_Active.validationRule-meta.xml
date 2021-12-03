@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_Reason_Status_Active</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+NOT(ISPICKVAL( Invoice_Reason__c , &quot;&quot;)),
+ISPICKVAL( Status__c ,&quot;Active&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Invoice_Reason__c</errorDisplayField>
+    <errorMessage>You cannot choose an Invoice Reason if Status is &quot;Active&quot;.</errorMessage>
+</ValidationRule>

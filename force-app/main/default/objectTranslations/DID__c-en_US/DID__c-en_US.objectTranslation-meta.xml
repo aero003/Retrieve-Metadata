@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>DID</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>DIDs</value>
+    </caseValues>
+    <layouts>
+        <layout>Copy of DID Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>DID Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DID Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>DID Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Inbound Email Addresses</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DOC DID Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>DID Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>J2 DID Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>DID Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label></label>
+        <name>Create_New_Case</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,1910 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>BUMI Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Add Customer Contact Info</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Additional Data items in Salesforce</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Data for Key Mktg Metrics</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Site Survey Info</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Campaigner Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Channel Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Partner Portal History Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Partner Portal Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Questions to be Answered</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Consensus ENT Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>DiscoverOrg</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Line Item</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pardot</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Consensus MKT Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>DiscoverOrg</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Line Item</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pardot</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Consensus SMB Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>DiscoverOrg</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Line Item</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pardot</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Efax Campaign Lead</layout>
+        <sections>
+            <label></label>
+            <section>Contact Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Fax Developer Layout</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Fax Sales Layout</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Fonebox Lead</layout>
+        <sections>
+            <label></label>
+            <section>Campaign Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Qualification</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Fusemail Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Addtional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Jigsaw Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Source</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Qualifying Questions</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Analytics</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Keepitsafe BUMI Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Keepitsafe Corporate Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Keepitsafe Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Keepitsafe New Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pardot Data</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web to Lead Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Keepitsafe New Lead Layout1</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pardot Data</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>RV Deal Registration Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web to Lead Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Keepitsafe New Lead Layout2</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Discover Org</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketo Sales Insight</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pardot Data</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>RV Deal Registration Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web to Lead Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Keepitsafe New Lead Layout3</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Discover Org</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pardot Data</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>RV Deal Registration Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web to Lead Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Line2 Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Livevault Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Discover Org</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Network</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Sugar Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Marketo Discover Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Box</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>DiscoverOrg</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketo Sales Insight</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Online Media</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pardot</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>My Fax Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customized components for other j2 Business Units - May be customized for MyFax</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>My Fax Lead Layout Online</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customized components for other j2 Business Units - May be customized for MyFax</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Online Media</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>OneBox Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing Analytics</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Qualifying Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>OutBound Sales Layout</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Business Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Discover Org</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Disposition</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Background &amp; Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Questions to be Answered</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sfax Lead Layout1</layout>
+        <sections>
+            <label></label>
+            <section>Account Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>System Admin</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>TechTarget Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Addtional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Jigsaw Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Source</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>TechTarget Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Analytics</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Voice Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eFax AU Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Campaign Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Qualification</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eFax Corporate AU</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eFax Free Partnership</layout>
+        <sections>
+            <label></label>
+            <section>Additional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eFax JP Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eFax Reseller/Partner</layout>
+        <sections>
+            <label></label>
+            <section>Additional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eFax corporate IE Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eFax corporate NL Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eFax/eReceptionist UK and EU</layout>
+        <sections>
+            <label></label>
+            <section>Additional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eVoice AU Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Campaign Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Qualification</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eVoice Live Receptionist</layout>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing Analytics</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Qualifying Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eVoice NZ Lead</layout>
+        <sections>
+            <label></label>
+            <section>Campaign Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Qualification</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eVoice NZ Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Company Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Methods</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketing Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Preferences</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>efax Corporate DE</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pardot</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>efax Corporate UK Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>efax Corporate UK Lead Layout Online</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Online Media</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>efax Corporate UK Lead Layout Online1</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketo Sales Insight</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Online Media</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>efax Corporate UK Lead Layout1</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Addtional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Marketo Sales Insight</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Pardot</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Visual Compliance Screening</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Web Lead Form Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>jSign US Lead Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>D&amp;B Hoovers</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <workflowTasks>
+        <description></description>
+        <name>Assigned_a_Site_Survey_KIS_Leads</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description></description>
+        <name>Converted_your_Successful_Lead</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description></description>
+        <name>Follow_Up_on_Site_Survey</name>
+        <subject></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

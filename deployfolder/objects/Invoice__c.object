@@ -1,0 +1,2459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>Invoice</label>
+    <nameField>
+        <displayFormat>I-{000000}</displayFormat>
+        <label>Invoice Name</label>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Invoices</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Amount__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LAST_UPDATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Billing_Run_Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Bill_To__c</customTabListAdditionalFields>
+        <lookupFilterFields>NAME</lookupFilterFields>
+        <lookupFilterFields>Account__c</lookupFilterFields>
+        <lookupFilterFields>Amount__c</lookupFilterFields>
+        <lookupFilterFields>Status__c</lookupFilterFields>
+        <lookupFilterFields>BilledCustomerID__c</lookupFilterFields>
+        <searchResultsAdditionalFields>Amount__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Sign_Up_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Billing_Period__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Total_Invoice_Amount__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Accounting_Rule_Name__c</fullName>
+        <description>Oracle Receivables uses this value to determine if the Deferral is Advance or if the billing is in Arrears, in case of a -ive Amount value, this value should be Blank</description>
+        <externalId>false</externalId>
+        <formula>IF( 
+AND(Amount__c &gt;= 0.00, Bill_in_Arrears__c &lt;&gt; True), &quot;Advance Invoice&quot;, &quot;&quot;)</formula>
+        <inlineHelpText>Oracle Receivables uses this value to determine if the Deferral is Advance or if the billing is in Arrears, in case of a -ive Amount value, this value should be Blank</inlineHelpText>
+        <label>Accounting Rule Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>AccountStatus__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Account__r.Account_Status__c)</formula>
+        <label>AccountStatus</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_Sign_Up_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Sign_Up_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Sign Up Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Invoices</relationshipLabel>
+        <relationshipName>Invoices</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Amount_Breakdown_NB__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+
+
+ISPICKVAL( Billing_Period__c ,&quot;Monthly&quot;), 
+
+First_Month_Pro_Rated__c, 
+Amount__c
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Amount Breakdown NB</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount_Breakdown__c</fullName>
+        <externalId>false</externalId>
+        <formula>Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Amount Breakdown</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount_KeepitsafeNL__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount KeepitsafeNL</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>April__c</fullName>
+        <externalId>false</externalId>
+        <label>April</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Audit_Account_ID__c</fullName>
+        <description>For Oracle Bill Audit - Customer Number of Account (Used in Send Bill to = Direct)</description>
+        <externalId>false</externalId>
+        <formula>Account__r.Customer_ID2__c</formula>
+        <inlineHelpText>For Oracle Bill Audit - Customer Number of Account (Used in Send Bill to = Direct)</inlineHelpText>
+        <label>Audit: Account ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Audit_Parent_Account_ID__c</fullName>
+        <description>For Oracle Bill Audit - Customer Number of Account (Used in Send Bill to = Partner)</description>
+        <externalId>false</externalId>
+        <formula>Account__r.Parent.Customer_ID2__c</formula>
+        <inlineHelpText>For Oracle Bill Audit - Customer Number of Account (Used in Send Bill to = Partner)</inlineHelpText>
+        <label>Audit: Parent Account ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Audit_Send_Bill_To__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Account__r.Send_Bill_To__c)</formula>
+        <label>Audit: Send Bill To</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>August__c</fullName>
+        <externalId>false</externalId>
+        <label>August</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BilledCustomerID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Header_Attribute4__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>BilledCustomerID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billed_Customer_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Billed Customer ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billing_Period_NB__c</fullName>
+        <description>Translates &quot;One-off&quot; to &quot;Monthly&quot; for Oracle purposes.</description>
+        <externalId>false</externalId>
+        <formula>CASE(Billing_Period__c, 
+&quot;Annual&quot;,&quot;Annual&quot;, 
+&quot;Quarterly&quot;,&quot;Quarterly&quot;, 
+&quot;Bi-Annual&quot;,&quot;Bi-Annual&quot;, 
+&quot;Monthly&quot;,&quot;Monthly&quot;, 
+&quot;One-off&quot;,&quot;Monthly&quot;, 
+null 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Billing Period NB</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Billing_Period__c</fullName>
+        <description>Oracle Billing uses this value to define the calculation and splits of Deferred Revenue, in case of a -ive Amount value, this value should be Blank</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Oracle Billing uses this value to define the calculation and splits of Deferred Revenue, in case of a -ive Amount value, this value should be Blank</inlineHelpText>
+        <label>Billing Period</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Annual</fullName>
+                    <default>false</default>
+                    <label>Annual</label>
+                </value>
+                <value>
+                    <fullName>Quarterly</fullName>
+                    <default>false</default>
+                    <label>Quarterly</label>
+                </value>
+                <value>
+                    <fullName>Bi-Annual</fullName>
+                    <default>false</default>
+                    <label>Bi-Annual</label>
+                </value>
+                <value>
+                    <fullName>Monthly</fullName>
+                    <default>false</default>
+                    <label>Monthly</label>
+                </value>
+                <value>
+                    <fullName>One-off</fullName>
+                    <default>false</default>
+                    <label>One-off</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Billing_Run_Date__c</fullName>
+        <description>KIS - Invoicing - Use this Date field to specify the Invoicing Run Date - in place of system date - This allows KeepItSafe to run billing for the month in advance of the 1st of the month.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>KIS - Invoicing - Use this Date field to specify the Invoicing Run Date - in place of system date - This allows KeepItSafe to run billing for the month in advance of the 1st of the month. (MM/DD/YYYY)</inlineHelpText>
+        <label>Billing Run Date *Verify Date Format</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Bill_in_Arrears__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If the Invoice is to be billed in arrears, then check the box.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If the Invoice is to be billed in arrears, then check the box.</inlineHelpText>
+        <label>Bill in Arrears</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Bill_To_Partner__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Partner_to_be_Billed__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Bill To Partner</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bill_To__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Account__r.Send_Bill_To__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Bill To</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <length>32768</length>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Commission_Due_Q1__c</fullName>
+        <description>KIS Commission calculation based upon Fixed or Variable Amount AND checking Reseller Hierarchy</description>
+        <externalId>false</externalId>
+        <formula>IF(Account__r.Commission__c  &gt; 0.00  &amp;&amp;  Q1__c &gt; 0.00, Account__r.Commission__c, Account__r.Commission_Variable_Percentage__c  *  Q1__c )</formula>
+        <inlineHelpText>KIS Commission calculation based upon Fixed or Variable Amount AND checking Reseller Hierarchy</inlineHelpText>
+        <label>Commission Due - Q1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Commission_Due_Q2__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Account__r.Commission__c  &gt; 0.00  &amp;&amp;  Q2__c &gt; 0.00, Account__r.Commission__c, Account__r.Commission_Variable_Percentage__c  *  Q2__c )</formula>
+        <label>Commission Due - Q2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Commission_Due_Q3__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Account__r.Commission__c  &gt; 0.00  &amp;&amp;  Q3__c &gt; 0.00, Account__r.Commission__c, Account__r.Commission_Variable_Percentage__c  *  Q3__c )</formula>
+        <label>Commission Due - Q3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Commission_Due_Q4__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Account__r.Commission__c  &gt; 0.00  &amp;&amp;  Q4__c &gt; 0.00, Account__r.Commission__c, Account__r.Commission_Variable_Percentage__c  *  Q4__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Commission Due - Q4</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Commission_Due__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Commission__c  *   Q1__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Commission Due - Q1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Consensus_Amount_Breakdown__c</fullName>
+        <description>Consensus Amount Breakdown</description>
+        <externalId>false</externalId>
+        <label>Consensus Amount Breakdown</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Consensus_Price__c</fullName>
+        <description>Consensus Price</description>
+        <externalId>false</externalId>
+        <label>Consensus Price</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Consensus_Quantity__c</fullName>
+        <description>Consensus Quantity</description>
+        <externalId>false</externalId>
+        <label>Consensus Quantity</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Conversion_Date_Oracle_Bill__c</fullName>
+        <description>Convert Date Field to DD-MM-YYYY for Oracle Billing</description>
+        <externalId>false</externalId>
+        <formula>TRX_Date_Oracle_Bill__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Convert Date Field to DD-MM-YYYY for Oracle Billing</inlineHelpText>
+        <label>Conversion_Date_Oracle_Bill</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Conversion_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>TRX_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Conversion Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Conversion_Rate__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos;&apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Conversion Rate</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Conversion_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos;Corporate&apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Conversion Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Currency__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Account__r.Currency_1__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Currency</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_Month_Amount__c</fullName>
+        <description>Used in query to run invoice for oracle feed via SOA</description>
+        <externalId>false</externalId>
+        <formula>if( MONTH(Today()) = 1, January__c,
+if( MONTH(Today()) = 2, February__c,
+if( MONTH(Today()) = 3, March__c,
+if( MONTH(Today()) = 4, April__c,
+if( MONTH(Today()) = 5, May__c,
+if( MONTH(Today()) = 6, June__c,
+if( MONTH(Today()) = 7, July__c,
+if( MONTH(Today()) = 8, August__c,
+if( MONTH(Today()) = 9, September__c,
+if( MONTH(Today()) = 10, October__c,
+if( MONTH(Today()) = 11, November__c,
+if( MONTH(Today()) = 12, December__c,
+0.00))))))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current Month Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(MONTH(Today()) = 1, &quot;January&quot;, 
+IF(MONTH(Today()) = 2, &quot;February&quot;, 
+IF(MONTH(Today()) = 3, &quot;March&quot;, 
+IF(MONTH(Today()) = 4, &quot;April&quot;, 
+IF(MONTH(Today()) = 5, &quot;May&quot;, 
+IF(MONTH(Today()) = 6, &quot;June&quot;, 
+IF(MONTH(Today()) = 7, &quot;July&quot;, 
+IF(MONTH(Today()) = 8, &quot;August&quot;, 
+IF(MONTH(Today()) = 9, &quot;September&quot;, 
+IF(MONTH(Today()) =10, &quot;October&quot;, 
+IF(MONTH(Today()) = 11, &quot;November&quot;, 
+IF(MONTH(Today()) = 12, &quot;December&quot;, &quot;Error&quot; 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current Month</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Custom_Invoice_Description__c</fullName>
+        <description>KIS - Invoice System - Enter in any Custom Invoice Description - limited to approximately 100 characters</description>
+        <externalId>false</externalId>
+        <inlineHelpText>KIS - Invoice System - Enter in any Custom Invoice Description - limited to approximately 100 characters</inlineHelpText>
+        <label>Custom Invoice Description</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cust_TRX_Type_Name__c</fullName>
+        <description>The Value which Oracle Billing expects to define the type of Transaction - Credit Memo - Corp in case of a -ive value &amp; Invoice - Corp in case of a +ive value</description>
+        <externalId>false</externalId>
+        <formula>IF( Amount__c  &gt;= 0.00, &quot;Invoice - Corp&quot;, &quot;Credit Memo - Corp&quot;)</formula>
+        <inlineHelpText>The Value which Oracle Billing expects to define the type of Transaction - Credit Memo - Corp in case of a -ive value &amp; Invoice - Corp in case of a +ive value</inlineHelpText>
+        <label>Cust TRX Type Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_in_Sign_Up_Date_Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Leap_Year__c=True,
+
+CASE(
+MONTH( Sign_Up_Date__c ),
+2, 29,
+4, 30,
+6, 30,
+9, 30,
+11, 30,
+31
+),
+
+CASE(
+MONTH( Sign_Up_Date__c ),
+2, 28,
+4, 30,
+6, 30,
+9, 30,
+11, 30,
+31
+)
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days in Sign Up Date Month</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>December__c</fullName>
+        <externalId>false</externalId>
+        <label>December</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deferred_Start_Date_Inv__c</fullName>
+        <description>Oracle Receivables uses this value to determine if the Billing is in Advance or if the billing is in Arrears, in case of a -ive Amount value, this value should be Blank</description>
+        <externalId>false</externalId>
+        <formula>IF( Bill_in_Arrears__c =True, &quot;&quot;,
+
+IF( MONTH(Billing_Run_Date__c) = 1, &quot;0&quot;+TEXT(1)+&quot;-&quot;
++TEXT(MONTH( TRX_Date_Calc__c +1 ))+&quot;-&quot;
++TEXT(YEAR(TRX_Date_Calc__c +1 )) , &quot;0&quot;+TEXT(1)+&quot;-&quot;
++TEXT(MONTH( TRX_Date_Calc__c +1 ))+&quot;-&quot;
++TEXT(YEAR(TRX_Date_Calc__c )))
+
+)</formula>
+        <inlineHelpText>Oracle Receivables uses this value to determine if the Billing is in Advance or if the billing is in Arrears, in case of a -ive Amount value, this value should be Blank</inlineHelpText>
+        <label>Deferred Start Date Inv</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deferred_Start_Date_NB__c</fullName>
+        <description>Field added to Invoice files</description>
+        <externalId>false</externalId>
+        <formula>&quot;0&quot;+TEXT(1)+&quot;-&quot;
++TEXT(MONTH( TRX_Date_Calc__c ))+&quot;-&quot;
++TEXT(YEAR(TRX_Date_Calc__c ))</formula>
+        <inlineHelpText>Calculates Deferred Start Date of Billing - Oracle Reqd. Field</inlineHelpText>
+        <label>Deferred Start Date NB</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DescMonthNB__c</fullName>
+        <description>Update Month of Description Value for NB Invoice</description>
+        <externalId>false</externalId>
+        <formula>CASE(MONTH(  Billing_Run_Date__c  ), 2, &quot;January&quot;, 3, &quot;February&quot;, 4, &quot;March&quot;,  5, &quot;April&quot;,  6, &quot;May&quot;,  7, &quot;June&quot;, 8, &quot;July&quot;, 9, &quot;August&quot;, 10, &quot;September&quot;, 11, &quot;October&quot;, 12, &quot;November&quot;, 1, &quot;December&quot;, &quot;None&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Update Month of Description Value for NB Invoice</inlineHelpText>
+        <label>DescMonthNB</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DescMonth__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  Bill_in_Arrears__c = True,
+
+(CASE(MONTH( Billing_Run_Date__c  ), 1, &quot;December&quot;, 2, &quot;January&quot;, 3, &quot;February&quot;,  4, &quot;March&quot;,  5, &quot;April&quot;,  6, &quot;May&quot;, 7, &quot;June&quot;, 8, &quot;July&quot;, 9, &quot;August&quot;, 10, &quot;September&quot;, 11, &quot;October&quot;, 12, &quot;November&quot;, &quot;None&quot;)),
+
+
+(CASE(MONTH( Billing_Run_Date__c  ), 1, &quot;January&quot;, 2, &quot;February&quot;, 3, &quot;March&quot;,  4, &quot;April&quot;,  5, &quot;May&quot;,  6, &quot;June&quot;, 7, &quot;July&quot;, 8, &quot;August&quot;, 9, &quot;September&quot;, 10, &quot;October&quot;, 11, &quot;November&quot;, 12, &quot;December&quot;, &quot;None&quot;))
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>DescMonth</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description_Period__c</fullName>
+        <description>KIS BIlling - Suppress True = Account Name + Appends Month YYYY + adds the Custom Invoice Description value  or Suppress False = Standard Description + Appends Month YYYY + adds the Custom Invoice Description value</description>
+        <externalId>false</externalId>
+        <formula>IF(Account__r.ParentId &lt;&gt; null &amp;&amp; Audit_Send_Bill_To__c==&apos;Partner&apos;,
+
+Account__r.Name + &quot; - &quot; + DescMonth__c + &quot; &quot; + DescYear__c + &quot; - &quot; + Custom_Invoice_Description__c + &quot; - &quot; + TEXT(Usage_GB__c) + &quot; GB&quot;+&quot; - &quot; + PO__c,
+
+Account__r.Name + &quot; - &quot; + DescMonth__c + &quot; &quot; + DescYear__c + &quot; - &quot; + Custom_Invoice_Description__c+&quot; - &quot; + PO__c
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>KIS BIlling - Suppress True = Account Name + Appends Month YYYY + adds the Custom Invoice Description value  or Suppress False = Standard Description + Appends Month YYYY + adds the Custom Invoice Description value</inlineHelpText>
+        <label>Invoice Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <description>Fully Managed Online Backup - X Month(s) ** This field is not editable**</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Fully Managed Online Backup - X Month(s) ** This field is not editable**</inlineHelpText>
+        <label>Description</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>DescYearNB__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(MONTH(Billing_Run_Date__c) = 1, TEXT(YEAR(Billing_Run_Date__c -1)), TEXT(YEAR(Billing_Run_Date__c)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Need to adjust for January Billing Run Dates to use YYYY-1</inlineHelpText>
+        <label>DescYearNB</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DescYear__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(YEAR(Billing_Run_Date__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>DescYear</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Discount_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Discount Amount</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Discount_Percentage__c</fullName>
+        <description>created this field for KIS NL portal integration to capture discount percentage</description>
+        <externalId>false</externalId>
+        <label>Discount Percentage</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>February__c</fullName>
+        <externalId>false</externalId>
+        <label>February</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>First_Month_Pro_Rated__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+
+ISPICKVAL(Billing_Period__c,&quot;Monthly&quot;), (Amount__c/ Days_in_Sign_Up_Date_Month__c)*(( Days_in_Sign_Up_Date_Month__c-DAY(Sign_Up_Date__c))+1),0
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>First Month Pro-rated (monthly only)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FormattedDescription__c</fullName>
+        <description>This field contains descrition field text with no carriage returns. Used for integration and hidden.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field contains descrition field text with no carriage returns. Used for integration and hidden.</inlineHelpText>
+        <label>FormattedDescription</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Future1__c</fullName>
+        <description>Value should be &apos;00000&apos;</description>
+        <externalId>false</externalId>
+        <formula>LPAD(TEXT(0), 5, &apos;0&apos; )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Value should be &apos;00000&apos;</inlineHelpText>
+        <label>Future1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Future2__c</fullName>
+        <externalId>false</externalId>
+        <formula>LPAD(TEXT(0), 3, &apos;0&apos; )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Future2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Future3__c</fullName>
+        <description>Value should be &apos;0000&apos;</description>
+        <externalId>false</externalId>
+        <formula>LPAD(TEXT(0), 4, &apos;0&apos; )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Value should be &apos;0000&apos;</inlineHelpText>
+        <label>Future3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GL_Date_Oracle_Bill__c</fullName>
+        <description>Changed Date format to DD-MM-YYYY for Oracle Billing</description>
+        <externalId>false</externalId>
+        <formula>TRX_Date_Oracle_Bill__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Changed Date format to DD-MM-YYYY for Oracle Billing</inlineHelpText>
+        <label>GL_Date_Oracle_Bill</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>GL_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>TRX_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>GL Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Header_Attribute1__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos; &apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Header Attribute1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Header_Attribute2__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos; &apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Header Attribute2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Header_Attribute3__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos; &apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Header Attribute3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Header_Attribute4__c</fullName>
+        <description>Changed to KIE &amp; KIS # - 5/2012</description>
+        <externalId>false</externalId>
+        <formula>IF( Bill_To__c  = &apos;Partner&apos;,  Header_Attribute5__c , Account__r.Customer_ID2__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Header Attribute4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Header_Attribute5__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Parent.Customer_ID2__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Header Attribute5</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Int_Bill_Desc_NB__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(MONTH( Billing_Run_Date__c ), 2, &quot;1&quot;, 3, &quot;2&quot;, 4, &quot;3&quot;, 5, &quot;4&quot;, 6, &quot;5&quot;, 7, &quot;6&quot;, 8, &quot;7&quot;, 9, &quot;8&quot;, 10, &quot;9&quot;, 11, &quot;10&quot;, 12, &quot;11&quot;, 1, &quot;12&quot;, &quot;None&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Int.Bill.Desc.NB</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Id 
+&amp; MID(&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ012345&quot;,( 
+IF(FIND(MID(Id,1,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,1,0) 
++IF(FIND(MID(Id,2,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,2,0) 
++IF(FIND(MID(Id,3,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,4,0) 
++IF(FIND(MID(Id,4,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,8,0) 
++IF(FIND(MID(Id,5,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,16,0) 
+)+1,1) 
+&amp; MID(&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ012345&quot;,( 
+IF(FIND(MID(Id,6,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,1,0) 
++IF(FIND(MID(Id,7,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,2,0) 
++IF(FIND(MID(Id,8,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,4,0) 
++IF(FIND(MID(Id,9,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,8,0) 
++IF(FIND(MID(Id,10,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,16,0) 
+)+1,1) 
+&amp; MID(&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ012345&quot;,( 
+IF(FIND(MID(Id,11,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,1,0) 
++IF(FIND(MID(Id,12,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,2,0) 
++IF(FIND(MID(Id,13,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,4,0) 
++IF(FIND(MID(Id,14,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,8,0) 
++IF(FIND(MID(Id,15,1), &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;)&gt;0,16,0) 
+)+1,1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Invoice ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_Line1__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos; &apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Invoice Line1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_Line2__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos; &apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Invoice Line2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_Line3__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos; &apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Invoice Line3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_Line4__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos; &apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Invoice Line4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Invoice_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Acquisition</fullName>
+                    <default>false</default>
+                    <label>Acquisition</label>
+                </value>
+                <value>
+                    <fullName>Cheaper Solution/Cost Cutting</fullName>
+                    <default>false</default>
+                    <label>Cheaper Solution/Cost Cutting</label>
+                </value>
+                <value>
+                    <fullName>Closed Down</fullName>
+                    <default>false</default>
+                    <label>Closed Down</label>
+                </value>
+                <value>
+                    <fullName>Competitor</fullName>
+                    <default>false</default>
+                    <label>Competitor</label>
+                </value>
+                <value>
+                    <fullName>Delinquent</fullName>
+                    <default>false</default>
+                    <label>Delinquent</label>
+                </value>
+                <value>
+                    <fullName>Dis-satisfied with Service</fullName>
+                    <default>false</default>
+                    <label>Dis-satisfied with Service</label>
+                </value>
+                <value>
+                    <fullName>Lost Through Re-seller</fullName>
+                    <default>false</default>
+                    <label>Lost Through Re-seller</label>
+                </value>
+                <value>
+                    <fullName>Merger/Alliance</fullName>
+                    <default>false</default>
+                    <label>Merger/Alliance</label>
+                </value>
+                <value>
+                    <fullName>Moved to Cloud Solution</fullName>
+                    <default>false</default>
+                    <label>Moved to Cloud Solution</label>
+                </value>
+                <value>
+                    <fullName>Moved to Bulk Invoice</fullName>
+                    <default>false</default>
+                    <label>Moved to Bulk Invoice</label>
+                </value>
+                <value>
+                    <fullName>New Contract in Place</fullName>
+                    <default>false</default>
+                    <label>New Contract in Place</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Invoice_Rule__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Bill_in_Arrears__c = True,&quot;&quot;, TEXT(Billing_Period__c) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Invoice Rule</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>January__c</fullName>
+        <externalId>false</externalId>
+        <label>January</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>July__c</fullName>
+        <externalId>false</externalId>
+        <label>July</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>June__c</fullName>
+        <externalId>false</externalId>
+        <label>June</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>KIS_Legacy_Account_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>KIS Legacy Account ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>KIS_Legacy_Billed_Customer_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>KIS Legacy Billed Customer ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>KIS_Legacy_Invoice_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>KIS Legacy Invoice ID</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>KIS_Legacy_Invoice_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>KIS Legacy Invoice Name</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>KIS_Legacy_Oracle_Invoice_ID_NB__c</fullName>
+        <externalId>false</externalId>
+        <label>KIS Legacy Oracle Invoice ID NB</label>
+        <length>24</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>KIS_Legacy_Oracle_Invoice_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>KIS Legacy Oracle Invoice ID</label>
+        <length>24</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Leap_Year__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+
+
+
+AND( 
+
+RIGHT(Sign_Up_Year__c, 2)&lt;&gt;&quot;00&quot;, 
+
+MOD(Sign_Up_Year_Value__c ,4)= 0),
+
+
+
+
+True, False)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Leap Year</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Line_Number1__c</fullName>
+        <description>created to capture line number info for Consensus and KIS NL</description>
+        <externalId>false</externalId>
+        <label>Line Number1</label>
+        <length>5</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Line_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos;1&apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Line Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Line__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos;LINE&apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Line</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>March__c</fullName>
+        <externalId>false</externalId>
+        <label>March</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>May__c</fullName>
+        <externalId>false</externalId>
+        <label>May</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Month_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>MONTH(TODAY())</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Month Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MRR__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(ispickval(Billing_Period__c, &apos;Monthly&apos;), Amount__c, 
+if(ispickval(Billing_Period__c, &apos;Annual&apos;), Amount__c/12, 
+if(ispickval(Billing_Period__c, &apos;Bi-Annual&apos;), Amount__c/6, 
+if(ispickval(Billing_Period__c, &apos;Quarterly&apos;), Amount__c/3,value(&apos;&apos;)))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>MRR</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NB_Description_Period__c</fullName>
+        <description>KIS BIlling - Suppress True = Account Name + Appends Month YYYY(NB) + adds the Custom Invoice Description value or Suppress False = Standard Description + Appends Month YYYY(NB) + adds the Custom Invoice Description value for NB Invoice Descriptions</description>
+        <externalId>false</externalId>
+        <formula>(Account__r.Name + &quot; - &quot; + DescMonthNB__c + &quot; &quot; + DescYearNB__c + &quot; - &quot; + Custom_Invoice_Description__c)</formula>
+        <inlineHelpText>KIS BIlling - Suppress True = Account Name + Appends Month YYYY(NB) + adds the Custom Invoice Description value or Suppress False = Standard Description + Appends Month YYYY(NB) + adds the Custom Invoice Description value for NB Invoice Descriptions</inlineHelpText>
+        <label>NB Invoice Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_Business_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>New Business Description</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>New_Business_Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(MONTH(Sign_Up_Date__c) = 1, &quot;January&quot;, 
+IF(MONTH(Sign_Up_Date__c) = 2, &quot;February&quot;, 
+IF(MONTH(Sign_Up_Date__c) = 3, &quot;March&quot;, 
+IF(MONTH(Sign_Up_Date__c) = 4, &quot;April&quot;, 
+IF(MONTH(Sign_Up_Date__c) = 5, &quot;May&quot;, 
+IF(MONTH(Sign_Up_Date__c) = 6, &quot;June&quot;, 
+IF(MONTH(Sign_Up_Date__c) = 7, &quot;July&quot;, 
+IF(MONTH(Sign_Up_Date__c) = 8, &quot;August&quot;, 
+IF(MONTH(Sign_Up_Date__c) = 9, &quot;September&quot;, 
+IF(MONTH(Sign_Up_Date__c) =10, &quot;October&quot;, 
+IF(MONTH(Sign_Up_Date__c) = 11, &quot;November&quot;, 
+IF(MONTH(Sign_Up_Date__c) = 12, &quot;December&quot;, &quot;Error&quot; 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+) 
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>New Business Month</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Non_Recurring__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(ispickval(Billing_Period__c,&apos;One-off&apos;),Amount__c,value(&apos;&apos;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Non Recurring</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>November__c</fullName>
+        <externalId>false</externalId>
+        <label>November</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>October__c</fullName>
+        <externalId>false</externalId>
+        <label>October</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Operating_Unit__c</fullName>
+        <description>This Value should equal the Org_ID; IE = 300000003194363, US=300000003339017, CA=300000003333073, UK=300000003194327,NL=300000003191499,</description>
+        <externalId>false</externalId>
+        <formula>CASE(LEFT(Account__r.Customer_ID2__c,3),
+&quot;KIE&quot;,&quot;300000003194363&quot;,
+&quot;KUS&quot;,&quot;300000003339017&quot;,
+&quot;KCA&quot;,&quot;300000003333073&quot;,
+&quot;KUK&quot;,&quot;300000003194327&quot;,
+&quot;KNL&quot;,&quot;300000003191499&quot;,
+null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>This Value should equal the Org_ID; IE = 300000003194363, US=300000003339017, CA=300000003333073, UK=300000003194327,NL=300000003191499,</inlineHelpText>
+        <label>Operating Unit</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Corp_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Corp_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Corp ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Opportunity lookup for consensus</description>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Invoices</relationshipLabel>
+        <relationshipName>ConsensusOpportunities</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Oracle_Invoice_ID_NB__c</fullName>
+        <externalId>false</externalId>
+        <label>Oracle Invoice ID NB</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Oracle_Invoice_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Oracle Invoice ID</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payment_Method__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT (Account__r.Payment_Method__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Payment Method</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payment_Terms__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Payment_Terms__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Payment Terms</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PO__c</fullName>
+        <externalId>false</externalId>
+        <label>PO</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Price_NB__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+
+
+ISPICKVAL( Billing_Period__c ,&quot;Monthly&quot;), 
+
+First_Month_Pro_Rated__c, 
+Amount__c
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Price NB</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Price__c</fullName>
+        <externalId>false</externalId>
+        <formula>Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>DR Offsite - KIS</fullName>
+                    <default>false</default>
+                    <label>DR Offsite - KIS</label>
+                </value>
+                <value>
+                    <fullName>DR Onsite - KIS</fullName>
+                    <default>false</default>
+                    <label>DR Onsite - KIS</label>
+                </value>
+                <value>
+                    <fullName>Enterprise Hybrid Backup Onsite - KIS - Asigra</fullName>
+                    <default>false</default>
+                    <label>Enterprise Hybrid Backup Onsite - KIS - Asigra</label>
+                </value>
+                <value>
+                    <fullName>Enterprise - KIS - Asigra</fullName>
+                    <default>false</default>
+                    <label>Enterprise - KIS - Asigra</label>
+                </value>
+                <value>
+                    <fullName>eVault</fullName>
+                    <default>false</default>
+                    <label>eVault</label>
+                </value>
+                <value>
+                    <fullName>Front-Server</fullName>
+                    <default>false</default>
+                    <label>Front-Server</label>
+                </value>
+                <value>
+                    <fullName>Managed Backup - KIS - Ahsay</fullName>
+                    <default>true</default>
+                    <label>Managed Backup - KIS - Ahsay</label>
+                </value>
+                <value>
+                    <fullName>Mobile - KIS</fullName>
+                    <default>false</default>
+                    <label>Mobile - KIS</label>
+                </value>
+                <value>
+                    <fullName>Reselling Data Backup Equipment</fullName>
+                    <default>false</default>
+                    <label>Reselling Data Backup Equipment</label>
+                </value>
+                <value>
+                    <fullName>Send2Cloud</fullName>
+                    <default>false</default>
+                    <label>Send2Cloud</label>
+                </value>
+                <value>
+                    <fullName>Server Colocation - KIS</fullName>
+                    <default>false</default>
+                    <label>Server Colocation - KIS</label>
+                </value>
+                <value>
+                    <fullName>Server Hosting - KIS</fullName>
+                    <default>false</default>
+                    <label>Server Hosting - KIS</label>
+                </value>
+                <value>
+                    <fullName>TSM Cloud Backup</fullName>
+                    <default>false</default>
+                    <label>TSM Cloud Backup</label>
+                </value>
+                <value>
+                    <fullName>Veeam Cloud Connect</fullName>
+                    <default>false</default>
+                    <label>Veeam Cloud Connect</label>
+                </value>
+                <value>
+                    <fullName>Veeam DRAAS</fullName>
+                    <default>false</default>
+                    <label>Veeam DRAAS</label>
+                </value>
+                <value>
+                    <fullName>Veeam - KIS</fullName>
+                    <default>false</default>
+                    <label>Veeam - KIS</label>
+                </value>
+                <value>
+                    <fullName>Workforce - KIS</fullName>
+                    <default>false</default>
+                    <label>Workforce - KIS</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Purchase_Order_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Purchase Order Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Q1__c</fullName>
+        <externalId>false</externalId>
+        <formula>January__c  +  February__c  +  March__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Q1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Q2__c</fullName>
+        <externalId>false</externalId>
+        <formula>April__c +  May__c +  June__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Q2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Q3__c</fullName>
+        <externalId>false</externalId>
+        <formula>July__c + August__c + September__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Q3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Q4__c</fullName>
+        <externalId>false</externalId>
+        <formula>October__c +  November__c +  December__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Q4</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quantity__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos;1&apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Quantity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Segment1__c</fullName>
+        <description>Company Code is set by Oracle Billing Team; KIE = 705,  KUS = 105, KCA = 815, KUK = 625, KNL = 722</description>
+        <externalId>false</externalId>
+        <formula>IF( Account__r.RecordType.Name ==&apos;Consensus: Account&apos;, &quot;100&quot;, 
+CASE(LEFT(Account__r.Customer_ID2__c,3),
+&quot;KIE&quot;,&quot;705&quot;,
+&quot;KUS&quot;,&quot;105&quot;,
+&quot;KCA&quot;,&quot;815&quot;,
+&quot;KUK&quot;,&quot;625&quot;,
+&quot;KNL&quot;,&quot;722&quot;,
+null))</formula>
+        <inlineHelpText>Company Code is set by Oracle Billing Team; KIE = 705,  KUS = 105, KCA = 815, KUK = 625, KNL = 722</inlineHelpText>
+        <label>Segment1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Segment2__c</fullName>
+        <externalId>false</externalId>
+        <formula>LPAD(TEXT(0), 3, &apos;0&apos; )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Segment2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Segment3__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Account__r.RecordType.Name ==&apos;Consensus: Account&apos;, &quot;4100&quot;, 
+CASE( Billing_Period__c ,
+&apos;Annual&apos;, &quot;41006&quot;,
+&apos;Bi-Annual&apos;,&quot;41006&quot;,
+&apos;Monthly&apos;,&quot;41001&quot;,
+&apos;Quarterly&apos;,&quot;41001&quot;,
+&apos;One-off&apos;,&quot;41001&quot;,&quot;&quot;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Segment3</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Segment4__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Account__r.RecordType.Name ==&apos;Consensus: Account&apos;, &apos;180&apos;, &apos;730&apos;)</formula>
+        <label>Segment4</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Segment5__c</fullName>
+        <externalId>false</externalId>
+        <formula>LPAD(TEXT(0), 3, &apos;0&apos; )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Segment5</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>September__c</fullName>
+        <externalId>false</externalId>
+        <label>September</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Signup_Month_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Month( Sign_Up_Date__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Signup Month Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sign_Up_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Sign Up Date</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sign_Up_Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(MONTH(Sign_Up_Date__c) = 1, &quot;January&quot;,
+IF(MONTH(Sign_Up_Date__c) = 2, &quot;February&quot;,
+IF(MONTH(Sign_Up_Date__c) = 3, &quot;March&quot;,
+IF(MONTH(Sign_Up_Date__c) = 4, &quot;April&quot;,
+IF(MONTH(Sign_Up_Date__c) = 5, &quot;May&quot;,
+IF(MONTH(Sign_Up_Date__c) = 6, &quot;June&quot;,
+IF(MONTH(Sign_Up_Date__c) = 7, &quot;July&quot;,
+IF(MONTH(Sign_Up_Date__c) = 8, &quot;August&quot;,
+IF(MONTH(Sign_Up_Date__c) = 9, &quot;September&quot;,
+IF(MONTH(Sign_Up_Date__c) =10, &quot;October&quot;,
+IF(MONTH(Sign_Up_Date__c) = 11, &quot;November&quot;,
+IF(MONTH(Sign_Up_Date__c) = 12, &quot;December&quot;, &quot;Error&quot;
+)
+)
+)
+)
+)
+)
+)
+)
+)
+)
+)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sign Up Month</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sign_Up_Year_Value__c</fullName>
+        <externalId>false</externalId>
+        <formula>YEAR( Sign_Up_Date__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sign Up Year Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sign_Up_Year__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(Year(Sign_Up_Date__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sign Up Year</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SOA_Integration_Status__c</fullName>
+        <description>created attribute to capture SOA integration status for record sync.</description>
+        <externalId>false</externalId>
+        <label>SOA Integration Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Ready To Process</fullName>
+                    <default>false</default>
+                    <label>Ready To Process</label>
+                </value>
+                <value>
+                    <fullName>Processed</fullName>
+                    <default>false</default>
+                    <label>Processed</label>
+                </value>
+                <value>
+                    <fullName>Errored</fullName>
+                    <default>false</default>
+                    <label>Errored</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SOA_Response__c</fullName>
+        <description>created to capture soa response from Oracle fusion</description>
+        <externalId>false</externalId>
+        <label>SOA Response</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+                <value>
+                    <fullName>Suspended</fullName>
+                    <default>false</default>
+                    <label>Suspended</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Suppress_Standard_Invoice_Description__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>KIS - Invoice - If check box is Checked the Standard Description will NOT be added to Invoice  **Default Value is UnChecked**</description>
+        <externalId>false</externalId>
+        <inlineHelpText>KIS - Invoice - If check box is Checked the Standard Description will NOT be added to Invoice  **Default Value is UnChecked**</inlineHelpText>
+        <label>Suppress - Standard Invoice Description</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Text_BrdateNB__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(TRX_Date_Calc__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Text:BrdateNB</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Text_Brdate__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Billing_Run_Date__c)</formula>
+        <label>Text:Brdate</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Invoice_Amount_NB__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+
+
+ISPICKVAL( Billing_Period__c ,&quot;Monthly&quot;), 
+
+First_Month_Pro_Rated__c, 
+Amount__c
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Invoice Amount NB</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Invoice_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Invoice Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transaction_Type_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Transaction Type Number</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRX_Date_Calc_NewMonth__c</fullName>
+        <description>Calculation for Oracle Invoice ID Billing run date updating.</description>
+        <externalId>false</externalId>
+        <formula>DATE(IF(MONTH(Billing_Run_Date__c ) = 12, YEAR(Billing_Run_Date__c ) + 1, YEAR(Billing_Run_Date__c )),
+IF(MONTH(Billing_Run_Date__c ) = 12, 1, MONTH(Billing_Run_Date__c ) + 1),
+1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TRX_Date_Calc_NewMonth</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>TRX_Date_Calc__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(MONTH( Billing_Run_Date__c ) = 12,DATE(YEAR( Billing_Run_Date__c),MONTH(Billing_Run_Date__c),1)-1,
+DATE(YEAR( Billing_Run_Date__c),MONTH(Billing_Run_Date__c),1)-1 )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TRX Date Calc</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>TRX_Date_Oracle_Bill__c</fullName>
+        <description>Converts TRX Date Calc to DD-MM-YYYY</description>
+        <externalId>false</externalId>
+        <formula>TEXT(DAY( TRX_Date_Calc__c ))+&quot;-&quot;
++TEXT(MONTH(TRX_Date_Calc__c ))+&quot;-&quot;
++TEXT(YEAR(TRX_Date_Calc__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Converts TRX Date Calc to DD-MM-YYYY</inlineHelpText>
+        <label>TRX_Date_Oracle_Bill</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TRX_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(MONTH( TRX_Date_Calc__c ))+&quot;/&quot;
++TEXT(DAY(TRX_Date_Calc__c ))+&quot;/&quot;
++TEXT(YEAR(TRX_Date_Calc__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TRX Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Unit_of_Measure__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos;EA&apos;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Unit of Measure</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Updated_Invoice_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Updated Invoice ID</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Usage_GB__c</fullName>
+        <externalId>false</externalId>
+        <label>Usage (GB)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VAT_Exempt__c</fullName>
+        <externalId>false</externalId>
+        <formula>If( Account__r.VAT_Exempt__c = TRUE, &apos;True&apos;, &apos;False&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>VAT Exempt</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VAT_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.VAT_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>VAT Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Account__c</columns>
+        <columns>Billed_Customer_ID__c</columns>
+        <columns>Bill_To__c</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>Header_Attribute4__c</columns>
+        <columns>KIS_Legacy_Account_ID__c</columns>
+        <columns>Oracle_Invoice_ID__c</columns>
+        <columns>Billing_Period__c</columns>
+        <columns>Billing_Period_NB__c</columns>
+        <columns>Amount__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Invocies_Commissions_Test_View</fullName>
+        <columns>NAME</columns>
+        <columns>Amount__c</columns>
+        <columns>Bill_To__c</columns>
+        <columns>Bill_To_Partner__c</columns>
+        <columns>Commission_Due__c</columns>
+        <columns>Commission_Due_Q2__c</columns>
+        <columns>Commission_Due_Q3__c</columns>
+        <columns>Commission_Due_Q4__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Invocies + Commissions Test View</label>
+        <language>en_US</language>
+        <sharedTo>
+            <roleAndSubordinates>KeepItSafe_Managing_Director</roleAndSubordinates>
+            <roleAndSubordinates>SystemAdministrators</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>KIS_US_Invoices</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Amount__c</columns>
+        <columns>Bill_To__c</columns>
+        <columns>Bill_To_Partner__c</columns>
+        <columns>Sign_Up_Date__c</columns>
+        <columns>Billing_Period__c</columns>
+        <columns>Billing_Period_NB__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Header_Attribute4__c</field>
+            <operation>startsWith</operation>
+            <value>KUS-</value>
+        </filters>
+        <label>KIS US Invoices</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>KeepItSafe</group>
+            <group>KeepItSafe_US_Group</group>
+        </sharedTo>
+    </listViews>
+    <validationRules>
+        <fullName>Do_Not_Bill</fullName>
+        <active>true</active>
+        <errorConditionFormula>Account__r.Do_Not_Bill__c =True</errorConditionFormula>
+        <errorDisplayField>Account__c</errorDisplayField>
+        <errorMessage>You cannot create an Invoice because &quot;Do Not Bill&quot; is checked for this account.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Invoice_Reason_Status_Active</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+NOT(ISPICKVAL( Invoice_Reason__c , &quot;&quot;)),
+ISPICKVAL( Status__c ,&quot;Active&quot;)
+)</errorConditionFormula>
+        <errorDisplayField>Invoice_Reason__c</errorDisplayField>
+        <errorMessage>You cannot choose an Invoice Reason if Status is &quot;Active&quot;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Invoice_Reason_Status_Inactive</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ISPICKVAL( Invoice_Reason__c ,&quot;&quot;),
+ISPICKVAL( Status__c ,&quot;Inactive&quot;)
+)</errorConditionFormula>
+        <errorDisplayField>Invoice_Reason__c</errorDisplayField>
+        <errorMessage>If Status is &quot;Inactive&quot; you must choose an Invoice Reason.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>No_Invoice_for_KIS_IC</fullName>
+        <active>false</active>
+        <description>Does not allow an Invoice to be created for KeepItSafeIC record type.</description>
+        <errorConditionFormula>Account__r.RecordType.DeveloperName = &quot;KeepItSafeIC&quot;</errorConditionFormula>
+        <errorMessage>You cannot create an Invoice for a KeepItSafe IC Account.</errorMessage>
+    </validationRules>
+</CustomObject>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage__c</fullName>
+    <description>Denotes which stage of the acquisition process the Target Company is currently in.</description>
+    <externalId>false</externalId>
+    <label>Stage</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Inactive</fullName>
+                <default>true</default>
+                <label>Inactive</label>
+            </value>
+            <value>
+                <fullName>1- Researching</fullName>
+                <default>false</default>
+                <label>1- Researching</label>
+            </value>
+            <value>
+                <fullName>2 - Preliminary Diligence and Valuation</fullName>
+                <default>false</default>
+                <label>2 - Preliminary Diligence and Valuation</label>
+            </value>
+            <value>
+                <fullName>3 - Negotiating Term Sheet</fullName>
+                <default>false</default>
+                <label>3 - Negotiating Term Sheet</label>
+            </value>
+            <value>
+                <fullName>4 - Due Diligence</fullName>
+                <default>false</default>
+                <label>4 - Due Diligence</label>
+            </value>
+            <value>
+                <fullName>5 - Drafting Formal Agreement</fullName>
+                <default>false</default>
+                <label>5 - Drafting Formal Agreement</label>
+            </value>
+            <value>
+                <fullName>6 - Signed and Closed</fullName>
+                <default>false</default>
+                <label>6 - Signed and Closed</label>
+            </value>
+            <value>
+                <fullName>7 - Integraton</fullName>
+                <default>false</default>
+                <label>7 - Integraton</label>
+            </value>
+            <value>
+                <fullName>Completed</fullName>
+                <default>false</default>
+                <label>Completed</label>
+            </value>
+            <value>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+                <label>Not Interested</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

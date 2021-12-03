@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account__c</fullName>
+    <description>Voice - WCSA - User Account (Transformed value) of System Phone Numbers of User Level Accounts</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Voice - WCSA - User Account (Transformed value) of System Phone Numbers of User Level Accounts</inlineHelpText>
+    <label>User Account</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipName>Voice_User_System_Phone_Numbers</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>true</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KIS__c</fullName>
+    <description>KIS-(max 7digit auto number) Starts at 100,000</description>
+    <externalId>false</externalId>
+    <formula>(&apos;1&apos; &amp;Right(Id, 6))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>KIS-(max 7digit auto number) Starts at 100,000</inlineHelpText>
+    <label>KIS</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

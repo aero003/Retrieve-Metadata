@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Note_Body__c</fullName>
+    <description>Voice - WCSA - Account Note Body Text (Up to 8,000 characters)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Voice - WCSA - Account Note Body Text (Up to 8,000 characters)</inlineHelpText>
+    <label>Note: Body</label>
+    <length>8000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>12</visibleLines>
+</CustomField>

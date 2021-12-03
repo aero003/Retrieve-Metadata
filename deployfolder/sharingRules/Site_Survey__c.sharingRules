@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>KIS_SIte_Surveys</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>KIS SIte Surveys</label>
+        <sharedTo>
+            <roleAndSubordinates>KeepItSafe_Managing_Director</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>KeepItSafe_Managing_Director</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

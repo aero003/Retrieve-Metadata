@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Presupuesto</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Presupuestos</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Admins Quote Page Layout</layout>
+        <sections>
+            <label>Texto adicional</label>
+            <section>Additional Text</section>
+        </sections>
+        <sections>
+            <label>Información de dirección</label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label>Información de contrato</label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Información de descuento</label>
+            <section>Discount Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Docusign Fields</section>
+        </sections>
+        <sections>
+            <label>Información de socio</label>
+            <section>Partner Information</section>
+        </sections>
+        <sections>
+            <label>Opciones de presupuesto</label>
+            <section>Quote Options</section>
+        </sections>
+        <sections>
+            <label>Volviendo a calcular</label>
+            <section>Recalculating</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Approved Quote Layout</layout>
+        <sections>
+            <label>Texto adicional</label>
+            <section>Additional Text</section>
+        </sections>
+        <sections>
+            <label>Información de dirección</label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label>Información de contrato</label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label>Vínculos personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Información de descuento</label>
+            <section>Discount Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Docusign Fields</section>
+        </sections>
+        <sections>
+            <label>Información de socio</label>
+            <section>Partner Information</section>
+        </sections>
+        <sections>
+            <label>Opciones de presupuesto</label>
+            <section>Quote Options</section>
+        </sections>
+        <sections>
+            <label>Volviendo a calcular</label>
+            <section>Recalculating</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Open Quotes</layout>
+        <sections>
+            <label></label>
+            <section>Additional Text</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Discount Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>DocuSign Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Partner Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote Options</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Recalculating</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Número de presupuesto</nameFieldLabel>
+    <quickActions>
+        <label></label>
+        <name>New_Quote</name>
+    </quickActions>
+</CustomObjectTranslation>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cotação</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cotações</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>Admins Quote Page Layout</layout>
+        <sections>
+            <label>Texto adicional</label>
+            <section>Additional Text</section>
+        </sections>
+        <sections>
+            <label>Informação de endereço</label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label>Informação do contrato</label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informação do desconto</label>
+            <section>Discount Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Docusign Fields</section>
+        </sections>
+        <sections>
+            <label>Informação do parceiro</label>
+            <section>Partner Information</section>
+        </sections>
+        <sections>
+            <label>Opções de cotação</label>
+            <section>Quote Options</section>
+        </sections>
+        <sections>
+            <label>Recalculando</label>
+            <section>Recalculating</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Approved Quote Layout</layout>
+        <sections>
+            <label>Texto adicional</label>
+            <section>Additional Text</section>
+        </sections>
+        <sections>
+            <label>Informação de endereço</label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label>Informação do contrato</label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informação do desconto</label>
+            <section>Discount Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Docusign Fields</section>
+        </sections>
+        <sections>
+            <label>Informação do parceiro</label>
+            <section>Partner Information</section>
+        </sections>
+        <sections>
+            <label>Opções de cotação</label>
+            <section>Quote Options</section>
+        </sections>
+        <sections>
+            <label>Recalculando</label>
+            <section>Recalculating</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Open Quotes</layout>
+        <sections>
+            <label></label>
+            <section>Additional Text</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Discount Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>DocuSign Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Partner Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quote Options</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Recalculating</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Número da cotação</nameFieldLabel>
+    <quickActions>
+        <label></label>
+        <name>New_Quote</name>
+    </quickActions>
+</CustomObjectTranslation>

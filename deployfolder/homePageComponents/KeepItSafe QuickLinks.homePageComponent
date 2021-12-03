@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <links>KIS_IE_OBS_J2_Server</links>
+    <links>Help_Ahsay_com</links>
+    <links>KIS_US_OBS_J2_Server</links>
+    <links>CheckerBot</links>
+    <links>Password_Change_OBS</links>
+    <links>DRT</links>
+    <links>UPS</links>
+    <links>KIS_Ireland_Website</links>
+    <links>KeepItSafe_US</links>
+    <links>Confluence</links>
+    <links>Google</links>
+    <pageComponentType>links</pageComponentType>
+</HomePageComponent>

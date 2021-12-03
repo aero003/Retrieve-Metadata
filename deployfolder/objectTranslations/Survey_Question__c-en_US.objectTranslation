@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Survey Question</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Survey Questions</value>
+    </caseValues>
+    <layouts>
+        <layout>Survey Question Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <fields>
+        <label></label>
+        <name>Choices__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>OrderNumber__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Question__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Required__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Survey__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Total_Responses__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Free Text</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multi-Select--Vertical</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Select--Horizontal</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Select--Vertical</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requested_By__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>KIS - Please select the name of your colleague who requested this Site Survey.  This will help automatically send a completion email and update the status in reports.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>KIS - Please select the name of your colleague who requested this Site Survey.  This will help automatically send a completion email and update the status in reports.</inlineHelpText>
+    <label>Requested By:</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <filterItems>
+            <field>User.Profile.Name</field>
+            <operation>startsWith</operation>
+            <value>Keep</value>
+        </filterItems>
+        <filterItems>
+            <field>User.Profile.Name</field>
+            <operation>contains</operation>
+            <value>admin</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Site_Surveys</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

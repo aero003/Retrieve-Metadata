@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Voice - Ledgers - Company for Account History</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>V: Ledger</label>
+    <nameField>
+        <displayFormat>VCL-{0000000}</displayFormat>
+        <label>Voice Company Ledger</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>V: Ledgers</pluralLabel>
+    <searchLayouts></searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Account__c</fullName>
+        <description>Voice - Ledger is Owned by this Account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Voice - Ledger is Owned by this Account</inlineHelpText>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Voice_Ledgers</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>CC_Number__c</fullName>
+        <description>Voice - Ledger - CC Number for the Transaction</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Voice - Ledger - CC Number for the Transaction</inlineHelpText>
+        <label>CC Number</label>
+        <length>6</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CC_Type__c</fullName>
+        <description>Voice - WCSA - Shows CC Type if Available</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Voice - WCSA - Shows CC Type if Available</inlineHelpText>
+        <label>CC Type</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Charges_USD__c</fullName>
+        <description>Voice - Ledger - Transaction Charges Amount in USD from WCSA</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Voice - Ledger - Transaction Charges Amount in USD from WCSA</inlineHelpText>
+        <label>Charges (USD)</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CS_Rep_ID__c</fullName>
+        <description>Voice - WCSA - Displays the Name of the CS Rep and the CSUSERKEY. Ex. “Hamlet Bernard (310)”</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Voice - WCSA - Displays the Name of the CS Rep and the CSUSERKEY. Ex. “Hamlet Bernard (310)”</inlineHelpText>
+        <label>CS Rep ID</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date__c</fullName>
+        <description>Voice - Ledger - Date Value for the Entry from WCSA</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Voice - Ledger - Date Value for the Entry from WCSA</inlineHelpText>
+        <label>Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LedgerID__c</fullName>
+        <description>Voice - WCSA - Matching Field for Ledger records</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Voice - WCSA - Matching Field for Ledger records</inlineHelpText>
+        <label>LedgerID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payments_USD__c</fullName>
+        <description>Voice - Ledger - Payment amount for the Transaction from WCSA</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Voice - Ledger - Payment amount for the Transaction from WCSA</inlineHelpText>
+        <label>Payments (USD)</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transaction_Detail__c</fullName>
+        <description>Voice - Ledger - Transaction Detail information text from WCSA</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Voice - Ledger - Transaction Detail information text from WCSA</inlineHelpText>
+        <label>Transaction Detail</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transaction_ID__c</fullName>
+        <description>Voice - Ledger - Transaction ID for the Ledger Entry from WCSA</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Voice - Ledger - Transaction ID for the Ledger Entry from WCSA</inlineHelpText>
+        <label>Transaction ID</label>
+        <length>25</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <description>Voice - Ledger - Transaction Type from WCSA</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Voice - Ledger - Transaction Type from WCSA</inlineHelpText>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Billing</fullName>
+                    <default>false</default>
+                    <label>Billing</label>
+                </value>
+                <value>
+                    <fullName>CC Payment Reversal</fullName>
+                    <default>false</default>
+                    <label>CC Payment Reversal</label>
+                </value>
+                <value>
+                    <fullName>Charge Reversal</fullName>
+                    <default>false</default>
+                    <label>Charge Reversal</label>
+                </value>
+                <value>
+                    <fullName>Late Fee</fullName>
+                    <default>false</default>
+                    <label>Late Fee</label>
+                </value>
+                <value>
+                    <fullName>Payment</fullName>
+                    <default>false</default>
+                    <label>Payment</label>
+                </value>
+                <value>
+                    <fullName>Write Off</fullName>
+                    <default>false</default>
+                    <label>Write Off</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+</CustomObject>

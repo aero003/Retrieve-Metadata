@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coaching_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Coaching Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Side By Side</fullName>
+                <default>false</default>
+                <label>Side By Side</label>
+            </value>
+            <value>
+                <fullName>Live Feedback</fullName>
+                <default>false</default>
+                <label>Live Feedback</label>
+            </value>
+            <value>
+                <fullName>Remote Call Listening</fullName>
+                <default>false</default>
+                <label>Remote Call Listening</label>
+            </value>
+            <value>
+                <fullName>Dial In &amp; Feedback</fullName>
+                <default>false</default>
+                <label>Dial In &amp; Feedback</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

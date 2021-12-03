@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Banking Relationship</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Banking Relationships</value>
+    </caseValues>
+    <layouts>
+        <layout>Engagement Layout</layout>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <fields>
+        <label></label>
+        <name>Company__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Date_Introduced__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Investment_Bank__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Primary_Contact__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Relationship_Type__c</name>
+        <picklistValues>
+            <masterLabel>Introducing Idea</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Placement Agent</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Representing Our Company</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Representing Target</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

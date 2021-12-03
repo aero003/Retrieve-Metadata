@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bill_in_Arrears__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>If the Invoice is to be billed in arrears, then check the box.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If the Invoice is to be billed in arrears, then check the box.</inlineHelpText>
+    <label>Bill in Arrears</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

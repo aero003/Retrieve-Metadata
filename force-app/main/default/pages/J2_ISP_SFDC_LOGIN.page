@@ -1,0 +1,270 @@
+<apex:page showheader="false" sidebar="false" standardstylesheets="false" doctype="html-5.0" language="en-US">
+    <apex:includescript value="{!URLFOR($Resource.J2_ISP_Tool,'/js/jquery.min.js')}" />
+    <apex:includescript value="{!URLFOR($Resource.J2_ISP_Tool,'/js/bootstrap.min.js')}" />
+    <apex:includescript value="{!URLFOR($Resource.J2_ISP_Tool,'/js/jquery.query-object.js')}" />
+    <apex:includescript value="{!URLFOR($Resource.J2_ISP_Tool,'/js/jquery.cookie.js')}" />
+    <apex:includescript value="/soap/ajax/26.0/connection.js" />
+    <apex:includescript value="/soap/ajax/15.0/apex.js" />
+
+    <script>
+        $(function () {
+            //save url of api calls in data
+            //$("body").data("apiurl", "https://billapp-ui1.test.j2noc.com/faxforce/");
+            $("body").data("apiurl", "{!$Setup.J2_ISP_ToolCustomSetting__c.J2_ISP_ApiEndpoint__c}");
+            $("body").data("faxforceEnvironment", "{!$Setup.J2_ISP_ToolCustomSetting__c.J2_FaxForce_Environment__c}");
+            
+            $("body").data("sfAccountid","{!$CurrentPage.parameters.id}");
+            $("body").data("atfsurl", "{!$Setup.J2_ISP_ToolCustomSetting__c.J2_ISP_ATFSendpoint__c}");
+            if("{!$User.ISP_CS_TOOL_TOKEN__c}" !== null){
+               $("body").data("ispuserToken","{!$User.ISP_CS_TOOL_TOKEN__c}");
+            } else {
+                $("body").data("ispuserToken","null");
+            }
+            
+
+            onClickbtnisplogin();
+          $("#txtispusername,#txtisppassword").off('keypress').on('keypress', function(e) {
+            if(e.keyCode==13){
+                 $('#btnisplogin').trigger('click');
+             }
+            });
+            txtKeyUp();
+            loginFormValid();
+            $("#DivWaitprocess").hide();
+            runGetAtsApiFirstTime();
+        });
+        function runGetAtsApiFirstTime(){
+            getAjaxFunc("health",atsApiHealthCheck);
+        }
+        function atsApiHealthCheck(data, issuccess){
+            if(issuccess){
+                console.log("success");
+
+            } else{
+                console.log("Failure");
+            }
+
+        }
+
+        function onClickbtnisplogin(){
+             $("#btnisplogin").off("click").on("click",function(){
+                turnoffIspLoginError();
+                if(loginFormValid){
+                    var data = '{\"user_name\":\"' + $("#txtispusername").val() + '" ,\"password\":\"' + b64EncodeUnicode($("#txtisppassword").val()) + '\"}';
+                    console.log('request data : ' + data);
+                    postAjaxFunc("authtoken/token?provider=ldap&sourceApp=FAXFORCE", data, ispLoginSuccessFunc);
+                }
+            });
+        }
+
+        function ispLoginSuccessFunc(data, issuccess) {
+            if (issuccess) {
+                if (data.token) {
+                    console.log(data.token);
+                    updateUserToken(data.token);
+                    
+                     postAuditLoginAjaxFunc("/users/login/","","");
+                    
+                    
+                }
+                else {
+                     $("div[id=lblErrorIspLogin]").html("No token found.").show();
+                }
+            }
+            else {
+                if(data.responseJSON && data.responseJSON.errors && data.responseJSON.errors[0]){
+                    if (data.responseJSON.errors[0].user_message) {
+                        $("div[id=lblErrorIspLogin]").html(data.responseJSON.errors[0].user_message).show();
+                    } else if (data.responseJSON.errors[0].developer_message) {
+                        $("div[id=lblErrorIspLogin]").html(data.responseJSON.errors[0].developer_message).show();
+                    }else {
+                        $("div[id=lblErrorIspLogin]").html(" Service Unavailable - Please try again later").show();
+                    }
+                } else {
+                    $("div[id=lblErrorIspLogin]").html(" Service Unavailable - Please try again later").show();
+                }
+            }
+        }
+
+        function txtKeyUp(){
+             $("#txtispusername").keyup(function(){
+                loginFormValid();
+            });
+            $("#txtisppassword").keyup(function(){
+                loginFormValid();
+            });
+        }
+
+        function checkCaps(b) {
+            var a = 0, c = !1, a = document.all ? b.keyCode : b.which, c = b.shiftKey; b = document.getElementById("pwcaps"); var d = 65 <= a && 90 >= a, a = 97 <= a && 122 >= a; if (d && !c || a && c) b.style.display = "block"; else if (a && !c || d && c) b.style.display = "none"
+        }
+
+        function updateUserToken(usertoken){
+            sforce.connection.sessionId = "{!$Api.Session_ID}";
+            var theUser = new sforce.SObject("user");
+
+            theUser.Id = "{!$User.Id}";
+            console.log("userid " + theUser.Id);
+            theUser.ISP_CS_TOOL_TOKEN__c = usertoken;
+            theUser.ISP_CS_TOOL_LDAP_USERNAME__c = $("#txtispusername").val();
+            var updateResult = sforce.connection.update([theUser]);
+            if(updateResult[0].getBoolean("success")){
+                $.cookie("ispusertoken", usertoken, { path  : '/', });
+                $.cookie("ispldapusername", $("#txtispusername").val(), { path  : '/', });
+                window.parent.$('#btnhdnSetUserToken').trigger('click');
+            } else {
+                $("div[id=lblErrorIspLogin]").html("Error in Updating User Token in Salesforce DB.").show();
+            }
+        }
+        function b64EncodeUnicode(str) { return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, function(match, p1) { return String.fromCharCode('0x' + p1); })); }
+
+        var loginFormValid = function(){
+            var ispControls = $("input[id*=isp]");
+            var contactHasError = false;
+
+            ispControls.each(function(){
+                if(!this.checkValidity()){
+                    contactHasError = true;
+                    //$(this).addClass("error");
+                }
+            });
+            if (contactHasError) {
+                $("#btnisplogin").prop("disabled", true);
+                $("#btnisplogin").addClass("disabled");
+                return false;
+            } else {
+                $("#btnisplogin").prop("disabled", false);
+                $("#btnisplogin").removeClass("disabled");
+                return true;
+            }
+        }
+
+        var turnoffIspLoginError = function(){
+            $("div[id=lblErrorIspLogin]").html("").show();
+        }
+
+        function postAjaxFunc(urlendpoints, data, successCallback) {
+            $.ajax({
+                type: "POST",
+                url: $("body").data("atfsurl") + urlendpoints,
+                dataType: "json",
+                contentType: "application/json",
+                data: data,
+                success: function (data) {
+                    if (typeof successCallback === "function") {
+                        successCallback(data, true);
+                    }
+                },
+                error: function (e) {
+                    if (typeof successCallback === "function") {
+                        successCallback(e, false);
+                    }
+                }
+            });
+        }
+        
+        function postAuditLoginAjaxFunc(urlendpoints, data, successCallback) {
+            $.ajax({
+                type: "POST",
+                url: $("body").data("apiurl") + urlendpoints,
+                dataType: "json",
+                headers: { 'Authorization': 'Bearer ' + $.cookie("ispusertoken") },
+                contentType: "application/json",
+                data: data,
+                success: function (data) {
+                    if (typeof successCallback === "function") {
+                        successCallback(data, true);
+                    }
+                },
+                error: function (e) {
+                    if (typeof successCallback === "function") {
+                        successCallback(e, false);
+                    }
+                }
+            });
+        }
+
+        function getAjaxFunc(urlendpoints, successCallback) {
+            $.ajax({
+                type: "GET",
+                url: $("body").data("atfsurl") + urlendpoints,
+                dataType: "json",
+                async: true,
+                success: function (data) {
+                    if (typeof successCallback === "function") {
+                            successCallback(data, true);
+                    }
+                },
+                error: function (e) {
+                    if (typeof successCallback === "function") {
+                        successCallback(e, false);
+                    }
+                }
+            });
+        }
+
+        $(document).ajaxStart(function () {
+            $("#DivWaitprocess").show();
+        });
+        $(document).ajaxStop(function () {
+                if ($.active === 0) {
+                    setTimeout(function () {
+                        $("#DivWaitprocess").hide();
+                    }, 1300);
+                }
+
+
+        });
+
+    </script>
+    <apex:form >
+        <apex:stylesheet value="{!URLFOR($Resource.J2_ISP_Tool,'/style/style.css')}" />
+        <apex:stylesheet value="{!URLFOR($Resource.J2_ISP_Tool,'/style/sfdc_login.css')}" />
+
+        <body class="background-login-color">
+            <div id="DivWaitprocess" class="LockOnSearch">
+                <div class="ajax-loader text-center">
+                    <apex:image url="{!URLFOR($Resource.J2_ISP_Tool,'images/InProcess.gif')}" />
+                </div>
+            </div>
+            <div id="main">
+                <div id="wrapper">
+                    <div class="standard_logo_wrapper mb24" id="logo_wrapper">
+                        <h1 style="height: 100%; display: table-cell; vertical-align: bottom;">
+                            <apex:image url="{!URLFOR($Resource.J2_ISP_Tool,'images/logo198.png')}" styleclass="standard_logo" alt="Salesforce"
+                                        id="logo" />
+                        </h1>
+                    </div>
+                    <div class="mb24" id="header" style="display: none;">Choose a Username</div>
+                    <div id="content" style="display: block;">
+                        <div style="display: none;" id="chooser">
+                            <div style="display:none;" id="chooser_error" class="loginError"> Incorrect username</div>
+                        </div>
+                        <div id="theloginform" style="display: block;">
+                            <div>
+                                <div class="inputgroup" id="usernamegroup">
+                                    <label class="label" for="username">Username</label>
+                                    <div id="username_container">
+                                        <input type="text" id="txtispusername" name="username" class="input r4 wide mb16 mt8 username" style="display: block;" required="required" />
+                                    </div>
+                                </div>
+                                <label class="label" for="password">Password</label>
+                                <input type="password" autocomplete="off" required="required" onkeypress="checkCaps(event)" name="pw" id="txtisppassword"
+                                       class="input r4 wide mb16 mt8 password" />
+                                <div style="display:none" class="mb16" id="pwcaps">
+                                    <apex:image url="{!URLFOR($Resource.J2_ISP_Tool,'images/capslock_blue.png')}" width="12" alt="Caps Lock is on." id="pwcapsicon" />Caps Lock is on.
+                                </div>
+                                <input type="button" value="Log in to Faxforce" name="Login" id="btnisplogin" class="button r4 wide primary" />
+                                <div class="w0 pr ln3 p16 remember">
+                                    <div>
+                                        <div id="lblErrorIspLogin" class="errorMsg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expected_Close_Date_TermSheet</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL( Stage__c ,&quot;3 - Negotiating Term Sheet&quot;), Expected_Close_Date__c    =   null)</errorConditionFormula>
+    <errorMessage>MUST HAVE EXPECTED CLOSE DATE FOR THIS STAGE</errorMessage>
+</ValidationRule>

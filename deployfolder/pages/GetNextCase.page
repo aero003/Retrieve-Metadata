@@ -1,0 +1,22 @@
+<apex:page tabStyle="Get_Next_Case__tab" controller="GetNextCaseController" action="{!CheckParameter}">
+    <apex:sectionHeader title="Get Next Case"/>
+    <apex:form >
+        <apex:pageblock >
+            <apex:pageMessages ></apex:pageMessages>
+            <apex:outputLabel value="{!debug}"/>
+            <apex:pageblockButtons location="bottom">
+                <apex:commandButton value="Get Next" action="{!GetNextCase}"/>
+                <apex:commandButton value="Cancel" action="{!GetNextCancel}" immediate="true"/>
+            </apex:pageblockButtons>
+            <apex:pageblockSection >
+                <apex:pageblockSectionItem >
+                    <apex:outputLabel value="Select queue to get next case from:" for="Queue"/>
+                    <apex:selectList id="Queue" value="{!QueueId}" size="1" required="true">
+                        <apex:selectOptions value="{!Queues}"/>
+                    </apex:selectList>
+                </apex:pageblockSectionItem>
+                <apex:outputText value="{!debug}"></apex:outputText>
+            </apex:pageblockSection>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

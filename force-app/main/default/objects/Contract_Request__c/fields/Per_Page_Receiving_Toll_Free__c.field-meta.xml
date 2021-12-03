@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Per_Page_Receiving_Toll_Free__c</fullName>
+    <description>SFSD-1271: changed from Currency(15, 3) to Currency(14, 4) on Oct 29 2019</description>
+    <externalId>false</externalId>
+    <label>Per Page Receiving Toll-Free</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>4</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

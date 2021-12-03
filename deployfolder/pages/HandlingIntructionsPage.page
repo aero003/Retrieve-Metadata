@@ -1,0 +1,4 @@
+<apex:page StandardController="Account" >
+ <apex:outputText style="font-weight: bold;font-size: 18px;color: black;text-align: center;background: red;" 
+ value="{!IF((Account.Handling_Instructions__c != null), 'Handling Instruction:'+ Account.Handling_Instructions__c, '')}"/>
+</apex:page>

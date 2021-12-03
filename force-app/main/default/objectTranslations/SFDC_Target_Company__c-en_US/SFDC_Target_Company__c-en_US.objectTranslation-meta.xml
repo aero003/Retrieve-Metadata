@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Interesting Company</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Interesting Companies</value>
+    </caseValues>
+    <layouts>
+        <layout>Interesting Company Layout</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Funding Overview</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Expected_Close_Date_Inactive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Expected_Close_Date_TermSheet</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>CA_Business_Search</name>
+    </webLinks>
+</CustomObjectTranslation>

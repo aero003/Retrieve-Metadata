@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Segment4__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Account__r.RecordType.Name ==&apos;Consensus: Account&apos;, &apos;180&apos;, &apos;730&apos;)</formula>
+    <label>Segment4</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

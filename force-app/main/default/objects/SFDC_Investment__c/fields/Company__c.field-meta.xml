@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Lookup field for the Target Company in which the Investment was made.</description>
+    <externalId>false</externalId>
+    <label>Company</label>
+    <referenceTo>SFDC_Target_Company__c</referenceTo>
+    <relationshipName>Investments</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

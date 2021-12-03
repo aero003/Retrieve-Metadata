@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operating_Unit__c</fullName>
+    <description>This Value should equal the Org_ID; IE = 300000003194363, US=300000003339017, CA=300000003333073, UK=300000003194327,NL=300000003191499,</description>
+    <externalId>false</externalId>
+    <formula>CASE(LEFT(Account__r.Customer_ID2__c,3),
+&quot;KIE&quot;,&quot;300000003194363&quot;,
+&quot;KUS&quot;,&quot;300000003339017&quot;,
+&quot;KCA&quot;,&quot;300000003333073&quot;,
+&quot;KUK&quot;,&quot;300000003194327&quot;,
+&quot;KNL&quot;,&quot;300000003191499&quot;,
+null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This Value should equal the Org_ID; IE = 300000003194363, US=300000003339017, CA=300000003333073, UK=300000003194327,NL=300000003191499,</inlineHelpText>
+    <label>Operating Unit</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

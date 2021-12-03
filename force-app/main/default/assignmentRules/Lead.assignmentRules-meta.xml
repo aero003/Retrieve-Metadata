@@ -1,0 +1,2156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>j2 Lead Assignment Rules</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>SPAM_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 OR 2 OR 3 OR 4) AND 5</booleanFilter>
+            <criteriaItems>
+                <field>Lead.LastName</field>
+                <operation>contains</operation>
+                <value>levitra,adipex,xanax,codeine,Zoloft,Ambien,st johns,dapoxetine,ativan,Payday Loans,penis,Trannies,forex,cigarette,BBW,asian,Sex,casino,canker,propecia,Lesbian,Porn,bisexual,cialis,viagra,ebony,Phen375</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.FirstName</field>
+                <operation>contains</operation>
+                <value>levitra,adipex,xanax,codeine,Zoloft,Ambien,st johns,dapoxetine,ativan,Payday Loans,penis,Trannies,winpalace,forex,cigarette,BBW,asian,Sex,casino,canker,propecia,Lesbian,Porn,bisexual,cialis,viagra,ebony,Phen375</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>contains</operation>
+                <value>xanax,codeine,Zoloft,Ambien,st johns,dapoxetine,ativan,Payday Loans,penis,Trannies,shemale,vigrx,valium,orgasm,sizegenetics,sdfsdf,winpalace,adsf,forex,cigarette,BBW,asian,Sex,casino,canker,propecia,Lesbian,Porn,bisexual,viagra,ebony,Phen375,google</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>contains</operation>
+                <value>adipex,xanax,codeine,Zoloft,Ambien,st johns,dapoxetine,ativan,Payday Loans,penis,Trannies,shemale,vigrx,valium,orgasm,sizegenetics,sdfsdf,winpalace,adsf,forex,cigarette,BBW,asian,Sex,casino,canker,propecia,Lesbian,Porn,bisexual,cialis,viagra,ebony,Phen375</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Have_Special_InCompany__c</field>
+                <operation>equals</operation>
+                <value>False</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPAM_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+            <criteriaItems>
+                <field>Lead.FirstName</field>
+                <operation>contains</operation>
+                <value>kamagra,stendra,avanafil,adultfriendfinder,sildenafil,ketone,bet365,hcg,roulette,fioricet,betfair</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LastName</field>
+                <operation>contains</operation>
+                <value>kamagra,stendra,avanafil,adultfriendfinder,sildenafil,ketone,bet365,hcg,roulette,fioricet,betfair</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>contains</operation>
+                <value>kamagra,stendra,avanafil,adultfriendfinder,sildenafil,ketone,bet365,hcg,roulette,fioricet,betfair</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Email</field>
+                <operation>contains</operation>
+                <value>summit-healthcare.com,patientping.com,collectivemedical.com,careporthealth.com,everbridge.com,andorhealth.com</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPAM_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.LastName</field>
+                <operation>contains</operation>
+                <value>Fetish,HGH,Klonopin,Shemale,Milf,Voyeur,Tramadol,Vardenafil,Vicodin,tranny,finasteride,lottery,loteria,poker,blackjack,lorazepam erectile,priligy,provigil,prozac,phentermine</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.FirstName</field>
+                <operation>contains</operation>
+                <value>Fetish,HGH,Klonopin,Shemale,Milf,Voyeur,Tramadol,Vardenafil,Vicodin,tranny,finasteride,lottery,loteria,poker,blackjack,lorazepam erectile,priligy,provigil,prozac,phentermine</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>contains</operation>
+                <value>Fetish,HGH,Klonopin,Shemale,Milf,Voyeur,Tramadol,Vardenafil,Vicodin,tranny,finasteride,lottery,loteria,poker,blackjack,lorazepam erectile,priligy,provigil,prozac,phentermine</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>contains</operation>
+                <value>Fetish,HGH,Klonopin,Shemale,Milf,Voyeur,Tramadol,Vardenafil,Vicodin,tranny,finasteride,lottery,loteria,poker,blackjack,lorazepam erectile,priligy,provigil,prozac,phentermine</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPAM_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7</booleanFilter>
+            <criteriaItems>
+                <field>Lead.FirstName</field>
+                <operation>contains</operation>
+                <value>!,@,#,$,%,^,&amp;,*,(,),:,:,&quot;,&lt;,&gt;,&apos;,?,/,~,`,{,},[,],+,\&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LastName</field>
+                <operation>contains</operation>
+                <value>!,@,#,$,%,^,&amp;,*,(,),:,:,&quot;,&lt;,&gt;,&apos;,?,/,~,`,{,},[,],+,\&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>contains</operation>
+                <value>google</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>notContain</operation>
+                <value>a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.FirstName</field>
+                <operation>contains</operation>
+                <value>1,2,3,4,5,6,7,8,9,0</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LastName</field>
+                <operation>equals</operation>
+                <value>1,2,3,4,5,6,7,8,9,0</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>equals</operation>
+                <value>1,2,3,4,5,6,7,8,9,0</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPAM_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Phone</field>
+                <operation>equals</operation>
+                <value>+1 213 425 1453</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPAM_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Email</field>
+                <operation>contains</operation>
+                <value>@mail.ru,@inbox.ru,@iwon.com,@cuvox.de,@jourrapide.com,@superrito.com,@einrot.com,@home.com,@gustr.com,@teleworm.us,@armyspy.com,@dayrep.com,@rhyta.com,@fleckens.hu,@yeah.net,@163.com</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPAM_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND ( TEXT(LeadSource) = &apos;Search&apos;, OR ( Company = LEFT(Email,Find(&quot;@&quot;, Email)-1), Company = Title, LEN(Title) = 1 ) )</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>michael.teller@j2.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 AND 2</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax: Corporate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Is_Fortune_1000_company__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+            <template>All_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>shiv.gopalia@j2.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax: Corporate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Website - eFax Corporate landing page</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>Demo,Quote,Whitepaper</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eFax_Corporate_AWS_Channel_Partnership</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax: Corporate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Channel Marketing</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>contains</operation>
+                <value>AWS</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>InsideBigCheese</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>((1 AND 2 AND 3) OR (1 AND 2 ))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.Email</field>
+                <operation>contains</operation>
+                <value>@gmail.com,@yahoo.com,@aol.com,@msn.com,@mac.com,@hotmail.com,@ymail.com,@cox.com</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax: Corporate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CreatedById</field>
+                <operation>equals</operation>
+                <value>Marketo Sync</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPAM_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>FirstName  =  LastName</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPAM_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.LastName</field>
+                <operation>equals</operation>
+                <value>,[not provided]</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>equals</operation>
+                <value>,[not provided]</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax AU,eVoice EU Corp : Lead,eVoice UK Corp : Lead,eVoice US Corp : Lead,eVoice US : Lead,eVoice UK : Lead,eVoice EU : Lead,eVoice AU: Lead,eVoice NZ: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.FirstName</field>
+                <operation>equals</operation>
+                <value>,[not provided]</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>UK_Big_Cheese</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.CreatedById</field>
+                <operation>equals</operation>
+                <value>Unbounce User</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>PPC,GDN Retargetting</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPAM_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Livevault: Lead,eFax: Corporate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.SPAM_Checker__c</field>
+                <operation>equals</operation>
+                <value>SPAM</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPAM_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Livevault: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>contains</operation>
+                <value>At&amp;t,T mobil,tmobile,Verizon,metro,metropcs,mobile,ipad,family mobile,boost mobile,Nokia,school project,home,Boost moble,Boost,Myself,Student</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Email</field>
+                <operation>contains</operation>
+                <value>@emai.com,@mail.com</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eFax_AU_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax AU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Website - Faxmate,Inbound Call</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>contains</operation>
+                <value>Porting,Quote,NBN,Get Started</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SPAM_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eVoice AU: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Email</field>
+                <operation>equals</operation>
+                <value>today918online@outlook.com</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>InsideBigCheese</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Sfax: Lead</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eVoice_Live_Receptionist</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND (3 OR 4)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eVoice Live Receptionist,eVoice US Corp : Lead,eVoice US : Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>notEqual</operation>
+                <value>website - eVoice</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>notEqual</operation>
+                <value>eVoice - corporate - page,eVoice - landing - page</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>notContain</operation>
+                <value>eV - LP,eV - plan,eV - feature,eV - peruser</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eVoice_US_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 4 AND (3 OR 5)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eVoice Live Receptionist,eVoice US Corp : Lead,eVoice US : Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>website - eVoice</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>eVoice - corporate - page,eVoice - landing - page</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>equals</operation>
+                <value>Voice - eVoice</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>contains</operation>
+                <value>eV - LP,eV - plan,eV - feature,eV - peruser</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>kent.montgomery2@j2.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax: Corporate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>contains</operation>
+                <value>GPO</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>contains</operation>
+                <value>LinkedIn GPO Ad-Jun2019</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Industry</field>
+                <operation>equals</operation>
+                <value>Healthcare</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>john.mannion@j2.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Channel</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Channel</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>contains</operation>
+                <value>Associations</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Industry</field>
+                <operation>equals</operation>
+                <value>Healthcare</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Consensus_Unite_Channel</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Consensus: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Number_of_Providers__c</field>
+                <operation>equals</operation>
+                <value>Not applicable,&quot;Not applicable (E.g. HIE, DME, Healthcare Software Vendor, etc.)&quot;</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Consensus_Unite_Enterprise</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Consensus: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Number_of_Providers__c</field>
+                <operation>equals</operation>
+                <value>20 or More</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Consensus_Unite_MidMarket</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Consensus: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Number_of_Providers__c</field>
+                <operation>equals</operation>
+                <value>1-19</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eFax_AU_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax AU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Website - mBox</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>Porting</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eFax_AU_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>((1 AND (2 OR 3 OR 4 OR 5 OR 6 OR 8)) OR 7) AND 9 AND 10 AND 11</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax AU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Newsletter sign-up</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Whitepaper download</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Opt-in subscriber</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Website - eFax AU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>contains</operation>
+                <value>EN-Number-Porting</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Sitefinity_LeadSource__c</field>
+                <operation>contains</operation>
+                <value>Website - eFax AU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>contains</operation>
+                <value>Website - eVoice AU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company</field>
+                <operation>notEqual</operation>
+                <value>[not provided]</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LastName</field>
+                <operation>notEqual</operation>
+                <value>[not provided]</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.FirstName</field>
+                <operation>notEqual</operation>
+                <value>,[not provided]</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eFax_AU_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax AU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Website - eFax AU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>contains</operation>
+                <value>Landing Page - EOFY,Porting</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eFax_AU_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax AU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>&quot;Campaign, Telesales&quot;</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>&quot;Campaign, Telemarketing - FMG&quot;,&quot;Campaign, Telemarketing - TP&quot;</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eVoice_AU_Newsletter_eBook</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 AND (2 OR 3))</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eVoice AU: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>contains</operation>
+                <value>eBook download – web</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>contains</operation>
+                <value>Newsletter sign-up – web</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eVoice_AU_Website</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eVoice AU: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>contains</operation>
+                <value>Zintel,eVoice</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Web - LP Pricing - Corp,Web - LP Pricing - SMB,Web - LP SMB - Quote</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eVoice_AU_Website</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eVoice AU: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Web - Ask an Expert,Website - Enquire About Call Features,Web - Request a Callback,Web - Register of Interest,Web - Contact Form,Web - Live Chat,Web - Request Number Availability,Web - Request a quote</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>contains</operation>
+                <value>eVoice,Zintel</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eVoice_AU_Website</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eVoice AU: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>contains</operation>
+                <value>Landing page - EOFY</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>contains</operation>
+                <value>eVoice,Zintel</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>EU_Enterprise_Big_Cheese</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 AND 2 AND 3 AND 4 AND 5) OR (6 AND 5)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.CreatedById</field>
+                <operation>equals</operation>
+                <value>Unbounce User</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax Corporate UK</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Paid Search</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>contains</operation>
+                <value>,Google PPC,Google PPC UK Healthcare</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Comments__c</field>
+                <operation>contains</operation>
+                <value>Replacing 100+ Fax Lines,Replacing 50+ Fax Lines,Replacing 101-500 Fax Lines,Replacing 501-1000 Fax Lines,Replacing 1001+ Fax Lines</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax Corporate DE,eFax Corporate FR,eFax Corporate UK</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>DE_Big_Cheese</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax Corporate DE</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Number_of_DIDs__c</field>
+                <operation>lessOrEqual</operation>
+                <value>50</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>EU_Channel_Big_Cheese</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax Corporate UK</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Number_of_DIDs__c</field>
+                <operation>lessOrEqual</operation>
+                <value>50</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>UK_Big_Cheese</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax Corporate UK</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>eFax® Corp UK Health LP</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.J2_Campaign_Tracking__c</field>
+                <operation>contains</operation>
+                <value>NHS Fendix</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Number_of_DIDs__c</field>
+                <operation>lessOrEqual</operation>
+                <value>50</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>richard.solomon@j2.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>contains</operation>
+                <value>SFDC-IN|MyFax for AppExchange 2,MyFax for AppExchange 2,MFA2.SFDC-IN|MyFax for AppExchange 2</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>UK_Big_Cheese</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>contains</operation>
+                <value>UK</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Company_Size__c</field>
+                <operation>notContain</operation>
+                <value>101,501,1000</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>trevor.lewis@j2.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <booleanFilter>1 AND 2 AND 3 AND (4 OR 5)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Fonebox : Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Website</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Brand__c</field>
+                <operation>contains</operation>
+                <value>Fonebox AU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>contains</operation>
+                <value>Website - Switch,Website - Consultation,Website - Quote,Website - Demo,Website - Contact,Website - Speak to Specialist</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>contains</operation>
+                <value>Website - LP - Bill Analysis,Website - LP - Callback,Website - LP - Consultation,Website - LP - Demo,Website - LP - Number Availability,Website - LP - Quote</value>
+            </criteriaItems>
+            <template>Fonebox_Support/Fonebox_New_Lead_Notification_Template</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>BigCheese</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Lead_Source_ID__c</field>
+                <operation>equals</operation>
+                <value>654123</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>YAC_Personal_Number</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eReceptionist® UK Sales,eVoice UK Corp : Lead,eVoice UK : Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>contains</operation>
+                <value>eReceptionist UK Website</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>contains</operation>
+                <value>YAC Personal Numbers</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>KIS_Lead_Forensics</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>KeepItSafe: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Lead Forensics</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eFax_eReceptionist_UK_and_EU_Sales1</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eReceptionist® EU Sales,eFax® EU Sales,eFax® UK Sales,eReceptionist® EU Sales,eReceptionist® UK Sales,X-Sell UK Sales,eFax® UK Sales,eVoice EU Corp : Lead,eVoice UK Corp : Lead,eVoice UK : Lead,eVoice EU : Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Solicitors Group</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eFax_eReceptionist_UK_and_EU_Sales1</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 OR 2 OR 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax® EU Sales,eFax® UK Sales,X-Sell UK Sales</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Business 2012,Donut,OMG Mailmedia,Sift Media,Duport,Huddlebuy</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>contains</operation>
+                <value>Huddlebuy</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>mark.storrar@j2.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>International Presence</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>contains</operation>
+                <value>AS400</value>
+            </criteriaItems>
+            <template>eFax_Corporate_Channel_Marketing/Owner_Email_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>michael.teller@j2.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>HybridFax</value>
+            </criteriaItems>
+            <template>All_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eVoice_NZ_Website</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eVoice NZ: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>contains</operation>
+                <value>eVoice,Zintel</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>EfaxConnector</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>contains</operation>
+                <value>Package Installation,Package Installation - Sandbox</value>
+            </criteriaItems>
+            <template>All_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Livevault_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Livevault: Lead</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>richard.solomon@j2.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Channel Marketing</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>NextGen</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>michael.teller@j2.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>LifeFile</value>
+            </criteriaItems>
+            <template>All_Templates/LeadsNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eVoice_AU_Website</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eVoice AU: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Brand__c</field>
+                <operation>contains</operation>
+                <value>eVoice,zintel</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eVoice_NZ_Website</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eVoice NZ: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Brand__c</field>
+                <operation>contains</operation>
+                <value>eVoice,zintel</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>iCumulus_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>iCumulus</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eVoice AU: Lead</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eFax_Corporate_Channel</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Channel</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Channel Marketing</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eFax_Corporate_Channel</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Channel Marketing</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>Prospect Partner</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>james.synk@j2global.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.CreatedById</field>
+                <operation>equals</operation>
+                <value>Jim Synk</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>nicholas.dipasquale@j2.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.CreatedById</field>
+                <operation>equals</operation>
+                <value>Nick Dipasquale</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>UK_Big_Cheese</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 OR 2 OR 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.scode__c</field>
+                <operation>equals</operation>
+                <value>UK</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>UK,UK_EU,UK EU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>contains</operation>
+                <value>efaxcorporate.co.uk,http://www.efaxcorporate.co.uk,www.efaxcorporate.co.uk,Efaxcorporate.co.uk,eFax®.co.uk</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>OneBox_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Onebox®: Lead</value>
+            </criteriaItems>
+            <template>Voice_Templates/Onebox_Assignment_Notification_Marketing</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>BigCheese</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>MyFax®: Lead</value>
+            </criteriaItems>
+            <template>All_Templates/MyFax_Lead_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eFax_eReceptionist_UK_and_EU_Sales1</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>X-Sell UK Sales</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Duport</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>thomas.vonmeer@j2global.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.CreatedById</field>
+                <operation>equals</operation>
+                <value>Thomas von Meer</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>mark.storrar@j2.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.CreatedById</field>
+                <operation>equals</operation>
+                <value>Mark Storrar</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jennifer.acey@j2.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.CreatedById</field>
+                <operation>equals</operation>
+                <value>Jennifer Acey</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>KeepItSafe_Leads_Enterprise</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>KIS Mobile Web Page</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Web Site,Website</value>
+            </criteriaItems>
+            <template>KeepItSafe_Templates/KIS_Lead_Internal_Notification</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>KeepItSafe_Leads_US</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>KeepItSafe: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Brand__c</field>
+                <operation>equals</operation>
+                <value>KeepItSafe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.OwnerId</field>
+                <operation>notEqual</operation>
+                <value>SPAM Leads</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>US</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>KeepItSafe_Leads_NL</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>KeepItSafe: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Brand__c</field>
+                <operation>equals</operation>
+                <value>KeepItSafe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>NL</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.OwnerId</field>
+                <operation>notEqual</operation>
+                <value>SPAM Leads</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>KeepItSafe_Leads_NZ</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>KeepItSafe: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Brand__c</field>
+                <operation>equals</operation>
+                <value>KeepItSafe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>NZ</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.OwnerId</field>
+                <operation>notEqual</operation>
+                <value>SPAM Leads</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>KeepItSafe_Leads_CA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>KeepItSafe: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Brand__c</field>
+                <operation>equals</operation>
+                <value>KeepItSafe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>CA</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.OwnerId</field>
+                <operation>notEqual</operation>
+                <value>SPAM Leads</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>KeepItSafe_Leads_AU</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>KeepItSafe: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Brand__c</field>
+                <operation>equals</operation>
+                <value>KeepItSafe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>AU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.OwnerId</field>
+                <operation>notEqual</operation>
+                <value>SPAM Leads</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>KeepItSafe_Leads_IE_UK</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>KeepItSafe: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Brand__c</field>
+                <operation>equals</operation>
+                <value>KeepItSafe</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Country</field>
+                <operation>equals</operation>
+                <value>GB,UK,IE</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.OwnerId</field>
+                <operation>notEqual</operation>
+                <value>SPAM Leads</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Keepitsafe_Partners_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>KeepItSafe: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CreatedById</field>
+                <operation>equals</operation>
+                <value>Impartner</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.OwnerId</field>
+                <operation>notEqual</operation>
+                <value>SPAM Leads</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>christian.ransopher@j2global.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Round_Robin_ID__c</field>
+                <operation>equals</operation>
+                <value>2</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.OwnerId</field>
+                <operation>equals</operation>
+                <value>Inside Big Cheese</value>
+            </criteriaItems>
+            <template>Internal_Admin_Emails/New_Lead_Assigned</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>BigCheese</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Round_Robin_ID__c</field>
+                <operation>equals</operation>
+                <value>3</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.OwnerId</field>
+                <operation>equals</operation>
+                <value>Inside Big Cheese</value>
+            </criteriaItems>
+            <template>Internal_Admin_Emails/New_Lead_Assigned</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Efax_France_Lead_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Firstway</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>InsideBigCheese</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.J2_Campaign_Tracking__c</field>
+                <operation>contains</operation>
+                <value>efxSmallBus</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>efaxsales</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.requestingFaxServiceFor__c</field>
+                <operation>contains</operation>
+                <value>Myself: Under 1000 pg/month</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eFax_European_DE_Sales</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>hilfede@mail.efax.com</value>
+            </criteriaItems>
+            <template>eFaxCorporateSalesMktg/eFaxCorpwebtoleadautoemailresponse</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>InsideBigCheese</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.requestingFaxServiceFor__c</field>
+                <operation>equals</operation>
+                <value>2-9 employees</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>efax_Corporate_Ziff_Davis_CC_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Ziff Davis CCL</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>RainKing</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>BigCheese</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>HubSpot KeepItSafe - BUMI</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>KeepItSafe_BUMI_Lead</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>KeepItSafe: BUMI Lead</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>james.synk@j2global.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>Proxios</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>richard.solomon@j2.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax: Corporate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Source_URL__c</field>
+                <operation>equals</operation>
+                <value>Ramsey</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>MyFax_Sales_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>MyFax®: Corporate Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Customer Inquiry Form</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Brand__c</field>
+                <operation>equals</operation>
+                <value>MyFax,MyFax®</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>InsideBigCheese</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>MyFax®: Corporate Lead</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>BigCheese</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Inbound - Web,Web Referral</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Email</field>
+                <operation>notContain</operation>
+                <value>@msn,@cox,@hotmail,@attglobal,@aol,@yahoo,@gmail,@comcast</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.OwnerId</field>
+                <operation>equals</operation>
+                <value>Big Cheese</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Blog_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>contains</operation>
+                <value>Website Blog</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LastName</field>
+                <operation>contains</operation>
+                <value>Blog Lead</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Sugar_Sync_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Sugar Sync</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>UK_Big_Cheese</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.CreatedById</field>
+                <operation>equals</operation>
+                <value>Unbounce User</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Record_Type_Hidden__c</field>
+                <operation>equals</operation>
+                <value>eFax Corporate UK</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Efax_France_Lead_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>FR Website</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>eFax® FR Corp Tab</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax Corporate FR</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Live_eR</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eReceptionist® UK Sales,eVoice UK Corp : Lead,eVoice UK : Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>notEqual</operation>
+                <value>website - ereceptionist</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>shiv.gopalia@j2.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax: Corporate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Inbound Call</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>contains</operation>
+                <value>Enquiry</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eFax_AU_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax: Corporate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Website - eFax AU</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>contains</operation>
+                <value>Enquiry</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>john.mannion@j2.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Partner</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>EMR Solutions</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eVoice_EU_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3</booleanFilter>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eReceptionist® UK Sales,eReceptionist® EU Sales,eVoice EU Corp : Lead,eVoice UK Corp : Lead,eVoice UK : Lead,eVoice EU : Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>website - ereceptionist</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>contains</operation>
+                <value>eReceptionist - LP,eReceptionist - feature</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Line2_US_leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Line2: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Website - Line2</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>L2 - peruser - plan</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>EU_Enterprise_Big_Cheese</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax Enterprise Sales EU</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Xerox_Channel_Partnership</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax: Corporate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Channel Marketing</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>Xerox</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Consensus_Signal_MidMarket</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Consensus: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Number_of_Hospital_Beds__c</field>
+                <operation>equals</operation>
+                <value>1 - 49,50 - 249</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Consensus_Signal_Enterprise</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Consensus: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Number_of_Hospital_Beds__c</field>
+                <operation>equals</operation>
+                <value>250 or more</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Consensus_Unknown_Beds_Count</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Consensus: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Number_of_Hospital_Beds__c</field>
+                <operation>equals</operation>
+                <value>Unknown</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Consensus_Signal_MidMarket</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Consensus: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Number_of_ALF_Beds__c</field>
+                <operation>equals</operation>
+                <value>1 - 4,5 - 14,15 - 29</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Consensus_Signal_Enterprise</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Consensus: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Number_of_ALF_Beds__c</field>
+                <operation>equals</operation>
+                <value>30 or more</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Consensus_Unknown_Beds_Count</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Consensus: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Number_of_ALF_Beds__c</field>
+                <operation>equals</operation>
+                <value>Unknown</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Consensus_Signal_MidMarket</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Consensus: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Number_of_SNF_Beds__c</field>
+                <operation>equals</operation>
+                <value>1 - 99,100 - 199</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Consensus_Signal_Enterprise</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Consensus: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Number_of_SNF_Beds__c</field>
+                <operation>equals</operation>
+                <value>200 or more</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Consensus_Unknown_Beds_Count</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Consensus: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Number_of_SNF_Beds__c</field>
+                <operation>equals</operation>
+                <value>Unknown</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Consensus_Unknown_Beds_Count</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>equals</operation>
+                <value>Consensus Signal</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Number_of_Hospital_Beds__c</field>
+                <operation>equals</operation>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Number_of_SNF_Beds__c</field>
+                <operation>equals</operation>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Number_of_ALF_Beds__c</field>
+                <operation>equals</operation>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>steven.delmar@j2.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax: Corporate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>DiscoverOrg</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CreatedById</field>
+                <operation>equals</operation>
+                <value>Steven Delmar</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>james.synk@j2global.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax: Corporate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>DiscoverOrg</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CreatedById</field>
+                <operation>equals</operation>
+                <value>Jim Synk</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>brittany@efaxusa.prod.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax: Corporate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>DiscoverOrg</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CreatedById</field>
+                <operation>equals</operation>
+                <value>Brittany Woo</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>william.kohler@j2.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax: Corporate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>DiscoverOrg</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CreatedById</field>
+                <operation>equals</operation>
+                <value>William Kohler</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>maurya.tillman@j2.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax: Corporate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>DiscoverOrg</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CreatedById</field>
+                <operation>equals</operation>
+                <value>Maurya Tillman</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>jennifer.acey@j2.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax: Corporate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>DiscoverOrg</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.CreatedById</field>
+                <operation>equals</operation>
+                <value>Jennifer Acey</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Consensus_Signal_MidMarket</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Consensus: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Industry</field>
+                <operation>equals</operation>
+                <value>Healthcare</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.vBrand__c</field>
+                <operation>equals</operation>
+                <value>Consensus</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>equals</operation>
+                <value>Consensus Signal</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>james.morales@j2.com</assignedTo>
+            <assignedToType>User</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Line2: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>L2 - new - pricing</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Website</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Consensus_Clarity_Enterprise</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Consensus: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>equals</operation>
+                <value>Consensus Clarity</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Consensus_Harmony_Enterprise</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Consensus: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Product__c</field>
+                <operation>equals</operation>
+                <value>Consensus Harmony</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Automated_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eFax: Sales</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Customer Inquiry Form</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eVoice_US_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2 AND 3 AND (4 OR 5 OR 6 OR 7)</booleanFilter>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>website - eVoice</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eVoice US Corp : Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Brand__c</field>
+                <operation>equals</operation>
+                <value>eVoice US Corporate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>eV - peruser - form</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>eV - peruser - plan</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>eV - plan - threeform</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>eV - plan - threeplan</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Metrofax_Sales_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>MetroFax®: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Description</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Customer Inquiry Form</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Brand__c</field>
+                <operation>contains</operation>
+                <value>MetroFax,MetroFax®</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>eVoice_US_Leads</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>website - eVoice</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>eV - Funnel - Plan,eV - Pricing - UPForm</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Brand__c</field>
+                <operation>equals</operation>
+                <value>eVoice US Corporate</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>eVoice US Corp : Lead</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>SRFax_Channel</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Lead.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>SRFax: Lead</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.LeadSource</field>
+                <operation>equals</operation>
+                <value>Channel Marketing</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Lead.Lead_Souce_Type__c</field>
+                <operation>equals</operation>
+                <value>SRFax Prospect Partner</value>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

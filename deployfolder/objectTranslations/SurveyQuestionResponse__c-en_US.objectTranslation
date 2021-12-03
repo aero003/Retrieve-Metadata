@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SurveyQuestionResponse</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SurveyQuestionResponses</value>
+    </caseValues>
+    <layouts>
+        <layout>Survey Question Answer Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <fields>
+        <label></label>
+        <name>of_Time_Question_was_Responded_to__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Response__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>SurveyTaker__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Survey_Question__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

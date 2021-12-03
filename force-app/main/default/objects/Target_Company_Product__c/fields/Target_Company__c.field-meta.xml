@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Target_Company__c</fullName>
+    <externalId>false</externalId>
+    <label>Target Company</label>
+    <referenceTo>SFDC_Target_Company__c</referenceTo>
+    <relationshipLabel>Target Company Products</relationshipLabel>
+    <relationshipName>Target_Company_Products</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

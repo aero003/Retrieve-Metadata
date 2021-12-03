@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Upsell_Possibilities_Comnment__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Probed for upsell possibilities comments</inlineHelpText>
+    <label>Upsell Possibilities Comnment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>SAM Admin</description>
+    <frameHeight>600</frameHeight>
+    <hasSidebar>true</hasSidebar>
+    <label>SAM Admin</label>
+    <motif>Custom22: Phone</motif>
+    <url>https://www.websprint.com/mh_sfdc/SAMadmin.asp?EndPoint={!API_Partner_Server_URL_50}&amp;SessionID={!API_Session_ID}</url>
+    <urlEncodingKey>UTF-8</urlEncodingKey>
+</CustomTab>

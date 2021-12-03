@@ -1,0 +1,16 @@
+<apex:page Controller="CaseStatisticesClass"  title="Open Cases" sidebar="false" showHeader="false">
+    
+    <table id="thetable" style="background-color: #B8DBFF;border-style: solid;border-width: 1px;" width="180px" >
+        <tr id="firstrow">
+            <td id="column">
+                <apex:outputLink value="/500?fcf=00B30000002Vd3Z" target="_blank">All Open Cases : {!caseCount}</apex:outputLink><br/>
+                
+            </td>
+        </tr>
+        <tr id="secondrow">
+            <td>
+                <apex:outputLink value="/500?fcf=00B60000006zHtc" target="_blank">My Open Cases : {!myCaseCount}</apex:outputLink>
+            </td>
+        </tr>
+    </table>
+</apex:page>

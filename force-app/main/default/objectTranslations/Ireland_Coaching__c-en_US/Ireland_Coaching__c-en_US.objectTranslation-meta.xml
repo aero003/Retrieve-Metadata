@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ireland Coaching</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ireland - Coachings</value>
+    </caseValues>
+    <layouts>
+        <layout>Ireland Coaching Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Maintenance &amp; Product Knowledge Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Call Coaching Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Call Handling Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Call Summary Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Coaching Summary</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Communication Skills Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Documentation Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Opening Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Retention &amp; Upsells Section</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

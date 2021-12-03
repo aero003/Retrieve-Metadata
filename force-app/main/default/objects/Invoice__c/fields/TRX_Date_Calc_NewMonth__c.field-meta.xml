@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TRX_Date_Calc_NewMonth__c</fullName>
+    <description>Calculation for Oracle Invoice ID Billing run date updating.</description>
+    <externalId>false</externalId>
+    <formula>DATE(IF(MONTH(Billing_Run_Date__c ) = 12, YEAR(Billing_Run_Date__c ) + 1, YEAR(Billing_Run_Date__c )),
+IF(MONTH(Billing_Run_Date__c ) = 12, 1, MONTH(Billing_Run_Date__c ) + 1),
+1)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>TRX_Date_Calc_NewMonth</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sent_By__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Name of Resource at KIS which sent the HDD to the Customer</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Name of Resource at KIS which sent the HDD to the Customer</inlineHelpText>
+    <label>Sent By</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>User.Profile.Name</field>
+            <operation>startsWith</operation>
+            <value>KeepItSafe</value>
+        </filterItems>
+        <infoMessage>Any User who has a Profile of KeepItSafe Sales User</infoMessage>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Hard_Drive_Tracker</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

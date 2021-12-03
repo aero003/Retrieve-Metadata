@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accounting_Rule_Name__c</fullName>
+    <description>Oracle Receivables uses this value to determine if the Deferral is Advance or if the billing is in Arrears, in case of a -ive Amount value, this value should be Blank</description>
+    <externalId>false</externalId>
+    <formula>IF( 
+AND(Amount__c &gt;= 0.00, Bill_in_Arrears__c &lt;&gt; True), &quot;Advance Invoice&quot;, &quot;&quot;)</formula>
+    <inlineHelpText>Oracle Receivables uses this value to determine if the Deferral is Advance or if the billing is in Arrears, in case of a -ive Amount value, this value should be Blank</inlineHelpText>
+    <label>Accounting Rule Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

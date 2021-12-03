@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pitched_Well_Comment__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Where they pitched well and correctly comment</inlineHelpText>
+    <label>Pitched Well Comment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Invoice_Amount__c</fullName>
+    <externalId>false</externalId>
+    <label>Total Invoice Amount</label>
+    <summarizedField>Consensus_Invoice_Line_Item__c.Consensus_Amount_Breakdown__c</summarizedField>
+    <summaryFilterItems>
+        <field>Consensus_Invoice_Line_Item__c.Invoice_Description__c</field>
+        <operation>notContain</operation>
+        <value>Professional Services</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Consensus_Invoice_Line_Item__c.Invoice_Description__c</field>
+        <operation>notContain</operation>
+        <value>Training Session (Users)</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Consensus_Invoice_Line_Item__c.Invoice_Description__c</field>
+        <operation>notContain</operation>
+        <value>Training Session (Administrators)</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>Consensus_Invoice_Line_Item__c.Invoice_Description__c</field>
+        <operation>notContain</operation>
+        <value>Other Training</value>
+    </summaryFilterItems>
+    <summaryForeignKey>Consensus_Invoice_Line_Item__c.Consensus_Invoice__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

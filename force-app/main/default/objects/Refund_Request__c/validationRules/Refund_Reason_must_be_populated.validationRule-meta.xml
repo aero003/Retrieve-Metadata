@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Refund_Reason_must_be_populated</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ RecordTypeID__c =&quot;012600000009bWj&quot;,
+ Requested_Refund_Amount__c &gt;0,
+ ISPICKVAL( Reason_for_Refund__c,&quot;&quot; )
+)</errorConditionFormula>
+    <errorDisplayField>Reason_for_Refund__c</errorDisplayField>
+    <errorMessage>If refund is requested, then Reason for Refund cannot be blank.</errorMessage>
+</ValidationRule>

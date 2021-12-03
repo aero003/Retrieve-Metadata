@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Do_Not_Bill</fullName>
+    <active>true</active>
+    <errorConditionFormula>Account__r.Do_Not_Bill__c =True</errorConditionFormula>
+    <errorDisplayField>Account__c</errorDisplayField>
+    <errorMessage>You cannot create an Invoice because &quot;Do Not Bill&quot; is checked for this account.</errorMessage>
+</ValidationRule>

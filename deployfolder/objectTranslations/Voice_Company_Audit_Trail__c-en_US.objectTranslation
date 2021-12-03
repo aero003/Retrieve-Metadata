@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>V: Audit Trail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>V: Audit Trails</value>
+    </caseValues>
+    <layouts>
+        <layout>Voice: Company Audit Trail Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>AuditID__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Company_Audit_Trail__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Support_Rep__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Target Company Contact</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Target Company Contacts</value>
+    </caseValues>
+    <layouts>
+        <layout>Target Contact Layout</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <fields>
+        <label></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Mobile__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>State_Province__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Street__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Target_Company__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Title__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Zip_Postal_Code__c</name>
+    </fields>
+</CustomObjectTranslation>

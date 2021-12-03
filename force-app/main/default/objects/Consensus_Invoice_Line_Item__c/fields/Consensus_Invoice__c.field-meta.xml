@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consensus_Invoice__c</fullName>
+    <externalId>false</externalId>
+    <label>Consensus Invoice</label>
+    <referenceTo>Consensus_Invoice__c</referenceTo>
+    <relationshipLabel>Consensus Invoice Line Items</relationshipLabel>
+    <relationshipName>Consensus_Invoice_Line_Items</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

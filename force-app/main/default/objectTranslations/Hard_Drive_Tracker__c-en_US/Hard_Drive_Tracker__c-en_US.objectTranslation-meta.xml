@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HDD Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HDD Requestor</value>
+    </caseValues>
+    <layouts>
+        <layout>Hard Drive Tracker Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Request a Hard Drive for an Account</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Tracking Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <workflowTasks>
+        <description></description>
+        <name>Ship_HDD_to_Customer</name>
+        <subject></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

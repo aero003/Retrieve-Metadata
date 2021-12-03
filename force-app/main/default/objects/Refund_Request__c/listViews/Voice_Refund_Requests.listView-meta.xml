@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Voice_Refund_Requests</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Account__c</columns>
+    <columns>Customer_Name__c</columns>
+    <columns>Contact_Email_Address__c</columns>
+    <columns>Requested_Refund_Amount__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Refund_Request__c.CS_HLW</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>6/1/2017 12:00 AM</value>
+    </filters>
+    <label>Voice Refund Requests</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>CS_HLW_Leads</group>
+        <group>CS_HLW_Management_Team</group>
+        <role>Fax_VP_of_Sales</role>
+    </sharedTo>
+</ListView>

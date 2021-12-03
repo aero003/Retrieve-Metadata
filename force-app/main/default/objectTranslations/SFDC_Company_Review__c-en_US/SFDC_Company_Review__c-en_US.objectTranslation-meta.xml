@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Company Review</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Company Reviews</value>
+    </caseValues>
+    <layouts>
+        <layout>Company Review Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Obstacles</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Overview Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

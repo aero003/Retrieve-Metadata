@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Investor</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Investors</value>
+    </caseValues>
+    <layouts>
+        <layout>Investor Layout</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <fields>
+        <label></label>
+        <name>Assets_Under_Management_M__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>State_Province__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Street__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Angel</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Buyout</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Early / Mid Stage</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hedge Fund</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Late Stage</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Venture Debt</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Website__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Zip_Postal_Code__c</name>
+    </fields>
+</CustomObjectTranslation>

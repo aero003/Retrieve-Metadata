@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>intlegalcompliance@mail.j2.com</email>
+    <name>Legal Compliance Ireland</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Legal_Compliance_Ireland</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

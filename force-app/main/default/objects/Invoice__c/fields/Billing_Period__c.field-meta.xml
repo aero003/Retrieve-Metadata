@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Period__c</fullName>
+    <description>Oracle Billing uses this value to define the calculation and splits of Deferred Revenue, in case of a -ive Amount value, this value should be Blank</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Oracle Billing uses this value to define the calculation and splits of Deferred Revenue, in case of a -ive Amount value, this value should be Blank</inlineHelpText>
+    <label>Billing Period</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Annual</fullName>
+                <default>false</default>
+                <label>Annual</label>
+            </value>
+            <value>
+                <fullName>Quarterly</fullName>
+                <default>false</default>
+                <label>Quarterly</label>
+            </value>
+            <value>
+                <fullName>Bi-Annual</fullName>
+                <default>false</default>
+                <label>Bi-Annual</label>
+            </value>
+            <value>
+                <fullName>Monthly</fullName>
+                <default>false</default>
+                <label>Monthly</label>
+            </value>
+            <value>
+                <fullName>One-off</fullName>
+                <default>false</default>
+                <label>One-off</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

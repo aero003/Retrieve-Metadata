@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>J2_ISP_sfdctabname__c</fullName>
+    <description>ISP CS TOOL tab&apos;s &quot;id&quot;</description>
+    <externalId>false</externalId>
+    <label>J2_ISP_sfdctabname</label>
+    <length>100</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

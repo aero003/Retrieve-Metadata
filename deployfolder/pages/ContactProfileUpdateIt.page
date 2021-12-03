@@ -1,0 +1,367 @@
+<apex:page standardController="Contact" showHeader="false" standardStyleSheets="false"  extensions="contactProfileUpdateExtension" docType="HTML-5.0" cache="false" applyHtmlTag="false" >
+    
+    <html>
+        
+        <head>
+            <title> eFax® </title>
+             <link rel="shortcut icon" href="{!URLFOR($Resource.efax_favicon)}" type="image/x-icon"/> 
+           <!--<link rel="shortcut icon" href="{!$Site.Prefix}/favicon.ico" type="image/x-icon"/> -->
+        </head>
+        <style>
+            .main-wrapper {
+            border: 1px solid #000;
+            padding: 50px 100px 100px 100px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            
+            }
+            
+            .main-innerwrapper {
+            border: 1px solid #000;
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid #000;
+            background-color: white; 
+            opacity: .95; 
+            }
+            
+            table {
+            width: 80%;
+            margin: 0 auto;
+            }
+            
+            .form-group {
+            margin-bottom: 15px;
+            }
+            
+            
+            .form-group label {
+            display: inline-block;
+            width: 25%;
+            font-weight: bold;
+            vertical-align: top;
+            }
+            
+            .form-group input,
+            .form-group textarea {
+            display: inline-block;
+            width: 60%;
+            border: 1px solid #1e1e1e;
+            height: 34px;
+            border-radius: 4px;
+            line-height: 1;
+            padding: 5px 15px;
+            vertical-align: top;
+            }
+            
+            .form-group .checkbox,
+            .form-group textarea {
+            width: 2%;
+            }
+            
+            .radioOpt{
+            width: 40%;
+            margin: -3% 24%;
+            }
+            .radioOpt td, .radioOpt input, .radioOpt label{
+            color:#666c71; 
+            width: 7%;
+            line-height:3;
+            }     
+            
+            .form-group textarea {
+            resize: none;
+            height: 100px;
+            }
+            
+            .form-group input[type="button"] {
+            background: #000;
+            width: auto;
+            padding: 5px 20px;
+            color: #fff;
+            font-size: 14px;
+            line-height: 1;
+            
+            }
+            .form-group input[type="submit"] {
+            background: #000;
+            width: auto;
+            padding: 5px 20px;
+            color: #fff;
+            font-size: 14px;
+            line-height: 1;
+            
+            }
+            .header-text{
+            font-size: 30px;
+            padding-left: 10%;
+            margin-bottom: 1%;
+            }
+            .submit-text{
+            font-size: 20px;
+            margin: 1%;
+            }
+            
+            /*.body{
+            background-image: url("https://media.cdnandroid.com/db/39/4c/08/imagen-efax-1gal.jpg");
+            height: 100%;
+            width: 100%;
+            background-color: #cccccc;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            }*/
+            body{
+            margin:1px;
+            }
+            .divBackgroundImage {
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            right: 0;
+            
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+            z-index: -1;
+            opacity: .85;
+            }
+            .imgBackground {
+            float: left;
+            }
+            .mandatory{
+            color:red;
+            }
+            
+            
+        </style>
+        <script>
+        var previousOnload = window.onload; 
+        window.onload = function() { 
+            if (previousOnload) { 
+                previousOnload(); 
+            } 
+            var ContactUserType = '{!UserType}';
+            if(ContactUserType == 'Business'){
+                console.log('display block');
+                toggle('div-business-user','block');
+                toggle('label-business-user','inline-block');
+                toggle('label-consumer','none');
+            } else {
+                console.log('display none');
+                toggle('div-business-user','none');
+                toggle('label-business-user','none');
+                toggle('label-consumer','inline-block');
+            }
+            SubmitOnComplete();
+        } 
+        function SubmitOnComplete(){
+            replaceText('li','Body: Validation Error: Value is required','Errore di convalida.');
+            replaceText('li','Please select Photo ID','Si prega di selezionare l\'ID della foto');
+        }
+        function replaceText(selector, text, newText, flags) {
+            var matcher = new RegExp(text, flags);
+            var elems = document.querySelectorAll(selector), i;
+            
+            for (i = 0; i < elems.length; i++)
+                elems[i].innerHTML = elems[i].innerHTML.replace(matcher,newText);
+        }
+        
+        function toggle(className, displayState){
+            var elements = document.getElementsByClassName(className)
+            
+            for (var i = 0; i < elements.length; i++){
+                elements[i].style.display = displayState;
+            }
+        }
+        function toggleRequired(className, AddRequired){
+            var elements = document.getElementsByClassName(className);
+            for (var i = 0; i < elements.length; i++){
+                var element = elements[i].getElementsByTagName('input');
+                for (var j = 0; j < element.length; j++){
+                    if(AddRequired == 'True'){
+                        element[j].setAttribute("required", "");
+                    } else {
+                        element[j].removeAttribute("required");
+                    }
+                }
+            }
+        }
+        
+        
+        var OnChangeBusinessUser = function(checkBoxId){
+            var checkBoxState = document.getElementById(checkBoxId).checked;
+            console.log('checkbox is checked... ' + document.getElementById(checkBoxId).checked);
+            if(checkBoxState){
+                console.log('display block');
+                toggle('div-business-user','block');
+                toggleRequired('div-business-user','True');
+            } else {
+                console.log('display none');
+                toggle('div-business-user','none');
+                toggleRequired('div-business-user','False');
+            }
+        }
+        var OnChangeUserType = function(radioButtonId){
+            var selectedRadio = document.querySelector('input[name = \''+ radioButtonId +'\']:checked').value;
+            console.log('Selected radio... ' + selectedRadio);
+            if(selectedRadio == 'Business'){
+                console.log('display block');
+                toggle('div-business-user','block');
+                toggle('label-business-user','inline-block');
+                toggleRequired('div-business-user','True');
+                toggle('label-consumer','none');
+            } else {
+                console.log('display none');
+                toggle('div-business-user','none');
+                toggle('label-business-user','none');
+                toggleRequired('div-business-user','False');
+                toggle('label-consumer','inline-block');
+            }
+        }
+        </script>
+        
+        <body class="body">
+            <div class="divBackgroundImage" style="background-image: url(https://media.cdnandroid.com/db/39/4c/08/imagen-efax-1gal.jpg);">
+            </div>
+            <apex:form id="theForm" >
+                
+                <div class="main-wrapper" id="mainpage">
+                    <div class="header-text">
+                        <img src="https://sassets.efax.com/sf-images/default-source/default-album/efzx-logo.png?sfvrsn=10"  />
+                    </div>
+                    <div class="header-text">Cliente eFax®- Prova di identità</div>
+                    <apex:outputPanel id="divSubmit1"  rendered="{!showThankYou}">
+                        <div class="main-innerwrapper">
+                            <div class="submit-text">Grazie!</div>
+                            <div  class="submit-text" style="{!IF(CntProof_of_identity_submitted, 'display:block', 'display:none')}">
+                                <label>Il tuo profilo è aggiornato.</label>
+                            </div>
+                        </div>
+                    </apex:outputPanel>
+                    <apex:outputPanel id="divSubmit2" rendered="{!showError}">
+                        <div class="main-innerwrapper" >
+                            <div class="submit-text">Error!</div>
+                            <div class="submit-text"><apex:messages /></div>
+                        </div>
+                    </apex:outputPanel>
+                    <apex:outputPanel id="maindiv"  rendered="{!(!showThankYou && !CntProof_of_identity_submitted)}">
+                        <div class="main-innerwrapper">
+                            
+                            <div class="form-group">
+                                <label for="name">Nome Cliente:</label>
+                                <apex:inputField id="contactname" value="{!thisContact.Name}"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="didnumber">Efax Numero:</label>
+                                <apex:OutputField id="lblEfaxNumber" value="{!thisContact.DID_Number__c}"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <apex:OutputField id="email" value="{!thisContact.Email}"/>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="Business_User__c"> Tipologia di utente:</label>
+                                <!--<apex:inputCheckbox id="ckbBusinessUser" value="{!CntBusinessUser}" styleClass="checkbox" onclick="OnChangeBusinessUser('{!$Component.ckbBusinessUser}')">
+</apex:inputCheckbox> -->
+                                <apex:selectRadio id="rbtUserType" value="{!UserType}"  styleClass="radioOpt" onclick="OnChangeUserType('{!$Component.rbtUserType}')">
+                                    <apex:selectOptions id="rbtUserTypeItems" value="{!UserTypeItems}" />
+                                </apex:selectRadio>
+                            </div>
+                        </div>
+                    </apex:outputPanel>
+                    <apex:outputPanel id="maindiv2"  rendered="{!(!showThankYou && !CntProof_of_identity_submitted)}">
+                        <div class="main-innerwrapper">
+                            <div class="form-group">
+                                <label for="phone">Contatto telefonico<span class="mandatory">*</span>:</label>
+                                <apex:inputText id="phone" value="{!CntPhone}" required="true"/>
+                            </div>
+                            
+                            <!-- <div class="form-group">
+<label for="description">Descrizione:</label>
+<apex:inputText id="description" value="{!CntDescription}"></apex:inputText>
+</div> -->
+                            
+                            <div class="form-group">
+                                <label> Indirizzo<span class="mandatory">*</span>:</label>
+                                <apex:inputText id="MailingStreet" value="{!CntStreet}" required="true"/>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label> Città<span class="mandatory">*</span>:</label>
+                                <apex:inputText id="MailingCity" value="{!CntCity}" required="true"/>
+                            </div>
+                            
+                            <!-- <div class="form-group">
+                                <label> Provincia<span class="mandatory">*</span>:</label>
+                                <apex:inputText id="MailingState" value="{!CntState}" required="true"/>
+                            </div> -->
+                            
+                            <div class="form-group">
+                                <label> Codice Postale (CAP)<span class="mandatory">*</span>:</label>
+                                <apex:inputText id="MailingPostalCode" value="{!CntPostal}" required="true"/>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label> Nazione<span class="mandatory">*</span>:</label>
+                                <apex:inputText id="MailingCountry" value="{!CntCountry}" required="true"/>
+                            </div>
+                            <div class="div-business-user">
+                                <div class="form-group" >
+                                    <label>Partita IVA<span class="mandatory">*</span>:</label>
+                                    <apex:inputText value="{!CntVatNumber}" />
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>Nome del firmatario<span class="mandatory">*</span>:</label>
+                                    <apex:inputText value="{!CntSignName}"/>
+                                </div>
+                             </div>
+                                <div class="form-group">
+                                    <label class="label-business-user"> Codice Fiscale del firmatario<span class="mandatory">*</span>:</label>
+                                    <label class="label-consumer">Codice Fiscale<span class="mandatory">*</span>:</label>
+                                    <apex:inputText value="{!CntTaxCode}" required="true" />
+                                </div>
+                                <div class="form-group" >
+                                    <label class="label-business-user">Data di nascita del firmatario<span class="mandatory">*</span>:</label>
+                                     <label class="label-consumer">Data di nascita<span class="mandatory">*</span>:</label>
+                                    <span class="dateInput dateOnlyInput">
+                                        <apex:input value="{!CntBirthdate}" type="date" required="true" />
+                                    </span>
+                                </div>
+                                <div class="form-group" >
+                                    <label class="label-business-user">Luogo di nascita del firmatario<span class="mandatory">*</span>:</label>
+                                    <label class="label-consumer">Luogo di nascita<span class="mandatory">*</span>:</label>
+                                    <apex:inputText value="{!CntBirthLocation}" required="true"/>
+                                </div>
+                                <div class="form-group">
+                                    <label class="label-business-user">Nazionalità del firmatario<span class="mandatory">*</span>:</label>
+                                     <label class="label-consumer">Nazionalità<span class="mandatory">*</span>:</label>
+                                    <apex:inputText value="{!CntNationality}" required="true"/>
+                                </div>
+                            
+                            <div  class="form-group">
+                                <label>Caricare foto identificativa<span class="mandatory">*</span>:</label>
+                                <apex:inputFile value="{!thisAttachment.body}" filename="{!thisAttachment.name}" id="file" required="true"/>
+                            </div>
+                            
+                            <br/>
+                            <div class="form-group">
+                                <label>&nbsp;</label>
+                                <apex:commandbutton value="Sottoscrivere" action="{!submitContactForm}" id="btnSubmitForm" />
+                            </div>
+                            <label style="font-size: 12px;"><span class="mandatory">*</span> Obligatorio </label>
+                        </div>    
+                    </apex:outputPanel>
+                </div>
+            </apex:form>
+        </body>
+        
+    </html>
+</apex:page>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Due Diligence Review</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Due Diligence Reviews</value>
+    </caseValues>
+    <layouts>
+        <layout>Due Diligence Review Layout</layout>
+        <sections>
+            <label></label>
+            <section>Description and Recommendation</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

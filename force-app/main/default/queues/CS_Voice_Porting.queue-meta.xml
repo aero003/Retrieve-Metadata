@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>jeff.brownlee@j2.com</email>
+    <name>CS Voice Porting</name>
+    <queueMembers>
+        <users>
+            <user>adrian.williams@j2.com</user>
+            <user>alvin.julio@j2.com</user>
+            <user>becky.calloo@j2.com</user>
+            <user>cindy.mckenna@j2.com</user>
+            <user>jeff.brownlee@j2.com</user>
+            <user>nicole.riley@j2.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Lead</sobjectType>
+    </queueSobject>
+</Queue>

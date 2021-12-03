@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AuditID__c</fullName>
+    <description>Voice - WCSA - Audit ID field added for Matching</description>
+    <externalId>true</externalId>
+    <inlineHelpText>Voice - WCSA - Audit ID field added for Matching</inlineHelpText>
+    <label>AuditID</label>
+    <length>10</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

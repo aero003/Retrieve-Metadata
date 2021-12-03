@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_SurveyForce</fullName>
+    <columns>NAME</columns>
+    <columns>Cases_With_Surveys__c</columns>
+    <columns>Survey_ID__c</columns>
+    <columns>URL__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Survey_Header__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All SurveyForce</label>
+    <language>en_US</language>
+    <sharedTo>
+        <role>SystemAdministrators</role>
+    </sharedTo>
+</ListView>

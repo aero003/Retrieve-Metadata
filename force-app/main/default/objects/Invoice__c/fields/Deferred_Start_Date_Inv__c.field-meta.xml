@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deferred_Start_Date_Inv__c</fullName>
+    <description>Oracle Receivables uses this value to determine if the Billing is in Advance or if the billing is in Arrears, in case of a -ive Amount value, this value should be Blank</description>
+    <externalId>false</externalId>
+    <formula>IF( Bill_in_Arrears__c =True, &quot;&quot;,
+
+IF( MONTH(Billing_Run_Date__c) = 1, &quot;0&quot;+TEXT(1)+&quot;-&quot;
++TEXT(MONTH( TRX_Date_Calc__c +1 ))+&quot;-&quot;
++TEXT(YEAR(TRX_Date_Calc__c +1 )) , &quot;0&quot;+TEXT(1)+&quot;-&quot;
++TEXT(MONTH( TRX_Date_Calc__c +1 ))+&quot;-&quot;
++TEXT(YEAR(TRX_Date_Calc__c )))
+
+)</formula>
+    <inlineHelpText>Oracle Receivables uses this value to determine if the Billing is in Advance or if the billing is in Arrears, in case of a -ive Amount value, this value should be Blank</inlineHelpText>
+    <label>Deferred Start Date Inv</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

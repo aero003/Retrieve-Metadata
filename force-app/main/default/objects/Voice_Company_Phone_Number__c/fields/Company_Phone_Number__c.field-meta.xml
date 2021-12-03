@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Company_Phone_Number__c</fullName>
+    <description>Voice - WCSA - Company Phone Number - Account can have an unlimited amount of #&apos;s</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Voice - WCSA - Company Phone Number - Account can have an unlimited amount of #&apos;s</inlineHelpText>
+    <label>Company Phone Number</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Phone</type>
+</CustomField>

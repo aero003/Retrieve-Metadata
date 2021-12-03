@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Idea_Source__c</fullName>
+    <description>Source from which the acquisition opportunity derived.</description>
+    <externalId>false</externalId>
+    <label>Idea Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Employee</fullName>
+                <default>true</default>
+                <label>Employee</label>
+            </value>
+            <value>
+                <fullName>Existing Partner</fullName>
+                <default>false</default>
+                <label>Existing Partner</label>
+            </value>
+            <value>
+                <fullName>Investment Bank / Advisor</fullName>
+                <default>false</default>
+                <label>Investment Bank / Advisor</label>
+            </value>
+            <value>
+                <fullName>Investor</fullName>
+                <default>false</default>
+                <label>Investor</label>
+            </value>
+            <value>
+                <fullName>Target Company Itself</fullName>
+                <default>false</default>
+                <label>Target Company Itself</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

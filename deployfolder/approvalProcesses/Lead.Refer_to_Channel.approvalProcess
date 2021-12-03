@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Change_Owner_to_Michael_Teller</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>Channel_Referral_Approved</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>Channel_Referral_Approved_Date</name>
+                <type>FieldUpdate</type>
+            </action>
+            <action>
+                <name>Lead_Referred_to_Channel_is_Approved</name>
+                <type>Alert</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>christian.ofer@j2.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Approval by Sales manager.</description>
+        <label>Sales Manager Approval</label>
+        <name>Sales_Manager_Approval</name>
+    </approvalStep>
+    <description>eFax Corporate referrals to Channel to be approved by Sales Manager. Approval Process updated changes owner and sends notification to Seth after final Approval</description>
+    <emailTemplate>eFax_Corporate_Channel_Marketing/Lead_Referred_to_Channel_for_Approval</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Lead.RecordType</field>
+            <operation>equals</operation>
+            <value>Channel</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Lead.Status</field>
+            <operation>equals</operation>
+            <value>Referred to Channel</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Change_Owner_to_Michael_Teller</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Change_owner_to_Big_Cheese</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Refer to Channel</label>
+    <processOrder>1</processOrder>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>

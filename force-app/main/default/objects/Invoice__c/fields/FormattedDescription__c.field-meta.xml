@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FormattedDescription__c</fullName>
+    <description>This field contains descrition field text with no carriage returns. Used for integration and hidden.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field contains descrition field text with no carriage returns. Used for integration and hidden.</inlineHelpText>
+    <label>FormattedDescription</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

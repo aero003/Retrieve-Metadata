@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Voice - User Phone Numbers - in place of re-utilizing the DID object of eFAX</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <label>V: User Acct Phone Number</label>
+    <nameField>
+        <displayFormat>UPN-{00000000}</displayFormat>
+        <label>Voice: User Phone Number Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>V: User Acct Phone Numbers</pluralLabel>
+    <searchLayouts></searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Account__c</fullName>
+        <description>Voice - WCSA - User Level Account Association for Phone Numbers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Voice - WCSA - User Level Account Association for Phone Numbers</inlineHelpText>
+        <label>User Level Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Voice_User_Level_Acct_Phone_Numbers</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Business_Direct_Line__c</fullName>
+        <description>Voice - WCSA - User Phone Numbers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Voice - WCSA - User Phone Numbers</inlineHelpText>
+        <label>Business Direct Line</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Business_Fax__c</fullName>
+        <description>Voice - WCSA - User Phone Numbers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Voice - WCSA - User Phone Numbers</inlineHelpText>
+        <label>Business Fax</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Company_s_Main_Line__c</fullName>
+        <description>Voice - WCSA - User Phone Numbers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Voice - WCSA - User Phone Numbers</inlineHelpText>
+        <label>Company&apos;s Main Line</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Home_Fax__c</fullName>
+        <description>Voice - WCSA - User Phone Numbers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Voice - WCSA - User Phone Numbers</inlineHelpText>
+        <label>Home Fax</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Home_Office__c</fullName>
+        <description>Voice - WCSA - User Phone Numbers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Voice - WCSA - User Phone Numbers</inlineHelpText>
+        <label>Home Office</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Home_Phone__c</fullName>
+        <description>Voice - WCSA - User Phone Numbers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Voice - WCSA - User Phone Numbers</inlineHelpText>
+        <label>Home Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Mobile_Phone__c</fullName>
+        <description>Voice - WCSA - User Phone Numbers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Voice - WCSA - User Phone Numbers</inlineHelpText>
+        <label>Mobile Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Pager__c</fullName>
+        <description>Voice - WCSA - User Phone Numbers</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Voice - WCSA - User Phone Numbers</inlineHelpText>
+        <label>Pager</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Phone_Description__c</fullName>
+        <description>Voice - WCSA - User - Phone Number Description</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Voice - WCSA - User - Phone Number Description</inlineHelpText>
+        <label>Phone Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Business Direct Line</fullName>
+                    <default>false</default>
+                    <label>Business Direct Line</label>
+                </value>
+                <value>
+                    <fullName>Business Fax</fullName>
+                    <default>false</default>
+                    <label>Business Fax</label>
+                </value>
+                <value>
+                    <fullName>Company&apos;s Main Line</fullName>
+                    <default>false</default>
+                    <label>Company&apos;s Main Line</label>
+                </value>
+                <value>
+                    <fullName>Home Fax</fullName>
+                    <default>false</default>
+                    <label>Home Fax</label>
+                </value>
+                <value>
+                    <fullName>Home Office</fullName>
+                    <default>false</default>
+                    <label>Home Office</label>
+                </value>
+                <value>
+                    <fullName>Home Phone</fullName>
+                    <default>false</default>
+                    <label>Home Phone</label>
+                </value>
+                <value>
+                    <fullName>Mobile Phone</fullName>
+                    <default>false</default>
+                    <label>Mobile Phone</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Pager</fullName>
+                    <default>false</default>
+                    <label>Pager</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Phone_Extension__c</fullName>
+        <description>Voice - WCSA - User Phone Number Extension</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Voice - WCSA - User Phone Number Extension</inlineHelpText>
+        <label>Phone Extension</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone_Number__c</fullName>
+        <description>Voice - WCSA - User - Phone Number</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Voice - WCSA - User - Phone Number</inlineHelpText>
+        <label>Phone Number</label>
+        <length>40</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

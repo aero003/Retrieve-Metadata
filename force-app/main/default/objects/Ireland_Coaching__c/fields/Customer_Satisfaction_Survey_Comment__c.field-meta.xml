@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Satisfaction_Survey_Comment__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Did advisor say customer satisfaction survey would be sent comment</inlineHelpText>
+    <label>Customer Satisfaction Survey Comment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

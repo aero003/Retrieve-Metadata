@@ -1,0 +1,44 @@
+.curvy {position:relative; FONT-SIZE: 11px; FONT-FAMILY: arial; width:250px; background:#9caf9c; color:#000; margin:5em auto;}
+        #ctl, #cbl, #ctr, #cbr {position:absolute; width:20px; height:20px; color:#000000; background:#fff; overflow:hidden; font-style:normal; z-index:1;}
+        #ctl {top:0; left:0;}
+        #cbl {bottom:0; left:0;}
+        #ctr {top:0; right:0;}
+        #cbr {bottom:0; right:0;}
+        .curvy em b {position:absolute; font-size:150px; font-family:arial; color:#000000; line-height:40px; font-weight:normal;}
+        #ctl b {left:-8px;}
+        #ctr b {left:-25px;}
+        #cbl b {left:-8px; top:-17px;}
+        #cbr b {left:-25px; top:-17px;}
+        .curvy p {position:relative; z-index:100; padding:5px 10px;
+        }
+        .body 
+        {
+            margin:0; width:100%; height:100%; background:#ddc;
+        }
+        #edge 
+        { 
+            width:0; 
+            height:100%;
+            display:inline-block;
+            vertical-align:middle;
+        } 
+        #container 
+        { 
+            text-align:center; 
+            width:100%; 
+            display:inline-block; 
+            vertical-align:middle;
+        }
+        .fontverdana
+        {
+            FONT-SIZE: 11px; FONT-FAMILY: verdana; 
+        }
+        .myborderwithfont
+        { 
+			BORDER-RIGHT: #000000 1px solid; 
+			BORDER-TOP: #000000 1px solid; 
+			BORDER-LEFT: #000000 1px solid; 
+			BORDER-BOTTOM: #000000 1px solid; 
+			FONT-SIZE: 11px; 
+			FONT-FAMILY: verdana; 
+		}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Term_Extension_Info_Needed</fullName>
+    <active>true</active>
+    <description>When Term Extension is yes please fill Amendment info</description>
+    <errorConditionFormula>AND(
+AND(
+RecordType.DeveloperName = &quot;New_Amendment&quot;,
+ISPICKVAL(IS_THIS_A_TERM_EXTENSION__c , &quot;Yes&quot;)
+),
+ IF(OR(
+ ISBLANK(TEXT(Term_of_Amendment_Units__c)),
+ ISNULL(Term_of_Amendment__c),
+ ISBLANK(Effective_Date_of_the_Amendment__c),
+ ISNULL(Date_of_Original_Contract__c),
+ ISBLANK(Date_Amendment_Term_Begins__c)
+ )==TRUE, TRUE, FALSE ) 
+)</errorConditionFormula>
+    <errorMessage>Enter values if &quot;TERM EXTENSION&quot;  is selected &quot;Yes&quot;</errorMessage>
+</ValidationRule>

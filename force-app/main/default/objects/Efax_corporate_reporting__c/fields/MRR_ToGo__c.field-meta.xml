@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MRR_ToGo__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(NOT(
+        ISPICKVAL(Opportunity__r.StageName, &apos;Closed Won&apos;)
+       ),
+CASE(MONTH(Opportunity__r.CloseDate), 
+1,(3 * Opportunity__r.Net_new_monthly_revenue__c * Opportunity__r.Probability), 
+2,(2 * Opportunity__r.Net_new_monthly_revenue__c * Opportunity__r.Probability), 
+3,(1 * Opportunity__r.Net_new_monthly_revenue__c * Opportunity__r.Probability),  
+4,(3 * Opportunity__r.Net_new_monthly_revenue__c * Opportunity__r.Probability),  
+5,(2 * Opportunity__r.Net_new_monthly_revenue__c * Opportunity__r.Probability), 
+6,(1 * Opportunity__r.Net_new_monthly_revenue__c * Opportunity__r.Probability),  
+7,(3 * Opportunity__r.Net_new_monthly_revenue__c * Opportunity__r.Probability), 
+8,(2 * Opportunity__r.Net_new_monthly_revenue__c * Opportunity__r.Probability), 
+9,(1 * Opportunity__r.Net_new_monthly_revenue__c * Opportunity__r.Probability), 
+10,(3 * Opportunity__r.Net_new_monthly_revenue__c * Opportunity__r.Probability), 
+11,(2 * Opportunity__r.Net_new_monthly_revenue__c * Opportunity__r.Probability), 
+1 * Opportunity__r.Net_new_monthly_revenue__c * Opportunity__r.Probability), 
+0 )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>MRR_ToGo</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

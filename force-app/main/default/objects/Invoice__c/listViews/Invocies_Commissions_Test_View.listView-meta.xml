@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invocies_Commissions_Test_View</fullName>
+    <columns>NAME</columns>
+    <columns>Amount__c</columns>
+    <columns>Bill_To__c</columns>
+    <columns>Bill_To_Partner__c</columns>
+    <columns>Commission_Due__c</columns>
+    <columns>Commission_Due_Q2__c</columns>
+    <columns>Commission_Due_Q3__c</columns>
+    <columns>Commission_Due_Q4__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>Invocies + Commissions Test View</label>
+    <language>en_US</language>
+    <sharedTo>
+        <roleAndSubordinates>KeepItSafe_Managing_Director</roleAndSubordinates>
+        <roleAndSubordinates>SystemAdministrators</roleAndSubordinates>
+    </sharedTo>
+</ListView>

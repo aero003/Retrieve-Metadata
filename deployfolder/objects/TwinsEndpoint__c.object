@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Twins Endpoint</description>
+    <enableFeeds>false</enableFeeds>
+    <label>TwinsEndpoint</label>
+    <visibility>Protected</visibility>
+    <fields>
+        <fullName>Endpoint__c</fullName>
+        <externalId>false</externalId>
+        <label>Endpoint</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

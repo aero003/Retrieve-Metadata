@@ -1,0 +1,3 @@
+<apex:page standardController="Case" extensions="cases_Extension" action="{!getNextCase}" >
+
+</apex:page>

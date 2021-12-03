@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Term_Extension_Info_not_needed</fullName>
+    <active>true</active>
+    <description>we shouldn&apos;t select value if extension is no</description>
+    <errorConditionFormula>AND(
+AND(
+RecordType.DeveloperName = &quot;New_Amendment&quot;,
+ISPICKVAL(IS_THIS_A_TERM_EXTENSION__c , &quot;No&quot;)
+),
+ IF(OR(
+ 
+ NOT(ISNULL(Term_of_Amendment__c)),
+ 
+ NOT(ISNULL(Date_of_Original_Contract__c)),
+ NOT(ISBLANK(Date_Amendment_Term_Begins__c))
+ )==TRUE, TRUE, FALSE ) 
+)</errorConditionFormula>
+    <errorMessage>Don&apos;t enter values if &quot;TERM EXTENSION&quot;  is selected &quot;No&quot;</errorMessage>
+</ValidationRule>

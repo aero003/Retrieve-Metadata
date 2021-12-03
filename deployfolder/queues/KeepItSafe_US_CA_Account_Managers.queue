@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>KeepItSafe US &amp; CA Account Managers</name>
+    <queueMembers>
+        <users>
+            <user>amaya.swanson@keepitsafe.com</user>
+            <user>cesar.padilla@keepitsafe.com</user>
+            <user>christopher.franco@keepitsafe.com</user>
+            <user>clifton.slater@keepitsafe.com</user>
+            <user>lauren.sheridan@bumi.com</user>
+            <user>marcos.vazquez@j2global.com</user>
+            <user>ogechi.ogamba@keepitsafe.com</user>
+            <user>shelly.injejikian@keepitsafe.com</user>
+            <user>timothy.conroy@keepitsafe.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

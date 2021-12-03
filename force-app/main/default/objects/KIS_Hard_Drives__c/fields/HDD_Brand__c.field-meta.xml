@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HDD_Brand__c</fullName>
+    <description>Please enter the Brand of the HDD for KIS Inventory.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please enter the Brand of the HDD for KIS Inventory.</inlineHelpText>
+    <label>HDD Brand</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Buffalo</fullName>
+                <default>true</default>
+                <label>Buffalo</label>
+            </value>
+            <value>
+                <fullName>Hitachi</fullName>
+                <default>false</default>
+                <label>Hitachi</label>
+            </value>
+            <value>
+                <fullName>Iomega</fullName>
+                <default>false</default>
+                <label>Iomega</label>
+            </value>
+            <value>
+                <fullName>Lacie</fullName>
+                <default>false</default>
+                <label>Lacie</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Prestigio</fullName>
+                <default>false</default>
+                <label>Prestigio</label>
+            </value>
+            <value>
+                <fullName>Samsung</fullName>
+                <default>false</default>
+                <label>Samsung</label>
+            </value>
+            <value>
+                <fullName>Seagate</fullName>
+                <default>false</default>
+                <label>Seagate</label>
+            </value>
+            <value>
+                <fullName>Toshiba</fullName>
+                <default>false</default>
+                <label>Toshiba</label>
+            </value>
+            <value>
+                <fullName>WD</fullName>
+                <default>false</default>
+                <label>WD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

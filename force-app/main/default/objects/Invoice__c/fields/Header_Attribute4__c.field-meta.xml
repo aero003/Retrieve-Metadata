@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Header_Attribute4__c</fullName>
+    <description>Changed to KIE &amp; KIS # - 5/2012</description>
+    <externalId>false</externalId>
+    <formula>IF( Bill_To__c  = &apos;Partner&apos;,  Header_Attribute5__c , Account__r.Customer_ID2__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Header Attribute4</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

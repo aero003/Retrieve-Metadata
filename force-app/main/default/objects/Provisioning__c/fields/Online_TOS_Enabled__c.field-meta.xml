@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Online_TOS_Enabled__c</fullName>
+    <description>consensus provisioning</description>
+    <externalId>false</externalId>
+    <inlineHelpText>TOS = Terms of Service  To ensure customer locations are grouped together, please provide your internal customer ID or customer name and repeat for each location linked to the same customer account.</inlineHelpText>
+    <label>Online TOS Enabled</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Online (click through)</fullName>
+                <default>false</default>
+                <label>Online (click through)</label>
+            </value>
+            <value>
+                <fullName>Paper (contract)</fullName>
+                <default>false</default>
+                <label>Paper (contract)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

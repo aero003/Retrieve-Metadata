@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Site_Survey_is_Completed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>KIS - Is the Site Survey Completed?  By clicking the check box here - we will let the requester know you are finished and start the Quote Generation phase</description>
+    <externalId>false</externalId>
+    <inlineHelpText>KIS - Is the Site Survey Completed?  By clicking the check box here - we will let the requester know you are finished and start the Quote Generation phase</inlineHelpText>
+    <label>Site Survey is Completed?</label>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

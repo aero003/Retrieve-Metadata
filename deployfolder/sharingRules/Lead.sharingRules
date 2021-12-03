@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Fonebox_Access</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Fonebox Access</label>
+        <sharedTo>
+            <group>Fonebox_Access</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Fonebox : Lead</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Role_is_Marketo_Sync</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>This is sharing rule for Marketo Sync</description>
+        <label>Role is Marketo Sync</label>
+        <sharedTo>
+            <role>Fax_Business_Line</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>MyFax®: Corporate Lead,eFax: Developer™,eFax: Corporate,eFax Corporate UK,Channel</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>BUMI,eFax: Sales,eFax®: Lead - Outbound Sales,eFax®: Lead - Enterprise Outbound Sales,eVoice US : Lead,Onebox®: Lead,Firstway,Sugar Sync,eFax®: (Formerly TechTarget),KeepItSafe: Lead,j2: Lead - Default</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_EU_Voice_Leads</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Share read/write access to EU Voice leads for US agents</description>
+        <label>Share EU Voice Leads</label>
+        <sharedTo>
+            <roleAndSubordinates>Fax_Inside_Sales_Manager</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>eVoice UK Corp : Lead,eVoice US Corp : Lead,eVoice EU : Lead,eVoice US : Lead,eVoice EU Corp : Lead,eVoice UK : Lead</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Share_US_Voice_Leads</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Sharing rules for read/write access to US Voice leads for EU regions</description>
+        <label>Share US Voice Leads</label>
+        <sharedTo>
+            <roleAndSubordinates>European_Sales_CS_Management</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>eVoice UK Corp : Lead,eVoice US Corp : Lead,eVoice EU : Lead,eVoice US : Lead,eVoice EU Corp : Lead,eVoice UK : Lead</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Swede_Sharing_Leads_with_Sasha</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Swede Sharing Leads with Sasha</label>
+        <sharedTo>
+            <group>Sasha_Lead</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>OwnerId</field>
+            <operation>equals</operation>
+            <value>00560000001Gprc</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>Ziff_Sfax_Lead_Access</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Ziff Sfax Lead Access</description>
+        <label>Ziff Sfax Lead Access</label>
+        <sharedTo>
+            <group>Ziff_Sfax_Access</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Sfax: Lead</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>ANZ_Sales_Reps_sharing_to_CS_HLW_eFax_International_AUS_HK</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>ANZ Sales Reps sharing to CS HLW eFax International AUS/HK</description>
+        <label>ANZ Sales Reps sharing to CS HLW eFax International AUS/HK</label>
+        <sharedTo>
+            <group>CS_HLW_eFax_International_AUS_HK</group>
+        </sharedTo>
+        <sharedFrom>
+            <role>ANZ_Sales_Reps</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Allbutbigcheese</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>All but bigcheese</label>
+        <sharedTo>
+            <group>Allbutbigcheese</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Allbutbigcheese</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>BigCheeseAccess</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Big Cheese Access</label>
+        <sharedTo>
+            <group>BigCheeseAccess</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Allbutbigcheese</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>European_Sales</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>European Sales</label>
+        <sharedTo>
+            <role>IrelandAgents</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>IrelandAgents</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>European_Telesales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>European Telesales</label>
+        <sharedTo>
+            <roleAndSubordinates>European_Sales_CS_Management</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>European_Sales_CS_Management</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Fax_Inside_Sales_Manager</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Fax Inside Sales Manager</description>
+        <label>Fax Inside Sales Manager</label>
+        <sharedTo>
+            <role>Fax_Inside_Sales_Manager</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Fax_Inside_Sales_Manager</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Jesus_Garcia_UK_Lead_access</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Jesus Garcia UK Lead access</label>
+        <sharedTo>
+            <group>Jesus_Garcia</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>European_Sales_CS_Management</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>KIS_Leads</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>KIS Leads</label>
+        <sharedTo>
+            <roleAndSubordinates>KeepItSafe_Managing_Director</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>KeepItSafe_Managing_Director</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>KeepItSafe</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>KeepItSafe</label>
+        <sharedTo>
+            <group>KeepItSafe</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>KeepItSafe</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Outbound_Sales_Team_Queue</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Outbound Sales Team Queue</label>
+        <sharedTo>
+            <role>Fax_Outbound_Sales_Rep</role>
+        </sharedTo>
+        <sharedFrom>
+            <queue>Outbound_Sales_Team</queue>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Outbound_Telesales</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Outbound Telesales</label>
+        <sharedTo>
+            <role>Fax_Outbound_Sales_Rep</role>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Fax_Inside_Sales_Manager</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Sharing_Fax_Inside_Sales_Rep_with_Alyssa_H</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Sharing Fax Inside Sales Rep leads with Alyssa Hancock read/write access</description>
+        <label>Sharing Fax Inside Sales Rep with Alyssa H</label>
+        <sharedTo>
+            <group>Alyssa_Hancock</group>
+        </sharedTo>
+        <sharedFrom>
+            <role>Fax_Inside_Sales_Rep</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Sharing_amongst_Fax_Inside_Sales_Rep</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>Sharing amongst Fax Inside Sales Rep</description>
+        <label>Sharing amongst Fax Inside Sales Rep</label>
+        <sharedTo>
+            <role>Fax_Inside_Sales_Rep</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Fax_Inside_Sales_Rep</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>UK_Big_Cheese_EU_Mgmt</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>UK Big Cheese - EU Mgmt</label>
+        <sharedTo>
+            <role>European_Sales_CS_Management</role>
+        </sharedTo>
+        <sharedFrom>
+            <queue>UK_Big_Cheese</queue>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Zintel_NZ_Lead_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Zintel NZ Lead Sharing</label>
+        <sharedTo>
+            <roleAndSubordinates>Zintel_NZ_Operations_Team</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Zintel_NZ_Operations_Team</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>eFax_Corporate_Leads</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>eFax Corporate Leads</label>
+        <sharedTo>
+            <group>IrelandCSManagementGroup</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Fax_VP_of_Sales</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>eFax_Corporate_Leads_EU_Access</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>eFax Corporate Leads_EU Access</label>
+        <sharedTo>
+            <roleAndSubordinates>eFax_MyFax_European_General_Manager</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>Fax_VP_of_Sales</roleAndSubordinates>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>eFax_Plus_Inside_Sales_Leads_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>eFax Plus Inside Sales Leads Sharing</label>
+        <sharedTo>
+            <role>InsideInboundeFaxPlus</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Fax_Inside_Sales_Manager</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>eFax_and_eReceptionist</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>eFax and eReceptionist</label>
+        <sharedTo>
+            <role>eFax_MyFax_European_Marketing</role>
+        </sharedTo>
+        <sharedFrom>
+            <group>eFax_eReceptionist_UK_EU_Sales</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>efax_eReceptionist</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>efax/eReceptionist</label>
+        <sharedTo>
+            <role>European_Sales_CS_Management</role>
+        </sharedTo>
+        <sharedFrom>
+            <group>eFax_eReceptionist_UK_EU_Sales</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>efax_eReceptionist_Lead_Share</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>efax/eReceptionist Lead Share</label>
+        <sharedTo>
+            <group>eFax_eReceptionist_UK_EU_Sales</group>
+        </sharedTo>
+        <sharedFrom>
+            <role>eFax_MyFax_European_Marketing</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

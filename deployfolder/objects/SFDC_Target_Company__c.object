@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>The Interesting Company object is used to store information on companies j2 has researched.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <label>Interesting Company</label>
+    <nameField>
+        <label>Target Company Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Interesting Companies</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Employees__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Annual_Revenue__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Country_Presence__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Markets__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Stage__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>City__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>State_Province__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Employees__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Annual_Revenue__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Markets__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchResultsAdditionalFields>Employees__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Annual_Revenue__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Country_Presence__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Markets__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <visibility>Public</visibility>
+    <fields>
+        <fullName>Alexa_Traffic_Rank_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Alexa Traffic Rank Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Alexa__c</fullName>
+        <externalId>false</externalId>
+        <label>Alexa Traffic Rank</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Annual_Revenue__c</fullName>
+        <description>Target company&apos;s trailing twelve months revenue.</description>
+        <externalId>false</externalId>
+        <label>Annual Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Basic_Pricing__c</fullName>
+        <externalId>false</externalId>
+        <label>Basic Pricing</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <description>City in which the target company is based</description>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Company_Bio__c</fullName>
+        <description>Company Bio from web-site</description>
+        <externalId>false</externalId>
+        <label>Company Bio</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Country_Presence__c</fullName>
+        <externalId>false</externalId>
+        <label>Country Presence</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AU</fullName>
+                    <default>false</default>
+                    <label>AU</label>
+                </value>
+                <value>
+                    <fullName>BE</fullName>
+                    <default>false</default>
+                    <label>BE</label>
+                </value>
+                <value>
+                    <fullName>BR</fullName>
+                    <default>false</default>
+                    <label>BR</label>
+                </value>
+                <value>
+                    <fullName>CN</fullName>
+                    <default>false</default>
+                    <label>CN</label>
+                </value>
+                <value>
+                    <fullName>CZ</fullName>
+                    <default>false</default>
+                    <label>CZ</label>
+                </value>
+                <value>
+                    <fullName>DE</fullName>
+                    <default>false</default>
+                    <label>DE</label>
+                </value>
+                <value>
+                    <fullName>ES</fullName>
+                    <default>false</default>
+                    <label>ES</label>
+                </value>
+                <value>
+                    <fullName>FR</fullName>
+                    <default>false</default>
+                    <label>FR</label>
+                </value>
+                <value>
+                    <fullName>IE</fullName>
+                    <default>false</default>
+                    <label>IE</label>
+                </value>
+                <value>
+                    <fullName>IL</fullName>
+                    <default>false</default>
+                    <label>IL</label>
+                </value>
+                <value>
+                    <fullName>IT</fullName>
+                    <default>false</default>
+                    <label>IT</label>
+                </value>
+                <value>
+                    <fullName>JP</fullName>
+                    <default>false</default>
+                    <label>JP</label>
+                </value>
+                <value>
+                    <fullName>NL</fullName>
+                    <default>false</default>
+                    <label>NL</label>
+                </value>
+                <value>
+                    <fullName>PL</fullName>
+                    <default>false</default>
+                    <label>PL</label>
+                </value>
+                <value>
+                    <fullName>PT</fullName>
+                    <default>false</default>
+                    <label>PT</label>
+                </value>
+                <value>
+                    <fullName>UK</fullName>
+                    <default>false</default>
+                    <label>UK</label>
+                </value>
+                <value>
+                    <fullName>US</fullName>
+                    <default>false</default>
+                    <label>US</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Country__c</fullName>
+        <description>Country in which the target company is based.</description>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Crunch_Base_Profile__c</fullName>
+        <externalId>false</externalId>
+        <label>Crunch Base Profile</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Segments__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Segments</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Consumer</fullName>
+                    <default>false</default>
+                    <label>Consumer</label>
+                </value>
+                <value>
+                    <fullName>Professional/SOHO (&lt;5 employees)</fullName>
+                    <default>false</default>
+                    <label>Professional/SOHO (&lt;5 employees)</label>
+                </value>
+                <value>
+                    <fullName>Micro Biz (5-25 employees)</fullName>
+                    <default>false</default>
+                    <label>Micro Biz (5-25 employees)</label>
+                </value>
+                <value>
+                    <fullName>Small Biz (25-250 employees)</fullName>
+                    <default>false</default>
+                    <label>Small Biz (25-250 employees)</label>
+                </value>
+                <value>
+                    <fullName>Enterprise (&gt;250 employees)</fullName>
+                    <default>false</default>
+                    <label>Enterprise (&gt;250 employees)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Employees__c</fullName>
+        <externalId>false</externalId>
+        <label>Employees</label>
+        <precision>9</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Existing_Partner__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check this box if the Targe Company is an existing partner.</description>
+        <externalId>false</externalId>
+        <label>Existing Partner</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Expected_Close_Date__c</fullName>
+        <description>Date you expect  the deal to close.</description>
+        <externalId>false</externalId>
+        <label>Expected Close Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Idea_Source__c</fullName>
+        <description>Source from which the acquisition opportunity derived.</description>
+        <externalId>false</externalId>
+        <label>Idea Source</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Employee</fullName>
+                    <default>true</default>
+                    <label>Employee</label>
+                </value>
+                <value>
+                    <fullName>Existing Partner</fullName>
+                    <default>false</default>
+                    <label>Existing Partner</label>
+                </value>
+                <value>
+                    <fullName>Investment Bank / Advisor</fullName>
+                    <default>false</default>
+                    <label>Investment Bank / Advisor</label>
+                </value>
+                <value>
+                    <fullName>Investor</fullName>
+                    <default>false</default>
+                    <label>Investor</label>
+                </value>
+                <value>
+                    <fullName>Target Company Itself</fullName>
+                    <default>false</default>
+                    <label>Target Company Itself</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Last_Funding_Amount_M__c</fullName>
+        <description>The last amount of outside funding the Target Company has raised.</description>
+        <externalId>false</externalId>
+        <label>Last Funding Amount ($M)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Last_Funding_Date__c</fullName>
+        <description>The date of the last funding round for the Target Company.</description>
+        <externalId>false</externalId>
+        <label>Last Funding Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Markets__c</fullName>
+        <externalId>false</externalId>
+        <label>Markets</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Accounting</fullName>
+                    <default>false</default>
+                    <label>Accounting</label>
+                </value>
+                <value>
+                    <fullName>Billing</fullName>
+                    <default>false</default>
+                    <label>Billing</label>
+                </value>
+                <value>
+                    <fullName>Collaboration Suites</fullName>
+                    <default>false</default>
+                    <label>Collaboration Suites</label>
+                </value>
+                <value>
+                    <fullName>Contacts/eMail Management</fullName>
+                    <default>false</default>
+                    <label>Contacts/eMail Management</label>
+                </value>
+                <value>
+                    <fullName>CRM</fullName>
+                    <default>false</default>
+                    <label>CRM</label>
+                </value>
+                <value>
+                    <fullName>Electronic Signature</fullName>
+                    <default>false</default>
+                    <label>Electronic Signature</label>
+                </value>
+                <value>
+                    <fullName>eMail Archiving</fullName>
+                    <default>false</default>
+                    <label>eMail Archiving</label>
+                </value>
+                <value>
+                    <fullName>eMail Marketing</fullName>
+                    <default>false</default>
+                    <label>eMail Marketing</label>
+                </value>
+                <value>
+                    <fullName>File Share/Sync/Store</fullName>
+                    <default>false</default>
+                    <label>File Share/Sync/Store</label>
+                </value>
+                <value>
+                    <fullName>Large File Send</fullName>
+                    <default>false</default>
+                    <label>Large File Send</label>
+                </value>
+                <value>
+                    <fullName>Online Backup</fullName>
+                    <default>false</default>
+                    <label>Online Backup</label>
+                </value>
+                <value>
+                    <fullName>Project Management/Collaboration</fullName>
+                    <default>false</default>
+                    <label>Project Management/Collaboration</label>
+                </value>
+                <value>
+                    <fullName>Remote Desktop</fullName>
+                    <default>false</default>
+                    <label>Remote Desktop</label>
+                </value>
+                <value>
+                    <fullName>Voice</fullName>
+                    <default>false</default>
+                    <label>Voice</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Phone__c</fullName>
+        <description>Phone number for the Target Company</description>
+        <externalId>false</externalId>
+        <label>Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Pricing_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Pricing Notes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Stage__c</fullName>
+        <description>Denotes which stage of the acquisition process the Target Company is currently in.</description>
+        <externalId>false</externalId>
+        <label>Stage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>true</default>
+                    <label>Inactive</label>
+                </value>
+                <value>
+                    <fullName>1- Researching</fullName>
+                    <default>false</default>
+                    <label>1- Researching</label>
+                </value>
+                <value>
+                    <fullName>2 - Preliminary Diligence and Valuation</fullName>
+                    <default>false</default>
+                    <label>2 - Preliminary Diligence and Valuation</label>
+                </value>
+                <value>
+                    <fullName>3 - Negotiating Term Sheet</fullName>
+                    <default>false</default>
+                    <label>3 - Negotiating Term Sheet</label>
+                </value>
+                <value>
+                    <fullName>4 - Due Diligence</fullName>
+                    <default>false</default>
+                    <label>4 - Due Diligence</label>
+                </value>
+                <value>
+                    <fullName>5 - Drafting Formal Agreement</fullName>
+                    <default>false</default>
+                    <label>5 - Drafting Formal Agreement</label>
+                </value>
+                <value>
+                    <fullName>6 - Signed and Closed</fullName>
+                    <default>false</default>
+                    <label>6 - Signed and Closed</label>
+                </value>
+                <value>
+                    <fullName>7 - Integraton</fullName>
+                    <default>false</default>
+                    <label>7 - Integraton</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Not Interested</fullName>
+                    <default>false</default>
+                    <label>Not Interested</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>State_Province__c</fullName>
+        <externalId>false</externalId>
+        <label>State / Province</label>
+        <length>40</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Street__c</fullName>
+        <description>Street address for the Target Company.</description>
+        <externalId>false</externalId>
+        <label>Street</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Total_Amount_Raised__c</fullName>
+        <description>The total amount of outside funding the Target Company has raised.</description>
+        <externalId>false</externalId>
+        <label>Total Amount Raised ($M)</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>1</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>WebSite_HomePage__c</fullName>
+        <description>Insert a home page screen shot and the date of capture</description>
+        <externalId>false</externalId>
+        <label>WebSite HomePage</label>
+        <length>32000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Website__c</fullName>
+        <description>Target Company&apos;s website</description>
+        <externalId>false</externalId>
+        <label>Website</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Zip_Postal_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Zip / Postal Code</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Annual_Revenue__c</columns>
+        <columns>Country_Presence__c</columns>
+        <columns>Employees__c</columns>
+        <columns>Markets__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <validationRules>
+        <fullName>Expected_Close_Date_Inactive</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(ISPICKVAL( Stage__c ,&quot;Inactive / Not Interested&quot;), Expected_Close_Date__c  &gt; DATEVALUE(&quot;1900-01-01&quot;))</errorConditionFormula>
+        <errorDisplayField>Expected_Close_Date__c</errorDisplayField>
+        <errorMessage>CANNOT HAVE EXPECTED CLOSE DATE WITH INACTIVE ACCOUNT</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Expected_Close_Date_TermSheet</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(ISPICKVAL( Stage__c ,&quot;3 - Negotiating Term Sheet&quot;), Expected_Close_Date__c    =   null)</errorConditionFormula>
+        <errorMessage>MUST HAVE EXPECTED CLOSE DATE FOR THIS STAGE</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>CA_Business_Search</fullName>
+        <availability>online</availability>
+        <description>Search the CA secretary of state website for business information</description>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>CA Business Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://kepler.ss.ca.gov/list.html</url>
+    </webLinks>
+</CustomObject>

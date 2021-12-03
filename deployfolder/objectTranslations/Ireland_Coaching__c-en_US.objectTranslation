@@ -1,0 +1,1189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ireland Coaching</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ireland - Coachings</value>
+    </caseValues>
+    <layouts>
+        <layout>Ireland Coaching Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Maintenance &amp; Product Knowledge Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Call Coaching Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Call Handling Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Call Summary Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Coaching Summary</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Communication Skills Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Documentation Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Opening Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Retention &amp; Upsells Section</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Additional_Assistance_Offered_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Additional_Assistance_Offered__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Additional_Comments__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Advisor_Name__c</name>
+        <picklistValues>
+            <masterLabel>Alessia Dominici</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delfin Tejada</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elena Tudorache</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Giancarlo Fioravanti</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>John Bekema</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lou Debourbe</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Madalina Craciun</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marianna Lagani</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michela Concas</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mihaela Nitu</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ola Juszczak</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rocco Paradiso</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sandra Gomez</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sara Pelagotti</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sonia Giglio</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stefan Pelgen</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virginia Molina</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Call_Calibrated_By__c</name>
+        <picklistValues>
+            <masterLabel>Denis Keogh</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>John Bekema</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lorraine McGuinness</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Luke Duffy</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michael Calotte</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scott Wilson</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vincent Gauthier</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Call_Logged_Correctly_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Call_Logged_Correctly__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Call_Logged_in_WCSA_ISP_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Call_Logged_in_WCSA_ISP__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Case__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>CID_COKEY__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Clear_in_Speech_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Clear_in_Speech__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Coaching_Type__c</name>
+        <picklistValues>
+            <masterLabel>Dial In &amp; Feedback</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live Feedback</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remote Call Listening</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Side By Side</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Customer_Satisfaction_Survey_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Customer_Satisfaction_Survey_Sent__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>DID__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Empathy_Comment__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Empathy__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs Improvement</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Good</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Features_Promoted_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Features_Promoted__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Hold_Technique_Comment__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Hold_Technique__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Identification_of_Customer_Issue_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Identification_of_Customer_Issue__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Listened_Appropriately_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Listened_Appropriately__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs Improvement</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Good</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Made_Requested_Changes_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Made_Requested_Changes__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Maintains_Call_Control_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Maintains_Call_Control__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Offer_Made_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Offer_Made__c</name>
+        <picklistValues>
+            <masterLabel>1 Month Free</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 Months Free</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 Months Free</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MyFax - Euro 4.50 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MyFax - Euro 6.00 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MyFax - Euro 9.00 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MyFax - GBP 3.00 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MyFax - USD 10.00 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MyFax - USD 20.00 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MyFax - USD 5.00 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voice - Annual Discount</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voice - Downgrade Plan</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - Euro 39.00</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - Euro 4 Month Promo 2.50 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - Euro 5.49 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - Euro 69.50 Annual (1 Year)</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - Euro 99.00 Annual</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - GBP 29.00 Annual</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - GBP 3.50 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - GBP 35.00 Annual</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - GBP 37.50 Bi-Annual</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - GBP 49.50 Annual</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - GBP 5.50 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - GBP 55.00 Annual</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - GBP 6 Month Promo 4.99 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - USD 2.95 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - USD 5.00 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - USD 50.00 Annual</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Offer_Status_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Offer_Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Overall_Confidence_Comment__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Overall_Confidence__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs Improvement</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Good</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Pace_of_the_Call_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Pace_of_the_Call__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs Improvement</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Good</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Perception_of_Advisor_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Perception_of_Advisor__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs Improvement</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Good</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Perception_of_Customer_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Perception_of_Customer__c</name>
+        <picklistValues>
+            <masterLabel>Closed &amp; Not Engaged</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Irate</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open &amp; Engaged</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other - See Notes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Perception_of_the_Call_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Perception_of_the_Call__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs Improvement</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Good</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Pitched_Well_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Pitched_Well__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Product__c</name>
+        <picklistValues>
+            <masterLabel>Fax</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voice</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Promote_Other_Products_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Promote_Other_Products__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Proper_Closing_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Proper_Closing__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Proper_Opening_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Proper_Opening__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Provides_Call_Resolution_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Provides_Call_Resolution__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Provide_a_Salesforce_Ref_Number_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Provide_a_Salesforce_Ref_Number__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Reason_For_Call__c</name>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancellation</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Recaps_on_Issue_Resolution_Comment__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Recaps_on_Issue_Resolution__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Researched_Customer_Issue_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Researched_Customer_Issue__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Retention_Offered_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Retention_Offered__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Score_Comment__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Score__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Secondary_Offer_Details_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Secondary_Offer_Details__c</name>
+        <picklistValues>
+            <masterLabel>1 Month Free</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 Months Free</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 Months Free</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MyFax - Euro 4.50 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MyFax - Euro 6.00 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MyFax - Euro 9.00 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MyFax - GBP 3.00 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MyFax - USD 10.00 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MyFax - USD 20.00 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MyFax - USD 5.00 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voice - Annual Discount</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voice - Downgrade Plan</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - Euro 39.00</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - Euro 4 Month Promo 2.50 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - Euro 5.49 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - Euro 69.50 Annual (1 Year)</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - Euro 99.00 Annual</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - GBP 29.00 Annual</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - GBP 3.50 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - GBP 35.00 Annual</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - GBP 37.50 Bi-Annual</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - GBP 49.50 Annual</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - GBP 5.50 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - GBP 55.00 Annual</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - GBP 6 Month Promo 4.99 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - USD 2.95 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - USD 5.00 Monthly</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax - USD 50.00 Annual</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Secondary_Offer_Made_Comment__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Secondary_Offer_Made__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Sent_an_Email_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Sent_an_Email__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Tone_and_Energy_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Tone_and_Energy__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs Improvement</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Good</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Tone_Etiquette_and_Politeness_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Tone_Etiquette_and_Politeness__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs Improvement</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Good</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Understanding_of_Customer_Issues_Comment__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Understanding_of_Customer_Issues__c</name>
+        <picklistValues>
+            <masterLabel>Excellent</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs Improvement</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Good</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Upsell_Offers_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Upsell_Offers__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Upsell_Possibilities_Comnment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Upsell_Possibilities__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Utilzation_of_Customers_Name_Comment__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Utilzation_of_Customers_Name__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

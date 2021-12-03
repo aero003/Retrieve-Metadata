@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SalesRep_Name__c</fullName>
+    <description>Test 1
+Test 2</description>
+    <externalId>false</externalId>
+    <label>SalesRep Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>--Pick Sales Rep Name--</fullName>
+                <default>true</default>
+                <label>--Pick Sales Rep Name--</label>
+            </value>
+            <value>
+                <fullName>Sam Steiger</fullName>
+                <default>false</default>
+                <label>Sam Steiger</label>
+            </value>
+            <value>
+                <fullName>Keith Hastings</fullName>
+                <default>false</default>
+                <label>Keith Hastings</label>
+            </value>
+            <value>
+                <fullName>Kevin Lautsbaugh</fullName>
+                <default>false</default>
+                <label>Kevin Lautsbaugh</label>
+            </value>
+            <value>
+                <fullName>Sean Kotora</fullName>
+                <default>false</default>
+                <label>Sean Kotora</label>
+            </value>
+            <value>
+                <fullName>Sean Purtill</fullName>
+                <default>false</default>
+                <label>Sean Purtill</label>
+            </value>
+            <value>
+                <fullName>Paul Buchanan</fullName>
+                <default>false</default>
+                <label>Paul Buchanan</label>
+            </value>
+            <value>
+                <fullName>Chris Monato</fullName>
+                <default>false</default>
+                <label>Chris Monato</label>
+            </value>
+            <value>
+                <fullName>Mina Gurguis</fullName>
+                <default>false</default>
+                <label>Mina Gurguis</label>
+            </value>
+            <value>
+                <fullName>Ronald Merrill</fullName>
+                <default>false</default>
+                <label>Ronald Merrill</label>
+            </value>
+            <value>
+                <fullName>Todd Veneman</fullName>
+                <default>false</default>
+                <label>Todd Veneman</label>
+            </value>
+            <value>
+                <fullName>Cedric Lowe</fullName>
+                <default>false</default>
+                <label>Cedric Lowe</label>
+            </value>
+            <value>
+                <fullName>Simon Pak</fullName>
+                <default>false</default>
+                <label>Simon Pak</label>
+            </value>
+            <value>
+                <fullName>Andrew Lagomarsino</fullName>
+                <default>false</default>
+                <label>Andrew Lagomarsino</label>
+            </value>
+            <value>
+                <fullName>Michael Boyer</fullName>
+                <default>false</default>
+                <label>Michael Boyer</label>
+            </value>
+            <value>
+                <fullName>Harry Tatarian</fullName>
+                <default>false</default>
+                <label>Harry Tatarian</label>
+            </value>
+            <value>
+                <fullName>Adam Esquivel</fullName>
+                <default>false</default>
+                <label>Adam Esquivel</label>
+            </value>
+            <value>
+                <fullName>Shawna Harris</fullName>
+                <default>false</default>
+                <label>Shawna Harris</label>
+            </value>
+            <value>
+                <fullName>Guest</fullName>
+                <default>false</default>
+                <label>Guest</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

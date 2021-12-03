@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Refund Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Refund Requests</value>
+    </caseValues>
+    <layouts>
+        <layout>Refund Request Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detailed Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Refund Request Layout - HLW</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detailed Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Refund Request Layout - International</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detailed Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Refund Request Layout - Microsites</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detailed Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Refund Request Layout - Ottawa</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detailed Description</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sfax Refund Request Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Detailed Description</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>CS_HLW</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>CS_International</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>CS_Microsites</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>CS_Ottawa</name>
+    </recordTypes>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Sfax</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Credit_Reason_must_be_populated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>RefundAmount_CreditAmount_mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Refund_Amount_must_be_populated_Intl</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Refund_Amount_must_be_populated_Micro</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Refund_Reason_must_be_populated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Refund_or_Credit_Amount_must_be_populate</name>
+    </validationRules>
+    <fields>
+        <label></label>
+        <name>Account_Number__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Account__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Additional_Comments__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Case__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Contact_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Contact__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Currency__c</name>
+        <picklistValues>
+            <masterLabel>AUD</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HKD</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JPY</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SGD</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Customer_ID__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Detailed_Description__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Fax_Brand__c</name>
+        <picklistValues>
+            <masterLabel>DOC</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MetroFax</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MyFax</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax AU</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eFax JP</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>jsign</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Fax_Number__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Fax_Representative__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Onebox_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Onebox_EVR_Number__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Onebox_EVR_Representative__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Reason_for_Credit__c</name>
+        <picklistValues>
+            <masterLabel>Cancellation</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dissatisfaction</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate Account</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraud</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple Billing</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Representative Error</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Offer</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Usage Balance</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Reason_for_Refund__c</name>
+        <picklistValues>
+            <masterLabel>30 day Money Back Guarantee</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancellation</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dissatisfaction</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate Account</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duration</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraud</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple Billing</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Representative Error</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Offer</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Usage Balance</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>RecordTypeID__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Requested_Credit_Amount__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Requested_Refund_Amount__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>User_Company_Key__c</name>
+    </fields>
+</CustomObjectTranslation>

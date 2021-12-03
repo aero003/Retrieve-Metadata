@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Sfax.com Support Chat Queue</name>
+    <queueMembers>
+        <users>
+            <user>alina.azarova@j2.com</user>
+            <user>armando.garcia@j2.com</user>
+            <user>ben.paddon@j2.com</user>
+            <user>cedric.bates@j2.com</user>
+            <user>chris.bohsung@j2.com</user>
+            <user>eliana.sandoval@j2.com</user>
+            <user>james.jefferson@j2.com</user>
+            <user>jennifer.castro@j2.com</user>
+            <user>jeremiah.wade@j2.com</user>
+            <user>mickey.galie@j2.com</user>
+            <user>silva.tatoyan@j2.com</user>
+            <user>soi.long@j2.com</user>
+            <user>todd.veneman@j2.com</user>
+            <user>willie.childs@j2.com</user>
+            <user>zelos.a@j2.com</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Chat</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>LiveChatTranscript</sobjectType>
+    </queueSobject>
+</Queue>

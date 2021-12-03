@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Excluded_F__c</fullName>
+    <description>KIS - Site Survey - Enter the  Excluded Folders on Separate Lines</description>
+    <externalId>false</externalId>
+    <inlineHelpText>KIS - Site Survey - Enter the  Excluded Folders on Separate Lines</inlineHelpText>
+    <label>Excluded Folders List</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>6</visibleLines>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>June_Inbound__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(MONTH(Opportunity__r.CloseDate),
+		1, WR_Inbound__c, 
+		2, WR_Inbound__c, 
+		3, WR_Inbound__c, 
+		4, WR_Inbound__c, 
+		5, WR_Inbound__c,
+		6, WR_Inbound__c,
+
+	0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>June_Inbound</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

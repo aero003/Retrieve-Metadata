@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending1</fullName>
+    <columns>Approved_Date__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Date__c</columns>
+    <columns>Account_Executive__c</columns>
+    <columns>Comments__c</columns>
+    <columns>NAME</columns>
+    <columns>Min_Monthly_Services_Charges__c</columns>
+    <columns>Minimum_Page_Commitment__c</columns>
+    <columns>Term_of_Contract__c</columns>
+    <columns>Status__c</columns>
+    <columns>Description_of_Amendment__c</columns>
+    <columns>Conga_eFax_Email_Contract_to_Legal_URL__c</columns>
+    <columns>Conga_Email_eFax_Corporate_SOF_to_Legal__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Pending,Approved</value>
+    </filters>
+    <label>Pending</label>
+    <language>en_US</language>
+</ListView>

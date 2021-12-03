@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Provisioning</fullName>
+    <availability>online</availability>
+    <description>Open newly created VF page to add a record</description>
+    <displayType>massActionButton</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>New Provisioning</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+    <url>var sfaxProvisioningURL = &apos;/apex/sfaxProvisioning?&apos;;
+var ConsensusProvisioningURL = &apos;/apex/ConsensusProvisioning?&apos;;
+
+if(&apos;{!Contact.Id}&apos;){
+//alert(&apos;Contact ID : &apos; + &apos;{!Contact.Id}&apos;);
+//alert(&apos;Record Type : &apos;+&apos;{!Contact.RecordTypeId}&apos;);
+//sfaxProvisioningURL += &apos;retURL=/{!Contact.Id}&amp;contactid={!Contact.Id}&amp;contactname={!Contact.Name}&amp;companyid={!Account.Id}&amp;companyname={!Account.Name}&apos;
+//Consensus RecordType on Contact
+	if(&apos;{!Contact.RecordTypeId}&apos; == &apos;0120e000000M6HV&apos;) {
+		ConsensusProvisioningURL += &apos;retURL=/{!Contact.Id}&amp;contactid={!Contact.Id}&amp;contactname={!Contact.Name}&amp;companyid={!Account.Id}&amp;companyname={!Account.Name}&apos;
+		window.location.href = ConsensusProvisioningURL;
+	}
+	//Sfax RecordType on Contact
+	else if(&apos;{!Contact.RecordTypeId}&apos; == &apos;01232000000ghmN&apos;) {
+		sfaxProvisioningURL += &apos;retURL=/{!Contact.Id}&amp;contactid={!Contact.Id}&amp;contactname={!Contact.Name}&amp;companyid={!Account.Id}&amp;companyname={!Account.Name}&apos;
+		window.location.href = sfaxProvisioningURL;
+	}
+}
+else if(&apos;{!Account.Id}&apos;){
+//alert(&apos;Account Id : &apos;+&apos;{!Account.Id}&apos;);
+//alert(&apos;Record Type : &apos;+&apos;{!Account.RecordTypeId}&apos;);
+//sfaxProvisioningURL += &apos;retURL=/{!Account.Id}&amp;companyid={!Account.Id}&amp;companyname={!Account.Name}&apos;
+	//Consensus RecordType on Account
+	if(&apos;{!Account.RecordTypeId}&apos; == &apos;0120e000000M6HT&apos;) {
+		ConsensusProvisioningURL += &apos;retURL=/{!Account.Id}&amp;companyid={!Account.Id}&amp;companyname={!Account.Name}&apos;
+		window.location.href = ConsensusProvisioningURL;
+	}
+	//Sfax RecordType on Account
+	else if(&apos;{!Account.RecordTypeId}&apos; == &apos;01232000000ghmL&apos;) {
+		sfaxProvisioningURL += &apos;retURL=/{!Account.Id}&amp;companyid={!Account.Id}&amp;companyname={!Account.Name}&apos;
+		window.location.href = sfaxProvisioningURL;
+	}
+}</url>
+</WebLink>

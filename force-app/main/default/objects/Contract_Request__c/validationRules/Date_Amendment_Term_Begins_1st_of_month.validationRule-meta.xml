@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Amendment_Term_Begins_1st_of_month</fullName>
+    <active>true</active>
+    <description>The Date Amendment Term Begins must be the first of the month.</description>
+    <errorConditionFormula>DAY(Date_Amendment_Term_Begins__c)&lt;&gt;1</errorConditionFormula>
+    <errorDisplayField>Date_Amendment_Term_Begins__c</errorDisplayField>
+    <errorMessage>Must be the first day of the month.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Int_Bill_Desc_NB__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(MONTH( Billing_Run_Date__c ), 2, &quot;1&quot;, 3, &quot;2&quot;, 4, &quot;3&quot;, 5, &quot;4&quot;, 6, &quot;5&quot;, 7, &quot;6&quot;, 8, &quot;7&quot;, 9, &quot;8&quot;, 10, &quot;9&quot;, 11, &quot;10&quot;, 12, &quot;11&quot;, 1, &quot;12&quot;, &quot;None&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Int.Bill.Desc.NB</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

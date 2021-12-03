@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Interesting Company</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Interesting Companies</value>
+    </caseValues>
+    <layouts>
+        <layout>Interesting Company Layout</layout>
+        <sections>
+            <label></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Funding Overview</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Expected_Close_Date_Inactive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Expected_Close_Date_TermSheet</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>CA_Business_Search</name>
+    </webLinks>
+    <fields>
+        <label></label>
+        <name>Alexa_Traffic_Rank_Date__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Alexa__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Annual_Revenue__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Basic_Pricing__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Company_Bio__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Country_Presence__c</name>
+        <picklistValues>
+            <masterLabel>AU</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BE</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BR</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CN</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CZ</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ES</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FR</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IE</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IT</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JP</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NL</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PL</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PT</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UK</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Crunch_Base_Profile__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Customer_Segments__c</name>
+        <picklistValues>
+            <masterLabel>Consumer</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise (&gt;250 employees)</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Micro Biz (5-25 employees)</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professional/SOHO (&lt;5 employees)</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Biz (25-250 employees)</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Employees__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Existing_Partner__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Expected_Close_Date__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Idea_Source__c</name>
+        <picklistValues>
+            <masterLabel>Employee</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing Partner</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investment Bank / Advisor</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Target Company Itself</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Last_Funding_Amount_M__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Last_Funding_Date__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Markets__c</name>
+        <picklistValues>
+            <masterLabel>Accounting</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRM</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collaboration Suites</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contacts/eMail Management</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronic Signature</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>File Share/Sync/Store</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large File Send</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Backup</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Management/Collaboration</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remote Desktop</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voice</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eMail Archiving</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>eMail Marketing</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Pricing_Notes__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Stage__c</name>
+        <picklistValues>
+            <masterLabel>1- Researching</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 - Preliminary Diligence and Valuation</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 - Negotiating Term Sheet</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4 - Due Diligence</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 - Drafting Formal Agreement</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6 - Signed and Closed</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7 - Integraton</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Interested</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label></label>
+        <name>State_Province__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Street__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Total_Amount_Raised__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>WebSite_HomePage__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Website__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Zip_Postal_Code__c</name>
+    </fields>
+</CustomObjectTranslation>

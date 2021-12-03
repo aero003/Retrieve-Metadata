@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estimated_Data_Total__c</fullName>
+    <description>The SUM of Data Types in Site Survey MINUS Excluded Data</description>
+    <externalId>false</externalId>
+    <formula>Exchange_Data_GB__c  +  Lotus_Data_GB__c  +  MySQL_Data_GB__c  +  MySQL_Data_GB__c  +  Oracle_Data_GB__c  +  SQL_Data_GB__c  +  Other_Data_GB__c  -  Exclusion_Data_GB__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>The SUM of Data Types in Site Survey MINUS Excluded Data</inlineHelpText>
+    <label>Estimated Data Total</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

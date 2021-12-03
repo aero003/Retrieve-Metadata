@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Advisor_Name__c</fullName>
+    <externalId>false</externalId>
+    <label>Advisor Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Stefan Pelgen</fullName>
+                <default>false</default>
+                <label>Stefan Pelgen</label>
+            </value>
+            <value>
+                <fullName>Elena Tudorache</fullName>
+                <default>false</default>
+                <label>Elena Tudorache</label>
+            </value>
+            <value>
+                <fullName>Sonia Giglio</fullName>
+                <default>false</default>
+                <label>Sonia Giglio</label>
+            </value>
+            <value>
+                <fullName>Sandra Gomez</fullName>
+                <default>false</default>
+                <label>Sandra Gomez</label>
+            </value>
+            <value>
+                <fullName>Sara Pelagotti</fullName>
+                <default>false</default>
+                <label>Sara Pelagotti</label>
+            </value>
+            <value>
+                <fullName>Virginia Molina</fullName>
+                <default>false</default>
+                <label>Virginia Molina</label>
+            </value>
+            <value>
+                <fullName>Lou Debourbe</fullName>
+                <default>false</default>
+                <label>Lou Debourbe</label>
+            </value>
+            <value>
+                <fullName>Marianna Lagani</fullName>
+                <default>false</default>
+                <label>Marianna Lagani</label>
+            </value>
+            <value>
+                <fullName>Madalina Craciun</fullName>
+                <default>false</default>
+                <label>Madalina Craciun</label>
+            </value>
+            <value>
+                <fullName>Alessia Dominici</fullName>
+                <default>false</default>
+                <label>Alessia Dominici</label>
+            </value>
+            <value>
+                <fullName>John Bekema</fullName>
+                <default>false</default>
+                <label>John Bekema</label>
+            </value>
+            <value>
+                <fullName>Rocco Paradiso</fullName>
+                <default>false</default>
+                <label>Rocco Paradiso</label>
+            </value>
+            <value>
+                <fullName>Mihaela Nitu</fullName>
+                <default>false</default>
+                <label>Mihaela Nitu</label>
+            </value>
+            <value>
+                <fullName>Ola Juszczak</fullName>
+                <default>false</default>
+                <label>Ola Juszczak</label>
+            </value>
+            <value>
+                <fullName>Delfin Tejada</fullName>
+                <default>false</default>
+                <label>Delfin Tejada</label>
+            </value>
+            <value>
+                <fullName>Giancarlo Fioravanti</fullName>
+                <default>false</default>
+                <label>Giancarlo Fioravanti</label>
+            </value>
+            <value>
+                <fullName>Michela Concas</fullName>
+                <default>false</default>
+                <label>Michela Concas</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

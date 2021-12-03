@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Diligence_Manager__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Diligence manager. All tasks will be assigned to this user.</description>
+    <externalId>false</externalId>
+    <label>Diligence Manager</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Due_Diligence_Project</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

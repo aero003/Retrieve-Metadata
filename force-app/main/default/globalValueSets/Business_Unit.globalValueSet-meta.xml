@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>FaxNA</fullName>
+        <default>false</default>
+        <label>FaxNA</label>
+    </customValue>
+    <customValue>
+        <fullName>FaxEU</fullName>
+        <default>false</default>
+        <label>FaxEU</label>
+    </customValue>
+    <description>Created these values to setup Pardot sync to different Business units.</description>
+    <masterLabel>Business Unit</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sfax</fullName>
+    <active>true</active>
+    <description>sfax provisioning</description>
+    <label>Sfax</label>
+    <picklistValues>
+        <picklist>Company_Industry__c</picklist>
+        <values>
+            <fullName>Academic%2F Medical School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Behavioral Health Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billing Company</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Healthcare Clinic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Durable Medical Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Health</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laboratory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pharmacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physician</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Real Estate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Skilled Nursing Facility</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Company_Terms__c</picklist>
+        <values>
+            <fullName>Net 30</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Company_Time_Zone__c</picklist>
+        <values>
+            <fullName>CST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PST</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Consensus_SKU_Tier__c</picklist>
+        <values>
+            <fullName>Tier 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tier 6</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Online_TOS_Enabled__c</picklist>
+        <values>
+            <fullName>Online %28click through%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paper %28contract%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Provisioning_Status__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subscription_Term__c</picklist>
+        <values>
+            <fullName>Annual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monthly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TOS__c</picklist>
+        <values>
+            <fullName>Bypass Online TOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Online TOS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

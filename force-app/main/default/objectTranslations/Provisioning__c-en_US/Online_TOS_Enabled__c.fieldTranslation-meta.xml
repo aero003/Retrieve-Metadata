@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>Online_TOS_Enabled__c</name>
+    <picklistValues>
+        <masterLabel>Online (click through)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paper (contract)</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

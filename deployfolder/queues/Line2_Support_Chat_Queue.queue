@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Line2 Support Chat Queue</name>
+    <queueMembers>
+        <users>
+            <user>adrian.williams@j2.com</user>
+            <user>becky.calloo@j2.com</user>
+            <user>cheryl.lowe@j2.com</user>
+            <user>cindy.mckenna@j2.com</user>
+            <user>crystal.sands@j2.com</user>
+            <user>dennis.harris@j2.com</user>
+            <user>eddie.osorio@j2.com</user>
+            <user>grace.mckenzie@j2.com</user>
+            <user>gregory.mccreath@j2.com</user>
+            <user>heather.masimba@j2.com</user>
+            <user>jai.shaffer@j2.com</user>
+            <user>javier.gonzalez@j2.com</user>
+            <user>jay.migliori@j2.com</user>
+            <user>jeff.brownlee@j2.com</user>
+            <user>jerome.jackson@j2.com</user>
+            <user>kadian.mckenzie@j2.com</user>
+            <user>keith.brown@j2.com</user>
+            <user>khale.oriley@j2.com</user>
+            <user>mariana.powell-hall@j2.com</user>
+            <user>mlania.matousian@j2.com</user>
+            <user>moniffa.whittle@j2.com</user>
+            <user>parris-tijh.lynch@j2.com</user>
+            <user>paul.dolan@j2.com</user>
+            <user>renae.martin@j2.com</user>
+            <user>samantha.scott@j2.com</user>
+            <user>shenique.dennis@j2.com</user>
+            <user>sirena.brown@j2.com</user>
+            <user>tamekia.johnson@j2.com</user>
+        </users>
+    </queueMembers>
+    <queueRoutingConfig>Chat</queueRoutingConfig>
+    <queueSobject>
+        <sobjectType>LiveChatTranscript</sobjectType>
+    </queueSobject>
+</Queue>

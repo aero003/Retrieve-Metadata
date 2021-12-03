@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Revenue_Outbound__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+	MONTH( Opportunity__r.CloseDate), 
+		1, (12 * WR_Outbound__c), 
+		2,(11 * WR_Outbound__c), 
+		3,(10 * WR_Outbound__c), 
+		4,(9 * WR_Outbound__c), 
+		5,(8 * WR_Outbound__c), 
+		6,(7 * WR_Outbound__c), 
+		7,(6 * WR_Outbound__c), 
+		8,(5 * WR_Outbound__c), 
+		9,(4 * WR_Outbound__c), 
+		10,(3 * WR_Outbound__c), 
+		11,(2 * WR_Outbound__c), 
+		WR_Outbound__c
+	)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Revenue Outbound</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

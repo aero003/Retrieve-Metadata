@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>Account__c</columns>
+    <columns>Billed_Customer_ID__c</columns>
+    <columns>Bill_To__c</columns>
+    <columns>OBJECT_ID</columns>
+    <columns>Header_Attribute4__c</columns>
+    <columns>KIS_Legacy_Account_ID__c</columns>
+    <columns>Oracle_Invoice_ID__c</columns>
+    <columns>Billing_Period__c</columns>
+    <columns>Billing_Period_NB__c</columns>
+    <columns>Amount__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+    <language>en_US</language>
+</ListView>

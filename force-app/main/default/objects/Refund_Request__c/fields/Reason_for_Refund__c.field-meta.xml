@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_for_Refund__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Required if refund amount is entered.</inlineHelpText>
+    <label>Reason for Refund</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Multiple Billing</fullName>
+                <default>false</default>
+                <label>Multiple Billing</label>
+            </value>
+            <value>
+                <fullName>Duplicate Account</fullName>
+                <default>false</default>
+                <label>Duplicate Account</label>
+            </value>
+            <value>
+                <fullName>Representative Error</fullName>
+                <default>false</default>
+                <label>Representative Error</label>
+            </value>
+            <value>
+                <fullName>Dissatisfaction</fullName>
+                <default>false</default>
+                <label>Dissatisfaction</label>
+            </value>
+            <value>
+                <fullName>Special Offer</fullName>
+                <default>false</default>
+                <label>Special Offer</label>
+            </value>
+            <value>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+                <label>Cancellation</label>
+            </value>
+            <value>
+                <fullName>Usage Balance</fullName>
+                <default>false</default>
+                <label>Usage Balance</label>
+            </value>
+            <value>
+                <fullName>Fraud</fullName>
+                <default>false</default>
+                <label>Fraud</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>30 day Money Back Guarantee</fullName>
+                <default>false</default>
+                <label>30 day Money Back Guarantee</label>
+            </value>
+            <value>
+                <fullName>Duration</fullName>
+                <default>false</default>
+                <label>Duration</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Admin Surveys J2 Support Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Active Queue Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Admin Surveys eFax: Int&apos;l &amp; Microsites Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Active Queue Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Campaigner Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Assignment Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Survey</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Consensus CS Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Active Queue Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Corp Porting &amp; Orders Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Active Queue Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Survey</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Email Thread</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>DOC Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Fonebox Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Active Queue Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FuseMail Provisioning Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Email Thread</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Install Checklist</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Services</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Workflow Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FuseMail Support Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Escalation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Workflow Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>FuseMail Support Case Layout Level 2</layout>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Escalation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Email Thread</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Workflow Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ireland Support Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Active Queue Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Cancellation Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Survey</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Email Thread</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>J2 Support Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Active Queue Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Survey</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Email Thread</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>J2 Support Case Layout1</layout>
+        <sections>
+            <label></label>
+            <section>Active Queue Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Survey</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Email Thread</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>KeepitSafe Layout1</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Product Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>KeepitSafe Layout2</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Product Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Keepitsafe Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>DS-System Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Landslide Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Assignment Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Line2 Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Line2 Case New Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Active Queue Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Survey</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Email Thread</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>LiveVault Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Closed Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Product Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>LiveVault Case Layout1</layout>
+        <sections>
+            <label></label>
+            <section>Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Closed Case Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Other Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Product Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MyFax Layout</layout>
+        <sections>
+            <label></label>
+            <section>Addtional Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Assignment Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Contact Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Survey</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MyFax Layout1</layout>
+        <sections>
+            <label></label>
+            <section>Addtional Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Assignment Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Contact Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Survey</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Email Thread</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MyFax Legacy Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Assignment Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Contact Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Ottawa UK Fax: Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Active Queue Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Survey</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Email Thread</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sfax Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sfax Case Layout1</layout>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Voice CC Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Voice Case Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Active Queue Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Survey</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Email Thread</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Voice Provisioning Page Layout</layout>
+        <sections>
+            <label></label>
+            <section>Active Queue Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Survey</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eFax Corp Porting Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Survey</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eFax Corporate Ireland: Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Active Queue Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eFax Corporate: Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Active Queue Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eFax: Int&apos;l &amp; Microsites Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Active Queue Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Email Thread</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eFax: International Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Active Queue Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Email Thread</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eFax: Microsites Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Active Queue Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Email Thread</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eVoice AU Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Active Queue Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Email information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>eVoice NZ Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Active Queue Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Assignment Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Notes</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>jSign Case layout</layout>
+        <sections>
+            <label></label>
+            <section>Addtional Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Assignment Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Case Contact Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Customer Survey</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>zDOC Case Layout</layout>
+        <sections>
+            <label></label>
+            <section>Case Details</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Useful Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Change_Status</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>CloseCase</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <workflowTasks>
+        <name>Aging_List_Check</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description></description>
+        <name>Cancel_Email</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description></description>
+        <name>Current_Price_Plan_Review</name>
+        <subject></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description></description>
+        <name>Perform_Health_Check</name>
+        <subject></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>rogers.efaxcorp@j2.com</email>
+    <name>Ottawa Rogers eFax Corporate</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Ottawa_Myfax_Support</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Account Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CORP</fullName>
+                <default>false</default>
+                <label>CORP</label>
+            </value>
+            <value>
+                <fullName>PAID</fullName>
+                <default>false</default>
+                <label>PAID</label>
+            </value>
+            <value>
+                <fullName>Free</fullName>
+                <default>false</default>
+                <label>Free</label>
+            </value>
+            <value>
+                <fullName>Direct</fullName>
+                <default>false</default>
+                <label>Direct</label>
+            </value>
+            <value>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+                <label>Reseller</label>
+            </value>
+            <value>
+                <fullName>Partner</fullName>
+                <default>false</default>
+                <label>Partner</label>
+            </value>
+            <value>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+                <label>Prospect</label>
+            </value>
+            <value>
+                <fullName>Lead - A</fullName>
+                <default>false</default>
+                <label>Lead - A</label>
+            </value>
+            <value>
+                <fullName>Lead - B</fullName>
+                <default>false</default>
+                <label>Lead - B</label>
+            </value>
+            <value>
+                <fullName>Lead - C</fullName>
+                <default>false</default>
+                <label>Lead - C</label>
+            </value>
+            <value>
+                <fullName>CRM - Signed Customer</fullName>
+                <default>false</default>
+                <label>CRM - Signed Customer</label>
+            </value>
+            <value>
+                <fullName>CPA - Signed Customer Pending Cancellation</fullName>
+                <default>false</default>
+                <label>CPA - Signed Customer Pending Cancellation</label>
+            </value>
+            <value>
+                <fullName>CRM - Signed Customer in Implementation</fullName>
+                <default>false</default>
+                <label>CRM - Signed Customer in Implementation</label>
+            </value>
+            <value>
+                <fullName>CRM - Cancelled</fullName>
+                <default>false</default>
+                <label>CRM - Cancelled</label>
+            </value>
+            <value>
+                <fullName>CRM - Cancelled - Non Payment</fullName>
+                <default>false</default>
+                <label>CRM - Cancelled - Non Payment</label>
+            </value>
+            <value>
+                <fullName>Campaigner - Active</fullName>
+                <default>false</default>
+                <label>Campaigner - Active</label>
+            </value>
+            <value>
+                <fullName>Campaigner - Suspended</fullName>
+                <default>false</default>
+                <label>Campaigner - Suspended</label>
+            </value>
+            <value>
+                <fullName>Campaigner - Cancelled</fullName>
+                <default>false</default>
+                <label>Campaigner - Cancelled</label>
+            </value>
+            <value>
+                <fullName>Suspended</fullName>
+                <default>false</default>
+                <label>Suspended</label>
+            </value>
+            <value>
+                <fullName>Partner &amp; Customer</fullName>
+                <default>false</default>
+                <label>Partner &amp; Customer</label>
+            </value>
+            <value>
+                <fullName>Partner Prospect</fullName>
+                <default>false</default>
+                <label>Partner Prospect</label>
+            </value>
+            <value>
+                <fullName>Pilot Customer</fullName>
+                <default>false</default>
+                <label>Pilot Customer</label>
+            </value>
+            <value>
+                <fullName>CSPM Customer (Playbook)</fullName>
+                <default>false</default>
+                <label>CSPM Customer (Playbook)</label>
+            </value>
+            <value>
+                <fullName>Partner - Nurture</fullName>
+                <default>false</default>
+                <label>Partner - Nurture</label>
+            </value>
+            <value>
+                <fullName>Partner - Cancel</fullName>
+                <default>false</default>
+                <label>Partner - Cancel</label>
+            </value>
+            <value>
+                <fullName>Partner - Active</fullName>
+                <default>false</default>
+                <label>Partner - Active</label>
+            </value>
+            <value>
+                <fullName>Contactology</fullName>
+                <default>false</default>
+                <label>Contactology</label>
+            </value>
+            <value>
+                <fullName>JBlast</fullName>
+                <default>false</default>
+                <label>JBlast</label>
+            </value>
+            <value>
+                <fullName>EmailDirect</fullName>
+                <default>false</default>
+                <label>EmailDirect</label>
+            </value>
+            <value>
+                <fullName>Publicaster</fullName>
+                <default>false</default>
+                <label>Publicaster</label>
+            </value>
+            <value>
+                <fullName>Mailout</fullName>
+                <default>false</default>
+                <label>Mailout</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

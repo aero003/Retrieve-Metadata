@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legal_IP_Diligence__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check this box if you plan to perform legal / IP diligence.</description>
+    <externalId>false</externalId>
+    <label>Legal / IP Diligence</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

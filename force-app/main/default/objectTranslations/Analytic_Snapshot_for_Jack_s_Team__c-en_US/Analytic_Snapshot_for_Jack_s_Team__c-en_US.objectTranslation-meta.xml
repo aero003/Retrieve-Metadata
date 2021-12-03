@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Analytic Snapshot for Jack&apos;s Team</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Analytic Snapshots for Jack&apos;s Team</value>
+    </caseValues>
+    <layouts>
+        <layout>Opportunity Snapshot for Jack&apos;s Team Layout</layout>
+        <sections>
+            <label></label>
+            <section>90% Stage</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>All</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Industry</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Product</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Rep</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
