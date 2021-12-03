@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <types>
+    <!--<types>
         <members>Campaigner</members>
         <members>Chat_Console</members>
         <members>eFax_Customer_Service</members>
@@ -141,9 +141,9 @@
         <members>lightningsync_lightning_sync_198122_iam_gserviceaccount_com1521157780856</members>
         <members>SelfSignedCert_06Mar2021_052933</members>
         <name>Certificate</name>
-    </types>
+    </types> -->
     <types>
-        <members>AccountTriggerCustomerIdHandler</members>
+        <!--<members>AccountTriggerCustomerIdHandler</members>
         <members>AccountTriggerCustomerIdHandler_v2</members>
         <members>AccountTriggerHandler</members>
         <members>AccountTriggerHandler_v2</members>
@@ -327,11 +327,11 @@
         <members>UpdateLeadAddress</members>
         <members>UpdateLeadAddressTest</members>
         <members>ViewSurveyController</members>
-        <members>ZintelCaseClass</members>
+        <members>ZintelCaseClass</members> -->
         <members>ZintelTestClass</members>
         <name>ApexClass</name>
     </types>
-    <types>
+    <!--<types>
         <members>DataCloudCompanyMatch</members>
         <members>DataCloudGeoLocation</members>
         <members>DataCloudLeadAppend</members>
@@ -7665,6 +7665,6 @@
         <members>Opportunity.Deal_Registration_Approved_Outbound</members>
         <members>Opportunity.Notify_Partner_Outbound</members>
         <name>WorkflowOutboundMessage</name>
-    </types>
+    </types> -->
     <version>52.0</version>
 </Package>
