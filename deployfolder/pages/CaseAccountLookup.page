@@ -24,6 +24,7 @@
                     </apex:actionStatus>
                 </apex:outputPanel>
                 
+                <!-- Hello from local -->
                 <apex:outputPanel id="pnlSearchResults" style="margin:10px;height:400px;overflow-Y:auto;" layout="block">
                     <apex:pageBlock id="searchResults"> 
                         <apex:pageBlockSection title="Accounts" showHeader="false" collapsible="false" columns="1">
