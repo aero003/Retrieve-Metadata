@@ -320,15 +320,15 @@
         <members>Test_Schedule_Invoice_Report</members>
         <members>Test_Schedule_Montly_Billing_Date</members>
         <members>TwinsCalloutIntegrationClass</members>
-        <members>UpdateAccountAddress</members>
+        <members>UpdateAccountAddress</members>-->
         <members>UpdateAccountAddressTest</members>
-        <members>UpdateContactAddress</members>
+        <!--<members>UpdateContactAddress</members>
         <members>UpdateContactAddressTest</members>
         <members>UpdateLeadAddress</members>
         <members>UpdateLeadAddressTest</members>
         <members>ViewSurveyController</members>
-        <members>ZintelCaseClass</members> -->
-        <members>ZintelTestClass</members>
+        <members>ZintelCaseClass</members>
+        <members>ZintelTestClass</members> -->
         <name>ApexClass</name>
     </types>
     <!--<types>
