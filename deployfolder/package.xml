@@ -1495,9 +1495,9 @@
         <members>Voice_Create_Client_Relation_Case_when_Voice_Account_Created</members>
         <name>FlowDefinition</name>
     </types> -->
-    <types>
-       <!--  <members>Access_to_Preview_and_Generate_Document_only_on_Approved_Quote</members>-->-->
-        <members>Account_ID_Proofed_Status</members>
+   <!--  <types>
+        <members>Access_to_Preview_and_Generate_Document_only_on_Approved_Quote</members>
+        <members>Account_ID_Proofed_Status</members>-->
         <!-- <members>Account_keepitSafe_trigger_logic</members>
         <members>Add_Lead_On_Campaign_during_Lead_Creation</members>
         <members>AutoResponses_for_Sfax_Efax_Corporate_and_consensus_Billing</members>
@@ -1565,9 +1565,9 @@
         <members>Update_Lead_Record_Type_Hidden</members>
         <members>UTM_Campaign_Source_update_on_Leads</members>
         <members>Voice_CC_Call_Date_Time_Update</members>
-        <members>Voice_Create_Client_Relation_Case_when_Voice_Account_Created</members>-->
+        <members>Voice_Create_Client_Relation_Case_when_Voice_Account_Created</members>
         <name>Flow</name>
-    </types>
+    </types>-->
     <!--<types>
         <members>Business_Unit</members>
         <members>Care_Setting_Price</members>
@@ -4265,16 +4265,16 @@
         <members>V_User_Sys_Phone_Number__c-en_US</members>
         <members>WCSA_Account_Notes__c-en_US</members>
         <name>CustomObjectTranslation</name>
-    </types>
+    </types> -->
     <types>
-        <members>AnswersHome</members>
+        <!--<members>AnswersHome</members>
         <members>AttachSignedContract</members>
         <members>BandwidthExceeded</members>
         <members>BoxAccountEmbeddedPage</members>
         <members>BoxEmbeddedPage</members>
-        <members>BoxLeadEmbeddedPage</members>
+        <members>BoxLeadEmbeddedPage</members> -->
         <members>CaseAccountLookup</members>
-        <members>CaseContactLookup</members>
+        <!--<members>CaseContactLookup</members>
         <members>cases_GetNext</members>
         <members>cases_GetNextQueue</members>
         <members>cases_New</members>
@@ -4334,10 +4334,10 @@
         <members>SurveyPage</members>
         <members>TakeSurvey</members>
         <members>Unauthorized</members>
-        <members>UnderConstruction</members>
+        <members>UnderConstruction</members> -->
         <name>ApexPage</name>
     </types>
-    <types>
+    <!--<types>
         <members>Access_for_managing_public_folders_of_email_templates</members>
         <members>Access_for_Notes_and_Attachment_Section</members>
         <members>Access_for_View_in_faxforce_button</members>
