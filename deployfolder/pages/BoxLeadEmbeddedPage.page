@@ -1,8 +1,0 @@
-<apex:page standardController="Lead">
-  
-      <iframe src="https://app.box.com/embed_widget/s/z9gnqeuj6h4jk5dgmacnyyl45um6v79h?view=list&sort=name&direction=ASC&theme=blue" width="1200" height="600" frameborder="0" >
-      </iframe>
-      
-      
-  
-</apex:page>

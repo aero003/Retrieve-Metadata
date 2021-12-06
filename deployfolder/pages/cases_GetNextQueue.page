@@ -1,8 +1,0 @@
-<apex:page standardController="Case" extensions="cases_Extension" recordSetVar="cases" action="{!getNextCase}" >
-	<apex:pageBlock rendered="false" >
-		<apex:pageBlockTable value="{!cases}" var="c" >
-			<apex:outputField value="{!c.Subject}" />
-			<apex:outputField value="{!c.OwnerId}" />
-		</apex:pageBlockTable>
-	</apex:pageBlock>
-</apex:page>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
-    <links>Zintel_Communications</links>
-    <links>Google</links>
-    <links>Zintel_Reports</links>
-    <links>Smart_Numbers</links>
-    <pageComponentType>links</pageComponentType>
-</HomePageComponent>

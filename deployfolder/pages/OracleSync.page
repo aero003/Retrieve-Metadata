@@ -1,3 +1,0 @@
-<apex:page standardController="Oracle_Error__c" extensions="OracleSyncExt" action="{!sync}" showHeader="true" sidebar="true">
-	
-</apex:page>
