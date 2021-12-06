@@ -3,6 +3,7 @@ public with sharing class ZintelTestClass {
     
      static testmethod void  opportunityTestMethod(){
         
+            //hello from jenkins
             Account a = new Account();
             a.Name = 'Test Account';
             a.Relationship_Type_Communications__c = 'Customer';
