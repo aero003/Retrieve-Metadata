@@ -9,6 +9,7 @@
         window.close();
     }
     </script>
+    <!-- hello-->
     <apex:actionFunction name="refreshPageSize" action="{!refreshPageSize}" status="fetchStatus" reRender="searchResults"/>
         <apex:outputPanel id="page" layout="block" style="margin:5px;padding:20px;padding-top:2px;">
             <apex:actionRegion >  
